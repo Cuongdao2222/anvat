@@ -75,7 +75,7 @@
                                             <img class="icon" src="/React/images/icons/cart.svg">
                                             <div class="badge-cart"></div>
                                         </div>
-                                        <span class="text display-block">Thêm vào giỏ</span>
+                                        <span class="text display-block" onclick="addToCart({{ $data->id }})">Thêm vào giỏ</span>
                                     </span>
                                 </div>
                             </button>

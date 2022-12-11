@@ -885,7 +885,7 @@ if(!empty($deal)){
                                     </div> -->
                                 </div>
                             </div>
-                            <a class="view-more one-line" href="https://cooky.vn/ho-chi-minh/market/search?type=flashsale">Xem thêm Flash Sale</a>
+                            <a class="view-more one-line" href="{{ route('details', 'sale') }}">Xem thêm Flash Sale</a>
                         </div>
                     </section>
                    
@@ -931,85 +931,36 @@ if(!empty($deal)){
                             <div class="swiper-slide swiper-slide-active" style="width: 1117px; margin-right: 20px;">
                                 <div class="promotion-box">
                                     <div class="feature">
-                                        <div class="feature-item"><img class="img-fit" src="https://image.cooky.vn/abn/s640x640/2d9d2de7-9829-483b-bc0a-023519ec8162.png"><a class="link-absolute" href="https://www.cooky.vn/ho-chi-minh/market/search?type=collection&amp;id=14934"></a></div>
+                                        <div class="feature-item"><img class="img-fit" src="https://image.cooky.vn/abn/s640x640/2d9d2de7-9829-483b-bc0a-023519ec8162.png"><a class="link-absolute" href="#"></a></div>
                                         <div class="info">
                                             <div class="title two-lines">Nhâm Nhi Mùa World Cup</div>
-                                            <a class="link-absolute" href="https://www.cooky.vn/ho-chi-minh/market/search?type=collection&amp;id=14934"></a>
+                                            <a class="link-absolute" href="#"></a>
                                         </div>
                                     </div>
                                     <div class="feature">
-                                        <div class="feature-item"><img class="img-fit" src="https://image.cooky.vn/abn/s640x640/1aec72c0-959d-4e61-8b7e-9cee58a87840.png"><a class="link-absolute" href="https://www.cooky.vn/ho-chi-minh/market/search?type=collection&amp;id=14398"></a></div>
+                                        <div class="feature-item"><img class="img-fit" src="https://image.cooky.vn/abn/s640x640/1aec72c0-959d-4e61-8b7e-9cee58a87840.png"><a class="link-absolute" href="#"></a></div>
                                         <div class="info">
                                             <div class="title two-lines">Signature Cooky 19K</div>
-                                            <a class="link-absolute" href="https://www.cooky.vn/ho-chi-minh/market/search?type=collection&amp;id=14398"></a>
+                                            <a class="link-absolute" href="#"></a>
                                         </div>
                                     </div>
                                     <div class="feature">
-                                        <div class="feature-item"><img class="img-fit" src="https://image.cooky.vn/abn/s640x640/ff482561-3005-4b0e-9c5b-2c89d557b99a.png"><a class="link-absolute" href="https://www.cooky.vn/ho-chi-minh/market/search?type=collection&amp;id=14427"></a></div>
+                                        <div class="feature-item"><img class="img-fit" src="https://image.cooky.vn/abn/s640x640/ff482561-3005-4b0e-9c5b-2c89d557b99a.png"><a class="link-absolute" href="#"></a></div>
                                         <div class="info">
                                             <div class="title two-lines">Mua 1 Được 2</div>
-                                            <a class="link-absolute" href="https://www.cooky.vn/ho-chi-minh/market/search?type=collection&amp;id=14427"></a>
+                                            <a class="link-absolute" href="#"></a>
                                         </div>
                                     </div>
                                     <div class="feature">
-                                        <div class="feature-item"><img class="img-fit" src="https://image.cooky.vn/abn/s640x640/45f59aa4-a532-4994-b529-33294c903575.png"><a class="link-absolute" href="https://www.cooky.vn/ho-chi-minh/market/search?type=collection&amp;id=11868"></a></div>
+                                        <div class="feature-item"><img class="img-fit" src="https://image.cooky.vn/abn/s640x640/45f59aa4-a532-4994-b529-33294c903575.png"><a class="link-absolute" href="#"></a></div>
                                         <div class="info">
                                             <div class="title two-lines">Món Ngon Dễ Nấu - Giảm 50%</div>
-                                            <a class="link-absolute" href="https://www.cooky.vn/ho-chi-minh/market/search?type=collection&amp;id=11868"></a>
+                                            <a class="link-absolute" href="#"></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide swiper-slide-next" style="width: 1117px; margin-right: 20px;">
-                                <div class="promotion-box">
-                                    <div class="feature">
-                                        <div class="feature-item"><img class="img-fit" src="https://image.cooky.vn/abn/s640x640/9f3e0323-3aec-44e3-9a3c-e272fe400683.png"><a class="link-absolute" href="https://www.cooky.vn/ho-chi-minh/market/search?type=collection&amp;id=14429"></a></div>
-                                        <div class="info">
-                                            <div class="title two-lines">Giảm 10% Cooky Mời Bạn Món Mới</div>
-                                            <a class="link-absolute" href="https://www.cooky.vn/ho-chi-minh/market/search?type=collection&amp;id=14429"></a>
-                                        </div>
-                                    </div>
-                                    <div class="feature">
-                                        <div class="feature-item"><img class="img-fit" src="https://image.cooky.vn/abn/s640x640/628a1256-4b9d-4b23-a10b-3508882a2328.png"><a class="link-absolute" href="https://www.cooky.vn/ho-chi-minh/market/search?type=collection&amp;id=14551&amp;sortType=1"></a></div>
-                                        <div class="info">
-                                            <div class="title two-lines">Rau Củ Tươi Mỗi Ngày</div>
-                                            <a class="link-absolute" href="https://www.cooky.vn/ho-chi-minh/market/search?type=collection&amp;id=14551&amp;sortType=1"></a>
-                                        </div>
-                                    </div>
-                                    <div class="feature">
-                                        <div class="feature-item"><img class="img-fit" src="https://image.cooky.vn/abn/s640x640/b6b762a7-459a-46e3-afb1-ae2f7f13f716.png"><a class="link-absolute" href="https://www.cooky.vn/ho-chi-minh/market/search?type=category&amp;id=12&amp;subCategoryIds=309"></a></div>
-                                        <div class="info">
-                                            <div class="title two-lines">Gia Vị Độc Quyền</div>
-                                            <a class="link-absolute" href="https://www.cooky.vn/ho-chi-minh/market/search?type=category&amp;id=12&amp;subCategoryIds=309"></a>
-                                        </div>
-                                    </div>
-                                    <div class="feature">
-                                        <div class="feature-item"><img class="img-fit" src="https://image.cooky.vn/abn/s640x640/b22f35ef-ee6c-444a-aeb7-53a9705fa8a2.png"><a class="link-absolute" href="https://www.cooky.vn/ho-chi-minh/market/search?type=collection&amp;id=13402"></a></div>
-                                        <div class="info">
-                                            <div class="title two-lines">Set Cơm Việt</div>
-                                            <a class="link-absolute" href="https://www.cooky.vn/ho-chi-minh/market/search?type=collection&amp;id=13402"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide" style="width: 1117px; margin-right: 20px;">
-                                <div class="promotion-box">
-                                    <div class="feature">
-                                        <div class="feature-item"><img class="img-fit" src="https://image.cooky.vn/abn/s640x640/3bd84ee5-50f6-40c8-aab8-2292cf7a9508.png"><a class="link-absolute" href="https://www.cooky.vn/ho-chi-minh/market/search?type=category&amp;id=22"></a></div>
-                                        <div class="info">
-                                            <div class="title two-lines">Tiệc Lẩu Tại Gia</div>
-                                            <a class="link-absolute" href="https://www.cooky.vn/ho-chi-minh/market/search?type=category&amp;id=22"></a>
-                                        </div>
-                                    </div>
-                                    <div class="feature">
-                                        <div class="feature-item"><img class="img-fit" src="https://image.cooky.vn/abn/s640x640/43faf9b3-a200-43fa-b215-d52ef58c33d4.png"><a class="link-absolute" href="https://www.cooky.vn/ho-chi-minh/market/search?type=collection&amp;id=14417"></a></div>
-                                        <div class="info">
-                                            <div class="title two-lines">Quà Tặng Từ MAGGI</div>
-                                            <a class="link-absolute" href="https://www.cooky.vn/ho-chi-minh/market/search?type=collection&amp;id=14417"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>

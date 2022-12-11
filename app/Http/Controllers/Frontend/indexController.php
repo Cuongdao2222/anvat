@@ -169,6 +169,11 @@ class indexController extends Controller
         echo "thanh cong";
     }
 
+    public function showCart()
+    {
+        return view('frontend.cart');
+    }
+
     public function addClick(Request $request)
     {
         $link = $request->link;

@@ -25,10 +25,15 @@
         <meta name="description" content="Với Cooky - Ứng dụng đi chợ online, bạn chỉ cần đặt, nhận hàng lại còn FREESHIP, nguyên liệu đã được sơ chế sẵn tiết kiệm thời gian hơn rất nhiều.">
         <meta name="keywords" content="công thức, món ăn, món ngon, làm bánh, cách làm bánh, công thức nấu ăn, món ngon mỗi ngày, cách làm món ngon, hướng dẫn nấu ăn">
         <meta name="robots" content="INDEX, FOLLOW">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+
         <link href="https://www.cooky.vn/dist/css/home.index.min.css?v=3339257520" rel="stylesheet">
         <link href="https://www.cooky.vn/dist/css/shared.market.min.css?v=3339257520" rel="stylesheet">
         <script src="https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.vi.9dHu6cY24zM.O/m=auth2/rt=j/sv=1/d=1/ed=1/rs=AHpOoo-4uY-g_fx7vBG82xSTh2RyDMqbog/cb=gapi.loaded_0?le=scs" async=""></script><script src="https://connect.facebook.net/en_US/sdk.js?hash=fcadfae5cc74dacbd4df8e91c9427460" async="" crossorigin="anonymous"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script id="google-login" src="https://apis.google.com/js/api.js" gapi_processed="true"></script><script async="" src="https://connect.facebook.com/en_US/fbevents.js&amp;#39;"></script><script id="facebook-jssdk" src="https://connect.facebook.net/en_US/sdk.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-NF9KS7H"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
         <script src="https://www.cooky.vn/dist/scripts/jquery-3.5.min.js?v=3339257520"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
         <script src="https://www.cooky.vn/dist/scripts/polyfill.js?v=3339257520"></script>
         <script src="https://www.cooky.vn/dist/scripts/helper.min.js?v=3339257520"></script>
         <script>
@@ -54,6 +59,7 @@
         <meta http-equiv="origin-trial" content="A751Xsk4ZW3DVQ8WZng2Dk5s3YzAyqncTzgv+VaE6wavgTY0QHkDvUTET1o7HanhuJO8lgv1Vvc88Ij78W1FIAAAAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1RoaXJkUGFydHkiOnRydWV9">
         <script type="text/javascript" async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/964978928/?random=1669628789718&amp;cv=11&amp;fst=1669628789718&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=2wgb90&amp;u_w=1920&amp;u_h=1080&amp;hn=www.googleadservices.com&amp;frm=0&amp;url=https%3A%2F%2Fwww.cooky.vn%2F&amp;ref=https%3A%2F%2Fwww.cooky.vn%2Fmarket%2Fba-roi-heo-nuong-bbq-uop-san-19570&amp;tiba=Cooky%20Market%20%7C%20Cooky&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B107.0.5304.107%7CChromium%3B107.0.5304.107%7CNot%253DA%253FBrand%3B24.0.0.0&amp;uap=Windows&amp;uapv=10.0.0&amp;uaw=0&amp;rfmt=3&amp;fmt=4"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/51/1/intl/vi_ALL/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/51/1/intl/vi_ALL/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/51/1/intl/vi_ALL/map.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/51/1/intl/vi_ALL/marker.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/51/1/intl/vi_ALL/onion.js"></script>
 
+        <link rel="stylesheet" href="https://dienmaynguoiviet.vn/css/lib/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 
         @stack('style')
@@ -86,7 +92,7 @@
                         $number_cart = count($cart);
                        
                      ?>   
-                        <button class="n-btn cart-icon action" title="Xem giỏ hàng"><img src="/React/Images/Icons/cart.svg"><span class="item-count-badge">{{ $number_cart??0 }}</span></button>
+                        <button class="n-btn cart-icon action" title="Xem giỏ hàng" onclick="showToCart()"><img src="/React/Images/Icons/cart.svg"><span class="item-count-badge">{{ $number_cart??0 }}</span></button>
 
                         <div class="action phone n-btn">
                             <img class="icon" src="{{ asset('React/Images/Icons/call.svg')}}">
@@ -758,6 +764,213 @@
                 </div>
             </div>
         </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="loader"></div>
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Thông tin giỏ hàng</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="tbl_list_cartss">
+                            
+                        </div>
+
+                        <div class="c3_col_1">
+                            <form class="c3_box" id="form-sub" method="post"  action="{{ route('order') }}">
+                                {{ csrf_field() }}
+                                <div class="title_box_cart"> Thông tin khách hàng</div>
+                                <div class="item-form">
+                                    <div class="option-group clearfix">
+                                        <div class="step_option">
+                                            <span class="st_opt st_opt_active" data-value="Anh" data-name="sex"></span><span>Anh</span>
+                                        </div>
+                                        <div class="step_option">
+                                            <span class="st_opt" data-value="Chị" data-name="sex"></span><span>Chị</span>
+                                        </div>
+                                        <input type="hidden" name="sex" id="sex" value="Nam">
+                                    </div>
+                                    <!--option-group-->
+                                </div>
+                                <div class="item-form">
+                                    <input type="text" name="name" id="buyer_name" placeholder="Họ tên">
+                                </div>
+                                <div class="item-form">
+                                    <input type="text" name="phone_number" id="buyer_tel" value="" placeholder="Số điện thoại">
+                                </div>
+                                <div class="item-form">
+                                    <input type="text" name="mail" id="buyer_email" value="" placeholder="Email">
+                                </div>
+                                <div class="item-form">
+                                    <textarea name="address" placeholder="Địa chỉ" id="buyer_address"></textarea>
+                                </div>
+                                <div class="item-form" style="width: 50%;display: inline-block;color: #0083d1;">
+                                    <select name="province" class="form-control" id="ship_to_province" onchange="getDistrict(this.value)">
+                                        <option value="0">--Lựa chọn--</option>
+                                        <option value="1">Hà nội</option>
+                                        <option value="2">TP HCM</option>
+                                        <option value="5">Hải Phòng</option>
+                                        <option value="4">Đà Nẵng</option>
+                                        <option value="6">An Giang</option>
+                                        <option value="7">Bà Rịa-Vũng Tàu</option>
+                                        <option value="13">Bình Dương</option>
+                                        <option value="15">Bình Phước</option>
+                                        <option value="16">Bình Thuận</option>
+                                        <option value="14">Bình Định</option>
+                                        <option value="8">Bạc Liêu</option>
+                                        <option value="10">Bắc Giang</option>
+                                        <option value="9">Bắc Kạn</option>
+                                        <option value="11">Bắc Ninh</option>
+                                        <option value="12">Bến Tre</option>
+                                        <option value="18">Cao Bằng</option>
+                                        <option value="17">Cà Mau</option>
+                                        <option value="3">Cần Thơ</option>
+                                        <option value="24">Gia Lai</option>
+                                        <option value="25">Hà Giang</option>
+                                        <option value="26">Hà Nam</option>
+                                        <option value="27">Hà Tĩnh</option>
+                                        <option value="30">Hòa Bình</option>
+                                        <option value="28">Hải Dương</option>
+                                        <option value="29">Hậu Giang</option>
+                                        <option value="31">Hưng Yên</option>
+                                        <option value="32">Khánh Hòa</option>
+                                        <option value="33">Kiên Giang</option>
+                                        <option value="34">Kon Tum</option>
+                                        <option value="35">Lai Châu</option>
+                                        <option value="38">Lào Cai</option>
+                                        <option value="36">Lâm Đồng</option>
+                                        <option value="37">Lạng Sơn</option>
+                                        <option value="39">Long An</option>
+                                        <option value="40">Nam Định</option>
+                                        <option value="41">Nghệ An</option>
+                                        <option value="42">Ninh Bình</option>
+                                        <option value="43">Ninh Thuận</option>
+                                        <option value="44">Phú Thọ</option>
+                                        <option value="45">Phú Yên</option>
+                                        <option value="46">Quảng Bình</option>
+                                        <option value="47">Quảng Nam</option>
+                                        <option value="48">Quảng Ngãi</option>
+                                        <option value="49">Quảng Ninh</option>
+                                        <option value="50">Quảng Trị</option>
+                                        <option value="51">Sóc Trăng</option>
+                                        <option value="52">Sơn La</option>
+                                        <option value="53">Tây Ninh</option>
+                                        <option value="56">Thanh Hóa</option>
+                                        <option value="54">Thái Bình</option>
+                                        <option value="55">Thái Nguyên</option>
+                                        <option value="57">Thừa Thiên-Huế</option>
+                                        <option value="58">Tiền Giang</option>
+                                        <option value="59">Trà Vinh</option>
+                                        <option value="60">Tuyên Quang</option>
+                                        <option value="61">Vĩnh Long</option>
+                                        <option value="62">Vĩnh Phúc</option>
+                                        <option value="63">Yên Bái</option>
+                                        <option value="19">Đắk Lắk</option>
+                                        <option value="22">Đồng Nai</option>
+                                        <option value="23">Đồng Tháp</option>
+                                        <option value="21">Điện Biên</option>
+                                        <option value="20">Đăk Nông</option>
+                                    </select>
+                                </div>
+                                <div id="district-holder-login" style="width: 49%;display: inline-block;color: #0083d1;"></div>
+                                <!-- <div id="ajxTaxInvoice" class="item-form">
+                                    <div class="ng_ml">
+                                        <input type="checkbox" onclick="showTap('pnlTaxInvoice')" name="chkTaxInvoice" id="chkTaxInvoice">
+                                        <label id="bale_ml" for="chkTaxInvoice">Xuất hóa đơn công ty</label>
+                                    </div>
+                                    <div style="width: 100%; margin-top:10px; padding: 0px;display: none;" id="pnlTaxInvoice">
+                                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td width="120" align="left">Công ty/Tổ chức:
+                                                    </td>
+                                                    <td align="left">
+                                                        <input type="text" id="txtTaxName" value="" size="50" name="user_info[tax_company]">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="120" align="left">Địa chỉ:
+                                                    </td>
+                                                    <td align="left">
+                                                        <input type="text" id="txtTaxAddress" value="" size="50" name="user_info[tax_address]">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="120" align="left">Mã số thuế:
+                                                    </td>
+                                                    <td align="left">
+                                                        <input type="text" id="txtTaxCode" name="user_info[tax_code]" value="">
+                                                        <span class="cmt" id="txtTaxCodeView">&nbsp;</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div> -->
+                                <!--ajxTaxInvoice-->
+                                <div class="item-form">
+                                    <h4 style="font-size:15px; margin-top:20px;">Hình thức thanh toán:</h4>
+                                    <table style="width:100%;">
+                                        <tbody>
+                                          
+                                            <tr class="item-paymethod">
+                                                <td><input type="radio" style="width:initial; padding:0; margin:0; height:auto;" name="pay_method" value="3" class="pay_option" id="paymethod_3" checked></td>
+                                                <td>
+                                                    <label for="paymethod_3">Trả tiền khi nhận hàng</label>
+                                                    <div id="pay_2" style="display:none;" class="pay_content">Trả tiền khi nhận hàng</div>
+                                                </td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <div class="clear"></div>
+
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-primary order1">Đặt hàng</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    
+                                </div>
+
+
+                            </form>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+        
+
         <script>
             var isMarket = true;
             
@@ -819,15 +1032,22 @@
                     },
                     success: function(result){
 
-                        alert('thêm sản phẩm vào giỏ hàng thành công');
+                        
             
-                       //  numberProductCart = $(".number-cart").text();
+                        numberProductCart = $(".item-count-badge").text();
+
+                        
+
+                        number = parseInt(numberProductCart)+1;
+
+                        alert('thêm sản phẩm vào giỏ hàng thành công');
+
             
                        //  console.log(numberProductCart);
                        
-                       numberCart = result.find(numberProductCart);
+                       // numberCart = result.find(numberProductCart);
             
-                        // $('#tbl_list_cartss').append(result);
+                        $('.item-count-badge').text(number);
             
                         // const numberCart = $('#number-product-cart').text();
             
@@ -835,6 +1055,31 @@
             
                         // $('#exampleModal').modal('show'); 
                         // $('.loader').hide();
+                        
+                    }
+                });
+                
+            }
+
+            function showToCart() {
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    }
+                });
+
+                $.ajax({
+                    type: 'POST',
+                    url: "{{ route('showCart') }}",
+                   
+                    success: function(result){
+                      
+                       // numberCart = result.find("#number-product-cart").text();
+
+                        $('#tbl_list_cartss').append(result);
+
+                       
+                        $('#exampleModal').modal('show'); 
                         
                     }
                 });
