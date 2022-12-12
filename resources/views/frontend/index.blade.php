@@ -54,6 +54,9 @@ if(!empty($deal)){
     $timestamp = $now->diffInSeconds($timeDeal_end);
 }
 
+ 
+    $banner_home =  App\Models\banners::where('option','=',0)->take(6)->OrderBy('stt', 'asc')->where('active','=',1)->select('title', 'image', 'title', 'link')->first();
+    
 
 ?>
 
@@ -112,7 +115,7 @@ if(!empty($deal)){
                                 <div class="banner-item" tabindex="-1" style="width: 100%; display: inline-block;">
                                     <div class="embed-responsive embed-responsive-16by9"><a href="https://www.cooky.vn/ho-chi-minh/market/search?type=collection&amp;id=14417" target="_blank">
 
-                                        <img src="https://image.cooky.vn/abn/s1065x333/d7026cf2-fae0-4e97-b0fb-50989002c469.png" alt="Quà Tặng Từ MAGGI" loading="lazy" class="embed-responsive-item"></a></div>
+                                        <img src="{{ asset($banner_home->image) }}" alt="{{$banner_home->title}}" loading="lazy" class="embed-responsive-item"></a></div>
                                 </div>
                             </div>
                         </div>
