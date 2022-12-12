@@ -113,7 +113,7 @@ if(!empty($deal)){
                         <div data-index="6" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 1117px;">
                             <div>
                                 <div class="banner-item" tabindex="-1" style="width: 100%; display: inline-block;">
-                                    <div class="embed-responsive embed-responsive-16by9"><a href="https://www.cooky.vn/ho-chi-minh/market/search?type=collection&amp;id=14417" target="_blank">
+                                    <div class="embed-responsive embed-responsive-16by9"><a href="{{ $banner_home->link }}" target="_blank">
 
                                         <img src="{{ asset($banner_home->image) }}" alt="{{$banner_home->title}}" loading="lazy" class="embed-responsive-item"></a></div>
                                 </div>
