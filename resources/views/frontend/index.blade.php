@@ -365,7 +365,7 @@ if(!empty($deal)){
                                 <div class="product-basic-info flex-25">
                                     <a class="link-absolute" title="Gà Vườn Xốt Muối Ớt Nướng Than (Dùng Ngay)" href="https://cooky.vn/market/ga-vuon-xot-muoi-ot-nuong-than-dung-ngay-19726"></a>
                                     <div class="cover-box">
-                                        <img class="video-play" src="./React/Images/Icons/video-play.svg"><img class="top-left-tag" src="https://image.cooky.vn/icon/s320x320/c982e85b-04a1-4c79-a485-8e4c70ea06ac.png">
+                                        <img class="video-play" src="./public/react/Images/Icons/video-play.svg"><img class="top-left-tag" src="https://image.cooky.vn/icon/s320x320/c982e85b-04a1-4c79-a485-8e4c70ea06ac.png">
                                         <div class="promotion-photo">
                                             <div class="package-default"><img src="https://image.cooky.vn/posproduct/g0/19726/s1124x1124/6f344d09-1614-42a3-a5fa-5c523af90850.jpeg" class="img-fit" loading="lazy"></div>
                                         </div>
@@ -380,7 +380,7 @@ if(!empty($deal)){
                                             </div>
                                         </div>
                                         <button class="btn-add-to-cart n-btn " title="Bấm để thêm vào giỏ hàng">
-                                            <div style="position: relative; z-index: 3;"><img src="./react/images/icons/plus-filled-red.svg"></div>
+                                            <div style="position: relative; z-index: 3;"><img src="./public/react/images/icons/plus-filled-red.svg"></div>
                                         </button>
                                     </div>
                                 </div>
@@ -408,7 +408,7 @@ if(!empty($deal)){
                                             </div>
                                         </div>
                                         <button class="btn-add-to-cart n-btn " title="Bấm để thêm vào giỏ hàng">
-                                            <div style="position: relative; z-index: 3;"><img src="./React/Images/Icons/plus-filled-red.svg"></div>
+                                            <div style="position: relative; z-index: 3;"><img src="./public/react/Images/Icons/plus-filled-red.svg"></div>
                                         </button>
                                     </div>
                                 </div>
@@ -429,7 +429,7 @@ if(!empty($deal)){
                                             </div>
                                         </div>
                                         <button class="btn-add-to-cart n-btn " title="Bấm để thêm vào giỏ hàng">
-                                            <div style="position: relative; z-index: 3;"><img src="./React/Images/Icons/plus-filled-red.svg"></div>
+                                            <div style="position: relative; z-index: 3;"><img src="./public/react/Images/Icons/plus-filled-red.svg"></div>
                                         </button>
                                     </div>
                                 </div>
@@ -450,7 +450,7 @@ if(!empty($deal)){
                                             </div>
                                         </div>
                                         <button class="btn-add-to-cart n-btn " title="Bấm để thêm vào giỏ hàng">
-                                            <div style="position: relative; z-index: 3;"><img src="./React/Images/Icons/plus-filled-red.svg"></div>
+                                            <div style="position: relative; z-index: 3;"><img src="./public/react/Images/Icons/plus-filled-red.svg"></div>
                                         </button>
                                     </div>
                                 </div>
@@ -471,7 +471,7 @@ if(!empty($deal)){
                                             </div>
                                         </div>
                                         <button class="btn-add-to-cart n-btn " title="Bấm để thêm vào giỏ hàng">
-                                            <div style="position: relative; z-index: 3;"><img src="./React/Images/Icons/plus-filled-red.svg"></div>
+                                            <div style="position: relative; z-index: 3;"><img src="./public/react/Images/Icons/plus-filled-red.svg"></div>
                                         </button>
                                     </div>
                                 </div>
@@ -482,7 +482,7 @@ if(!empty($deal)){
                                 <div class="product-basic-info flex-25">
                                     <a class="link-absolute" title="Gà Ta Hấp Mắm Nhĩ" href="https://cooky.vn/market/ga-ta-hap-mam-nhi-29"></a>
                                     <div class="cover-box">
-                                        <img class="video-play" src="./React/Images/Icons/video-play.svg">
+                                        <img class="video-play" src="./public/react/Images/Icons/video-play.svg">
                                         <div class="promotion-photo">
                                             <div class="package-default"><img src="https://image.cooky.vn/posproduct/g0/29/s1124x1124/63da1a8e-994e-4e8a-80e6-970a6401b391.jpeg" class="img-fit" loading="lazy"></div>
                                         </div>
@@ -497,7 +497,7 @@ if(!empty($deal)){
                                             </div>
                                         </div>
                                         <button class="btn-add-to-cart n-btn " title="Bấm để thêm vào giỏ hàng">
-                                            <div style="position: relative; z-index: 3;"><img src="./React/Images/Icons/plus-filled-red.svg"></div>
+                                            <div style="position: relative; z-index: 3;"><img src="./public/react/Images/Icons/plus-filled-red.svg"></div>
                                         </button>
                                     </div>
                                 </div>
@@ -518,7 +518,7 @@ if(!empty($deal)){
                                             </div>
                                         </div>
                                         <button class="btn-add-to-cart n-btn " title="Bấm để thêm vào giỏ hàng">
-                                            <div style="position: relative; z-index: 3;"><img src="./React/Images/Icons/plus-filled-red.svg"></div>
+                                            <div style="position: relative; z-index: 3;"><img src="./public/react/Images/Icons/plus-filled-red.svg"></div>
                                         </button>
                                     </div>
                                 </div>
@@ -539,7 +539,7 @@ if(!empty($deal)){
                                             </div>
                                         </div>
                                         <button class="btn-add-to-cart n-btn " title="Bấm để thêm vào giỏ hàng">
-                                            <div style="position: relative; z-index: 3;"><img src="./React/Images/Icons/plus-filled-red.svg"></div>
+                                            <div style="position: relative; z-index: 3;"><img src="./public/react/Images/Icons/plus-filled-red.svg"></div>
                                         </button>
                                     </div>
                                 </div>
@@ -585,7 +585,7 @@ if(!empty($deal)){
                                                 <div class="promotion-name two-lines">{{ $value->Name }}</div>
                                                 <div class="promotion-info">
                                                     <div class="p-percent" style="width: 0%;">
-                                                        <img src="./React/Images/Icons/cart-black-s11.svg" loading="lazy">&nbsp;&nbsp;
+                                                        <img src="./public/react/Images/Icons/cart-black-s11.svg" loading="lazy">&nbsp;&nbsp;
                                                         <!-- <div class="countdown-wrapper">
                                                             <div class="countdown-item">Còn 10 sản phẩm</div>
                                                         </div> -->
@@ -600,7 +600,7 @@ if(!empty($deal)){
                                                         </div>
                                                     </div>
                                                     <button class="btn-add-to-cart n-btn " title="Bấm để thêm vào giỏ hàng" onclick="addToCart({{ $value->product_id }})">
-                                                        <div style="position: relative; z-index: 3;"><img src="./React/Images/Icons/plus-filled-red.svg"></div>
+                                                        <div style="position: relative; z-index: 3;"><img src="./public/react/Images/Icons/plus-filled-red.svg"></div>
                                                     </button>
                                                 </div>
                                             </div>
@@ -622,7 +622,7 @@ if(!empty($deal)){
                                                 <div class="promotion-name two-lines">Salad Bắp Cải Xốt Chua Ngọt</div>
                                                 <div class="promotion-info">
                                                     <div class="p-percent" style="width: 40%;">
-                                                        <img src="./React/Images/Icons/cart-black-s11.svg" loading="lazy">&nbsp;&nbsp;
+                                                        <img src="./public/react/Images/Icons/cart-black-s11.svg" loading="lazy">&nbsp;&nbsp;
                                                         <div class="countdown-wrapper">
                                                             <div class="countdown-item">Còn 3 sản phẩm</div>
                                                         </div>
@@ -637,7 +637,7 @@ if(!empty($deal)){
                                                         </div>
                                                     </div>
                                                     <button class="btn-add-to-cart n-btn " title="Bấm để thêm vào giỏ hàng">
-                                                        <div style="position: relative; z-index: 3;"><img src="./React/Images/Icons/plus-filled-red.svg"></div>
+                                                        <div style="position: relative; z-index: 3;"><img src="./public/react/Images/Icons/plus-filled-red.svg"></div>
                                                     </button>
                                                 </div>
                                             </div>
@@ -652,7 +652,7 @@ if(!empty($deal)){
                                                 <div class="promotion-name two-lines">Canh Chua Cá Hú Bông Súng</div>
                                                 <div class="promotion-info">
                                                     <div class="p-percent" style="width: 60%;">
-                                                        <img src="./React/Images/Icons/cart-black-s11.svg" loading="lazy">&nbsp;&nbsp;
+                                                        <img src="./public/react/Images/Icons/cart-black-s11.svg" loading="lazy">&nbsp;&nbsp;
                                                         <div class="countdown-wrapper">
                                                             <div class="countdown-item">Còn 2 sản phẩm</div>
                                                         </div>
@@ -667,7 +667,7 @@ if(!empty($deal)){
                                                         </div>
                                                     </div>
                                                     <button class="btn-add-to-cart n-btn " title="Bấm để thêm vào giỏ hàng">
-                                                        <div style="position: relative; z-index: 3;"><img src="./React/Images/Icons/plus-filled-red.svg"></div>
+                                                        <div style="position: relative; z-index: 3;"><img src="./public/react/Images/Icons/plus-filled-red.svg"></div>
                                                     </button>
                                                 </div>
                                             </div>
@@ -682,7 +682,7 @@ if(!empty($deal)){
                                                 <div class="promotion-name two-lines">Canh Tôm Thẻ Nấu Khoai Mỡ</div>
                                                 <div class="promotion-info">
                                                     <div class="p-percent" style="width: 90%;">
-                                                        <img src="./React/Images/Icons/cart-black-s11.svg" loading="lazy">&nbsp;&nbsp;
+                                                        <img src="./public/react/Images/Icons/cart-black-s11.svg" loading="lazy">&nbsp;&nbsp;
                                                         <div class="countdown-wrapper">
                                                             <div class="countdown-item">Còn 1 sản phẩm</div>
                                                         </div>
@@ -697,7 +697,7 @@ if(!empty($deal)){
                                                         </div>
                                                     </div>
                                                     <button class="btn-add-to-cart n-btn " title="Bấm để thêm vào giỏ hàng">
-                                                        <div style="position: relative; z-index: 3;"><img src="./React/Images/Icons/plus-filled-red.svg"></div>
+                                                        <div style="position: relative; z-index: 3;"><img src="./public/react/Images/Icons/plus-filled-red.svg"></div>
                                                     </button>
                                                 </div>
                                             </div>
@@ -712,7 +712,7 @@ if(!empty($deal)){
                                                 <div class="promotion-name two-lines">Sườn Non Heo Chiên Sả Ớt (Ướp Sẵn)</div>
                                                 <div class="promotion-info">
                                                     <div class="p-percent" style="width: 20%;">
-                                                        <img src="./React/Images/Icons/cart-black-s11.svg" loading="lazy">&nbsp;&nbsp;
+                                                        <img src="./public/react/Images/Icons/cart-black-s11.svg" loading="lazy">&nbsp;&nbsp;
                                                         <div class="countdown-wrapper">
                                                             <div class="countdown-item">Còn 4 sản phẩm</div>
                                                         </div>
@@ -727,7 +727,7 @@ if(!empty($deal)){
                                                         </div>
                                                     </div>
                                                     <button class="btn-add-to-cart n-btn " title="Bấm để thêm vào giỏ hàng">
-                                                        <div style="position: relative; z-index: 3;"><img src="./React/Images/Icons/plus-filled-red.svg"></div>
+                                                        <div style="position: relative; z-index: 3;"><img src="./public/react/Images/Icons/plus-filled-red.svg"></div>
                                                     </button>
                                                 </div>
                                             </div>
@@ -742,7 +742,7 @@ if(!empty($deal)){
                                                 <div class="promotion-name two-lines">Salad Thanh Cua Rong Nho Hỗn Hợp</div>
                                                 <div class="promotion-info">
                                                     <div class="p-percent" style="width: 40%;">
-                                                        <img src="./React/Images/Icons/cart-black-s11.svg" loading="lazy">&nbsp;&nbsp;
+                                                        <img src="./public/react/Images/Icons/cart-black-s11.svg" loading="lazy">&nbsp;&nbsp;
                                                         <div class="countdown-wrapper">
                                                             <div class="countdown-item">Còn 3 sản phẩm</div>
                                                         </div>
@@ -757,14 +757,14 @@ if(!empty($deal)){
                                                         </div>
                                                     </div>
                                                     <button class="btn-add-to-cart n-btn " title="Bấm để thêm vào giỏ hàng">
-                                                        <div style="position: relative; z-index: 3;"><img src="./React/Images/Icons/plus-filled-red.svg"></div>
+                                                        <div style="position: relative; z-index: 3;"><img src="./public/react/Images/Icons/plus-filled-red.svg"></div>
                                                     </button>
                                                 </div>
                                             </div>
                                             <div class="product-basic-info ">
                                                 <a class="link-absolute" title="Sườn Non Heo Xào Chua Ngọt" href="https://cooky.vn/market/suon-non-heo-xao-chua-ngot-258"></a>
                                                 <div class="cover-box">
-                                                    <img class="video-play" src="./React/Images/Icons/video-play.svg"><img class="img-flash-sale" src="https://image.cooky.vn/promotion/s50/61861311-be6d-4ade-8c4c-685fb2845db7.png" loading="lazy">
+                                                    <img class="video-play" src="./public/react/Images/Icons/video-play.svg"><img class="img-flash-sale" src="https://image.cooky.vn/promotion/s50/61861311-be6d-4ade-8c4c-685fb2845db7.png" loading="lazy">
                                                     <div class="promotion-photo">
                                                         <div class="package-default"><img src="https://image.cooky.vn/posproduct/g0/258/s200x200/78310905-6968-46f7-8c67-6e49cb5bbe29.jpeg" class="img-fit" loading="lazy"></div>
                                                     </div>
@@ -772,7 +772,7 @@ if(!empty($deal)){
                                                 <div class="promotion-name two-lines">Sườn Non Heo Xào Chua Ngọt</div>
                                                 <div class="promotion-info">
                                                     <div class="p-percent" style="width: 40%;">
-                                                        <img src="./React/Images/Icons/cart-black-s11.svg" loading="lazy">&nbsp;&nbsp;
+                                                        <img src="./public/react/Images/Icons/cart-black-s11.svg" loading="lazy">&nbsp;&nbsp;
                                                         <div class="countdown-wrapper">
                                                             <div class="countdown-item">Còn 6 sản phẩm</div>
                                                         </div>
@@ -787,7 +787,7 @@ if(!empty($deal)){
                                                         </div>
                                                     </div>
                                                     <button class="btn-add-to-cart n-btn " title="Bấm để thêm vào giỏ hàng">
-                                                        <div style="position: relative; z-index: 3;"><img src="./React/Images/Icons/plus-filled-red.svg"></div>
+                                                        <div style="position: relative; z-index: 3;"><img src="./public/react/Images/Icons/plus-filled-red.svg"></div>
                                                     </button>
                                                 </div>
                                             </div>
@@ -802,7 +802,7 @@ if(!empty($deal)){
                                                 <div class="promotion-name two-lines">Nạc Dăm Heo (Thịt Tươi) Kho Tiêu (Ướp Sẵn)</div>
                                                 <div class="promotion-info">
                                                     <div class="p-percent" style="width: 50%;">
-                                                        <img src="./React/Images/Icons/cart-black-s11.svg" loading="lazy">&nbsp;&nbsp;
+                                                        <img src="./public/react/Images/Icons/cart-black-s11.svg" loading="lazy">&nbsp;&nbsp;
                                                         <div class="countdown-wrapper">
                                                             <div class="countdown-item">Còn 5 sản phẩm</div>
                                                         </div>
@@ -817,7 +817,7 @@ if(!empty($deal)){
                                                         </div>
                                                     </div>
                                                     <button class="btn-add-to-cart n-btn " title="Bấm để thêm vào giỏ hàng">
-                                                        <div style="position: relative; z-index: 3;"><img src="./React/Images/Icons/plus-filled-red.svg"></div>
+                                                        <div style="position: relative; z-index: 3;"><img src="./public/react/Images/Icons/plus-filled-red.svg"></div>
                                                     </button>
                                                 </div>
                                             </div>
@@ -832,7 +832,7 @@ if(!empty($deal)){
                                                 <div class="promotion-name two-lines">Thăn Ngoại Bò Hokubee (Striploin) Cắt Steak</div>
                                                 <div class="promotion-info">
                                                     <div class="p-percent" style="width: 23.0769%;">
-                                                        <img src="./React/Images/Icons/cart-black-s11.svg" loading="lazy">&nbsp;&nbsp;
+                                                        <img src="./public/react/Images/Icons/cart-black-s11.svg" loading="lazy">&nbsp;&nbsp;
                                                         <div class="countdown-wrapper">
                                                             <div class="countdown-item">Còn 10 sản phẩm</div>
                                                         </div>
@@ -847,7 +847,7 @@ if(!empty($deal)){
                                                         </div>
                                                     </div>
                                                     <button class="btn-add-to-cart n-btn " title="Bấm để thêm vào giỏ hàng">
-                                                        <div style="position: relative; z-index: 3;"><img src="./React/Images/Icons/plus-filled-red.svg"></div>
+                                                        <div style="position: relative; z-index: 3;"><img src="./public/react/Images/Icons/plus-filled-red.svg"></div>
                                                     </button>
                                                 </div>
                                             </div>
@@ -862,7 +862,7 @@ if(!empty($deal)){
                                                 <div class="promotion-name two-lines">Hộp Hâm Nóng ArirangLife EL-ALS263 (Hồng)</div>
                                                 <div class="promotion-info">
                                                     <div class="p-percent" style="width: 60%;">
-                                                        <img src="./React/Images/Icons/cart-black-s11.svg" loading="lazy">&nbsp;&nbsp;
+                                                        <img src="./public/react/Images/Icons/cart-black-s11.svg" loading="lazy">&nbsp;&nbsp;
                                                         <div class="countdown-wrapper">
                                                             <div class="countdown-item">Còn 2 sản phẩm</div>
                                                         </div>
@@ -877,7 +877,7 @@ if(!empty($deal)){
                                                         </div>
                                                     </div>
                                                     <button class="btn-add-to-cart n-btn " title="Bấm để thêm vào giỏ hàng">
-                                                        <div style="position: relative; z-index: 3;"><img src="./React/Images/Icons/plus-filled-red.svg"></div>
+                                                        <div style="position: relative; z-index: 3;"><img src="./public/react/Images/Icons/plus-filled-red.svg"></div>
                                                     </button>
                                                 </div>
                                             </div>
@@ -982,7 +982,7 @@ if(!empty($deal)){
                                 <div class="promotion-name two-lines">{{ $datas->Name }}</div>
                                 <div class="promotion-info">
                                     <div class="p-percent" style="width: 11.1111%;">
-                                        <img src="./React/Images/Icons/cart-black-s11.svg" loading="lazy">&nbsp;&nbsp;
+                                        <img src="./public/react/Images/Icons/cart-black-s11.svg" loading="lazy">&nbsp;&nbsp;
                                         <div class="countdown-wrapper">
                                             <!-- <div class="countdown-item">Còn 8 sản phẩm</div> -->
                                         </div>
@@ -997,7 +997,7 @@ if(!empty($deal)){
                                         </div>
                                     </div>
                                     <button class="btn-add-to-cart n-btn " title="Bấm để thêm vào giỏ hàng" onclick="addToCart({{ $datas->id }})">
-                                        <div style="position: relative; z-index: 3;"><img src="./react/images/icons/plus-filled-red.svg"></div>
+                                        <div style="position: relative; z-index: 3;"><img src="./public/react/images/icons/plus-filled-red.svg"></div>
                                     </button>
                                 </div>
                             </div>
