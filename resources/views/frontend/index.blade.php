@@ -982,7 +982,7 @@ if(!empty($deal)){
                                 <div class="promotion-name two-lines">{{ $datas->Name }}</div>
                                 <div class="promotion-info">
                                     <div class="p-percent" style="width: 11.1111%;">
-                                        <img src="./public/react/Images/Icons/cart-black-s11.svg" loading="lazy">&nbsp;&nbsp;
+                                        <img src="./public/react/images/icons/cart-black-s11.svg" loading="lazy">&nbsp;&nbsp;
                                         <div class="countdown-wrapper">
                                             <!-- <div class="countdown-item">Còn 8 sản phẩm</div> -->
                                         </div>
