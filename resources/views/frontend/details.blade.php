@@ -72,7 +72,7 @@
                                 <div style="position: relative; z-index: 3;">
                                     <span class="row-1">
                                         <div class="icon-total-save">
-                                            <img class="icon" src="/React/images/icons/cart.svg">
+                                            <img class="icon" src="{{ asset('/public/react/images/icons/cart.svg') }}">
                                             <div class="badge-cart"></div>
                                         </div>
                                         <span class="text display-block" onclick="addToCart({{ $data->id }})">Thêm vào giỏ</span>
