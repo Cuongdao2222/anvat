@@ -890,7 +890,7 @@ if(!empty($deal)){
                                     </div> -->
                                 </div>
                             </div>
-                            <a class="view-more one-line" href="{{ route('details', 'sale') }}">Xem thêm Flash Sale</a>
+                            <!-- <a class="view-more one-line" href="{{ route('details', 'sale') }}">Xem thêm Flash Sale</a> -->
                         </div>
                     </section>
                    
