@@ -78,11 +78,11 @@
         <div id="app">
             <div class="navigation-bar">
                 <div>
-                    <div class="logo"><a href="/"><img src="{{ asset('react/images/logos/logo.svg')}}" alt="Logo Cooky"></a></div>
-                    <div class="search-input"><img class="icon" src="{{ asset('react/images/icons/magnifying-glass.svg')}}" alt="Magnifying Glass"><input type="text" tabindex="0" control="inp-search" placeholder="Tìm công thức hoặc sản phẩm" value=""></div>
+                    <div class="logo"><a href="/"><img src="{{ asset('public/react/images/logos/logo.svg')}}" alt="Logo Cooky"></a></div>
+                    <div class="search-input"><img class="icon" src="{{ asset('public/react/images/icons/magnifying-glass.svg')}}" alt="Magnifying Glass"><input type="text" tabindex="0" control="inp-search" placeholder="Tìm công thức hoặc sản phẩm" value=""></div>
                     <div class="user">
                         
-                        <a class="action extra n-btn" title="Bộ sưu tập"><img class="icon" src="{{ asset('react/images/icons/heart-big-white.svg')}}"></a>
+                        <a class="action extra n-btn" title="Bộ sưu tập"><img class="icon" src="{{ asset('public/react/images/icons/heart-big-white.svg')}}"></a>
 
                          <?php
                         $cart = Gloudemans\Shoppingcart\Facades\Cart::content();
@@ -92,20 +92,20 @@
                         $number_cart = count($cart);
                        
                      ?>   
-                        <button class="n-btn cart-icon action" title="Xem giỏ hàng" onclick="showToCart()"><img src="/react/images/icons/cart.svg"><span class="item-count-badge">{{ $number_cart??0 }}</span></button>
+                        <button class="n-btn cart-icon action" title="Xem giỏ hàng" onclick="showToCart()"><img src="/public/react/images/icons/cart.svg"><span class="item-count-badge">{{ $number_cart??0 }}</span></button>
 
                         <div class="action phone n-btn">
-                            <img class="icon" src="{{ asset('react/images/icons/call.svg')}}">
+                            <img class="icon" src="{{ asset('public/react/images/icons/call.svg')}}">
                             <div class="phone-hover">
-                                <div style="display: flex; justify-content: space-between; align-items: center; padding: 16px;"><span>HOTLINE: 19002041</span><img src="{{ asset('react/images/icons/copy.svg')}}"></div>
+                                <div style="display: flex; justify-content: space-between; align-items: center; padding: 16px;"><span>HOTLINE: 19002041</span><img src="{{ asset('public/react/images/icons/copy.svg')}}"></div>
                             </div>
                         </div>
-                        <!-- <div class="action hotline view-city"><span class="user-name">TP.HCM</span>&nbsp;&nbsp;<img class="icon toggle" src="{{ asset('react/images/icons/toggle-down-white.svg')}}"></div> -->
-                        <!-- <div class="action hotline" style="cursor: pointer;"><img class="icon" src="{{ asset('react/images/icons/user-white.svg')}}"><span class="user-name">Đăng nhập</span></div> -->
+                        <!-- <div class="action hotline view-city"><span class="user-name">TP.HCM</span>&nbsp;&nbsp;<img class="icon toggle" src="{{ asset('public/react/images/icons/toggle-down-white.svg')}}"></div> -->
+                        <!-- <div class="action hotline" style="cursor: pointer;"><img class="icon" src="{{ asset('public/react/images/icons/user-white.svg')}}"><span class="user-name">Đăng nhập</span></div> -->
                     </div>
                     <div class="header-menu header-city-menu">
-                        <!-- <div class="m-box"><span>TP.HCM</span><img src="{{ asset('react/images/icons/arrow-right.svg')}}"></div> -->
-                        <div class="m-box"><a class="link-absolute"></a><span>Hà Nội</span><img src="{{ asset('react/images/icons/arrow-right.svg')}}"></div>
+                        <!-- <div class="m-box"><span>TP.HCM</span><img src="{{ asset('public/react/images/icons/arrow-right.svg')}}"></div> -->
+                        <div class="m-box"><a class="link-absolute"></a><span>Hà Nội</span><img src="{{ asset('public/react/images/icons/arrow-right.svg')}}"></div>
                     </div>
                 </div>
             </div>
@@ -113,12 +113,12 @@
                 <div class="modal-backdrop modal-login " style="cursor: default;"></div>
                 <div class="modal-container modal-login animate__animated animate__faster display-none" style="cursor: default;">
                     <div class="modal-wrapper">
-                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('react/images/icons/close.svg')}}"></button></div>
+                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('public/react/images/icons/close.svg')}}"></button></div>
                         <div class="modal-body-r">
                             <div class="x-container">
                                 <div class="x-header">Đăng nhập</div>
                                 <div class="x-body">
-                                    <div class="input-group"><img class="input-mobile-icon" src="{{ asset('react/images/icons/mobile.svg')}}"><input name="phone" class="input-username" placeholder="Nhập số điện thoại" maxlength="12" value=""></div>
+                                    <div class="input-group"><img class="input-mobile-icon" src="{{ asset('public/react/images/icons/mobile.svg')}}"><input name="phone" class="input-username" placeholder="Nhập số điện thoại" maxlength="12" value=""></div>
                                     <button class="btn-continue" style="background: rgb(217, 217, 217);">Tiếp theo</button>
                                     <div class="login-type"><span>Đăng nhập bằng mật khẩu</span></div>
                                     <div style="margin-top: 40px;">
@@ -126,13 +126,13 @@
                                     </div>
                                     <button class="group-btn facebook-icon">
                                         <div class="icon-container">
-                                            <div class="icon-wrapper"><img width="25" height="25" src="{{ asset('react/images/icons/fb-white.svg')}}"></div>
+                                            <div class="icon-wrapper"><img width="25" height="25" src="{{ asset('public/react/images/icons/fb-white.svg')}}"></div>
                                         </div>
                                         <div class="icon-content">Đăng nhập bằng Facebook</div>
                                     </button>
                                     <button class="group-btn google-icon">
                                         <div class="icon-container" style="background-color: white;">
-                                            <div class="icon-wrapper"><img width="25" height="25" src="{{ asset('react/images/icons/google-white.svg')}}"></div>
+                                            <div class="icon-wrapper"><img width="25" height="25" src="{{ asset('public/react/images/icons/google-white.svg')}}"></div>
                                         </div>
                                         <div class="icon-content">Đăng nhập bằng Google</div>
                                     </button>
@@ -146,7 +146,7 @@
                 <div class="modal-backdrop modal-forgot-pass " style="cursor: default; outline: none;"></div>
                 <div class="modal-container modal-forgot-pass animate__animated animate__faster display-none" style="cursor: default; outline: none;">
                     <div class="modal-wrapper">
-                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('react/images/icons/close.svg')}}"></button></div>
+                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('public/react/images/icons/close.svg')}}"></button></div>
                         <div class="modal-body-r">
                             <div class="x-container">
                                 <div class="x-header">Quên mật khẩu?</div>
@@ -163,7 +163,7 @@
                 <div class="modal-backdrop modal-forgot-pass " style="cursor: default; outline: none;"></div>
                 <div class="modal-container modal-forgot-pass animate__animated animate__faster display-none" style="cursor: default; outline: none;">
                     <div class="modal-wrapper">
-                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('react/images/icons/close.svg')}}"></button></div>
+                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('public/react/images/icons/close.svg')}}"></button></div>
                         <div class="modal-body-r"></div>
                     </div>
                 </div>
@@ -172,13 +172,13 @@
                 <div class="modal-backdrop modal-verify-phone " style="cursor: default;"></div>
                 <div class="modal-container modal-verify-phone animate__animated animate__faster display-none" style="cursor: default;">
                     <div class="modal-wrapper">
-                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('react/images/icons/close.svg')}}"></button></div>
+                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('public/react/images/icons/close.svg')}}"></button></div>
                         <div class="modal-body-r">
                             <div class="x-container">
                                 <div class="x-header">Thêm số điện thoại</div>
                                 <div class="x-body">
                                     <div class="description">Mỗi tài khoản cần có số điện thoại để Cooky liên lạc trong quá trình xử lý đơn hàng. Bạn vui lòng liên kết số điện thoại với tài khoản.</div>
-                                    <div class="input-group"><img class="input-mobile-icon" src="{{ asset('react/images/icons/mobile.svg')}}"><input name="phone" class="input-username" placeholder="Nhập số điện thoại của bạn" maxlength="12" value=""></div>
+                                    <div class="input-group"><img class="input-mobile-icon" src="{{ asset('public/react/images/icons/mobile.svg')}}"><input name="phone" class="input-username" placeholder="Nhập số điện thoại của bạn" maxlength="12" value=""></div>
                                     <button class="btn-continue" disabled="" style="background: rgb(217, 217, 217);">Đăng nhập</button>
                                 </div>
                             </div>
@@ -190,7 +190,7 @@
                 <div class="modal-backdrop modal-exits-phone " style="cursor: default;"></div>
                 <div class="modal-container modal-exits-phone animate__animated animate__faster display-none" style="cursor: default;">
                     <div class="modal-wrapper">
-                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('react/images/icons/close.svg')}}"></button></div>
+                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('public/react/images/icons/close.svg')}}"></button></div>
                         <div class="modal-body-r">
                             <div class="x-container">
                                 <div class="x-body">
@@ -205,7 +205,7 @@
                 <div class="modal-backdrop modal-verify " style="cursor: default; outline: none;"></div>
                 <div class="modal-container modal-verify animate__animated animate__faster display-none" style="cursor: default; outline: none;">
                     <div class="modal-wrapper">
-                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('react/images/icons/close.svg')}}"></button></div>
+                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('public/react/images/icons/close.svg')}}"></button></div>
                         <div class="modal-body-r">
                             <div class="x-container">
                                 <div class="x-header">Xác minh</div>
@@ -262,7 +262,7 @@
                             </div>
                            <!--  <div class="">
                                 <div class="title">Ứng dụng</div>
-                                <div class="app-link"><a href="https://itunes.apple.com/us/app/cooky/id1056621751" class="display-block" rel="nofollow"><img src="{{ asset('React/Images/Store/appstore.svg')}}"></a><a href="https://play.google.com/store/apps/details?id=vn.cooky.cooky" class="display-block" rel="nofollow"><img src="{{ asset('React/Images/Store/chplay.svg')}}"></a></div>
+                                <div class="app-link"><a href="https://itunes.apple.com/us/app/cooky/id1056621751" class="display-block" rel="nofollow"><img src="{{ asset('public/React/Images/Store/appstore.svg')}}"></a><a href="https://play.google.com/store/apps/details?id=vn.cooky.cooky" class="display-block" rel="nofollow"><img src="{{ asset('public/React/Images/Store/chplay.svg')}}"></a></div>
                             </div> -->
                         </div>
                         
@@ -273,7 +273,7 @@
                 <div class="modal-backdrop popup-option "></div>
                 <div class="modal-container popup-option animate__animated animate__faster display-none">
                     <div class="modal-wrapper">
-                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('react/images/icons/close.svg')}}"></button></div>
+                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('public/react/images/icons/close.svg')}}"></button></div>
                         <div class="modal-body-r">
                             <div class="x-container">
                                 <div class="x-header">Chọn option</div>
@@ -337,7 +337,7 @@
                 <div class="modal-backdrop cart-detail-popup "></div>
                 <div class="modal-container cart-detail-popup animate__animated animate__faster display-none">
                     <div class="modal-wrapper">
-                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('react/images/icons/close.svg')}}"></button></div>
+                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('public/react/images/icons/close.svg')}}"></button></div>
                         <div class="modal-body-r">
                             <div class="x-container">
                                 <div class="x-header cart-detail-popup__header">
@@ -346,7 +346,7 @@
                                 </div>
                                 <div class="x-body cart-detail-popup__body cooky-scroll">
                                     <div class="cart-detail-popup__empty">
-                                        <div class="cart-detail-popup__empty-icon"><img src="{{ asset('react/images/icons/empty-cart.svg')}}" alt="empty-cart"></div>
+                                        <div class="cart-detail-popup__empty-icon"><img src="{{ asset('public/react/images/icons/empty-cart.svg')}}" alt="empty-cart"></div>
                                         <div class="cart-detail-popup__empty-label">Chưa có sản phẩm trong giỏ hàng</div>
                                     </div>
                                 </div>
@@ -359,7 +359,7 @@
                 <div class="modal-backdrop note-popup  "></div>
                 <div class="modal-container note-popup  animate__animated animate__faster display-none">
                     <div class="modal-wrapper">
-                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('react/images/icons/close.svg')}}"></button></div>
+                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('public/react/images/icons/close.svg')}}"></button></div>
                         <div class="modal-body-r">
                             <div class="x-container">
                                 <div class="x-header">Ghi chú</div>
@@ -379,7 +379,7 @@
                 <div class="modal-backdrop shared-popup "></div>
                 <div class="modal-container shared-popup animate__animated animate__faster display-none">
                     <div class="modal-wrapper">
-                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('react/images/icons/close.svg')}}"></button></div>
+                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('public/react/images/icons/close.svg')}}"></button></div>
                         <div class="modal-body-r">
                             <div class="x-container">
                                 <div class="x-body" style="padding-right: 15px;">
@@ -394,11 +394,11 @@
                 <div class="modal-backdrop pre-order-popup "></div>
                 <div class="modal-container pre-order-popup animate__animated animate__faster display-none">
                     <div class="modal-wrapper">
-                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('react/images/icons/close.svg')}}"></button></div>
+                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('public/react/images/icons/close.svg')}}"></button></div>
                         <div class="modal-body-r">
                             <div class="x-container">
                                 <div class="x-body" style="padding-right: 15px;">
-                                    <img src="{{ asset('react/images/icons/cart-pre-order.svg')}}" alt="cart-pre-order">
+                                    <img src="{{ asset('public/react/images/icons/cart-pre-order.svg')}}" alt="cart-pre-order">
                                     <div class="pre-order-popup__tittle">Kiểm tra thời gian giao hàng</div>
                                     <div class="pre-order-popup__content">Do có sản phẩm cần phải đặt trước <b></b> nên thời gian giao hàng sớm nhất có thể từ</div>
                                     <div class="pre-order-popup__datetime"></div>
@@ -413,7 +413,7 @@
                 <div class="modal-backdrop checkout-popup "></div>
                 <div class="modal-container checkout-popup animate__animated animate__faster display-none">
                     <div class="modal-wrapper">
-                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('react/images/icons/close.svg')}}"></button></div>
+                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('public/react/images/icons/close.svg')}}"></button></div>
                         <div class="modal-body-r">
                             <div class="x-container">
                                 <div class="x-header">Thanh toán</div>
@@ -454,7 +454,7 @@
                 <div class="modal-backdrop checkout-invalid-promo-popup "></div>
                 <div class="modal-container checkout-invalid-promo-popup animate__animated animate__faster display-none">
                     <div class="modal-wrapper">
-                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('react/images/icons/close.svg')}}"></button></div>
+                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('public/react/images/icons/close.svg')}}"></button></div>
                         <div class="modal-body-r">
                             <div class="x-container">
                                 <div class="x-header">Mô tả ưu đãi</div>
@@ -468,7 +468,7 @@
                 <div class="modal-backdrop note-popup  "></div>
                 <div class="modal-container note-popup  animate__animated animate__faster display-none">
                     <div class="modal-wrapper">
-                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('react/images/icons/close.svg')}}"></button></div>
+                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('public/react/images/icons/close.svg')}}"></button></div>
                         <div class="modal-body-r">
                             <div class="x-container">
                                 <div class="x-header">Ghi chú</div>
@@ -488,7 +488,7 @@
                 <div class="modal-backdrop create-edit-shipping-address-popup "></div>
                 <div class="modal-container create-edit-shipping-address-popup animate__animated animate__faster display-none">
                     <div class="modal-wrapper">
-                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('react/images/icons/close.svg')}}"></button></div>
+                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('public/react/images/icons/close.svg')}}"></button></div>
                         <div class="modal-body-r">
                             <div class="x-container">
                                 <div class="x-body">
@@ -559,7 +559,7 @@
                 <div class="modal-backdrop payment-method-popup "></div>
                 <div class="modal-container payment-method-popup animate__animated animate__faster display-none">
                     <div class="modal-wrapper">
-                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('react/images/icons/close.svg')}}"></button></div>
+                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('public/react/images/icons/close.svg')}}"></button></div>
                         <div class="modal-body-r">
                             <div class="x-container">
                                 <div class="x-header">Chọn phương thức thanh toán</div>
@@ -587,7 +587,7 @@
                 <div class="modal-backdrop search-address-popup "></div>
                 <div class="modal-container search-address-popup animate__animated animate__faster display-none">
                     <div class="modal-wrapper">
-                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('react/images/icons/close.svg')}}"></button></div>
+                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('public/react/images/icons/close.svg')}}"></button></div>
                         <div class="modal-body-r">
                             <div class="x-container">
                                 <div class="x-header">Tìm địa chỉ</div>
@@ -658,7 +658,7 @@
                 <div class="modal-backdrop schedule-popup "></div>
                 <div class="modal-container schedule-popup animate__animated animate__faster display-none">
                     <div class="modal-wrapper">
-                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('react/images/icons/close.svg')}}"></button></div>
+                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('public/react/images/icons/close.svg')}}"></button></div>
                         <div class="modal-body-r">
                             <div class="x-container">
                                 <div class="x-header">Thời gian giao hàng</div>
@@ -682,10 +682,10 @@
                 <div class="modal-backdrop shipping-address-popup "></div>
                 <div class="modal-container shipping-address-popup animate__animated animate__faster display-none">
                     <div class="modal-wrapper">
-                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('react/images/icons/close.svg')}}"></button></div>
+                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('public/react/images/icons/close.svg')}}"></button></div>
                         <div class="modal-body-r">
                             <div class="x-container">
-                                <div class="x-header">Danh sách địa chỉ<button class="n-btn shipping-address-popup__add-button" title="Tạo địa chỉ mới"><img src="{{ asset('react/images/icons/plus.svg')}}" alt="plus"></button></div>
+                                <div class="x-header">Danh sách địa chỉ<button class="n-btn shipping-address-popup__add-button" title="Tạo địa chỉ mới"><img src="{{ asset('public/react/images/icons/plus.svg')}}" alt="plus"></button></div>
                                 <div class="x-body">
                                     <div class="shipping-address__list"></div>
                                 </div>
@@ -699,7 +699,7 @@
                 <div class="modal-backdrop voucher-detail-popup "></div>
                 <div class="modal-container voucher-detail-popup animate__animated animate__faster display-none">
                     <div class="modal-wrapper">
-                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('react/images/icons/close.svg')}}"></button></div>
+                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('public/react/images/icons/close.svg')}}"></button></div>
                         <div class="modal-body-r">
                             <div class="x-container">
                                 <div class="x-header">Chi tiết mã khuyến mãi</div>
@@ -713,14 +713,14 @@
                 <div class="modal-backdrop voucher-popup "></div>
                 <div class="modal-container voucher-popup animate__animated animate__faster display-none">
                     <div class="modal-wrapper">
-                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('react/images/icons/close.svg')}}"></button></div>
+                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('public/react/images/icons/close.svg')}}"></button></div>
                         <div class="modal-body-r">
                             <div class="x-container">
                                 <div class="x-header">Chọn mã khuyến mãi</div>
                                 <div class="x-body">
                                     <div class="voucher-code-input"><input type="text" placeholder="Nhập mã khuyến mãi"><button class="n-btn" title="Bấm để áp dụng mã đã nhập">Áp dụng</button></div>
                                     <div class="empty-voucher-list">
-                                        <div class="empty-voucher-list__icon"><img class="img-fit" src="{{ asset('react/images/icons/promotion-code.svg')}}" alt="promotion-code"></div>
+                                        <div class="empty-voucher-list__icon"><img class="img-fit" src="{{ asset('public/react/images/icons/promotion-code.svg')}}" alt="promotion-code"></div>
                                         <div class="empty-voucher-list__text">Bạn không có mã khuyến mãi nào</div>
                                     </div>
                                 </div>
