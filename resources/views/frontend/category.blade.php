@@ -129,10 +129,10 @@
                                             <div class="promotion-photo">
                                                 <div class="package-default"><img src="https://image.cooky.vn/posproduct/g0/17282/s200x200/2b0e0d7f-82b9-4c98-8f7a-68ed0d02cb0d.jpeg" class="img-fit" loading="lazy"></div>
                                             </div>
-                                            <a class="link-absolute" target="_self" href="https://cooky.vn/market/set-com-viet-k-17282"></a>
+                                            <a class="link-absolute" target="_self" href="{{ route('details', $value->Link) }}"></a>
                                         </div>
                                         <div class="overview">
-                                            <div class="name two-lines"><a class="link-absolute" target="_self" href="https://cooky.vn/market/set-com-viet-k-17282"></a>{{ $value->Name  }}</div>
+                                            <div class="name two-lines"><a class="link-absolute" target="_self" href="{{ route('details', $value->Link) }}"></a>{{ $value->Name  }}</div>
                                             <div class="d-flex-center-middle">
                                                 <div class="price p-g-v ">
                                                     <!-- <div class="weight-serving">3 món/2 người</div> -->
