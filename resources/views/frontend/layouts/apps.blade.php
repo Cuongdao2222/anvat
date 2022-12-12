@@ -78,7 +78,7 @@
         <div id="app">
             <div class="navigation-bar">
                 <div>
-                    <div class="logo"><a href="/"><img src="{{ asset('React/Images/Logos/logo.svg')}}" alt="Logo Cooky"></a></div>
+                    <div class="logo"><a href="/"><img src="{{ asset('react/Images/Logos/logo.svg')}}" alt="Logo Cooky"></a></div>
                     <div class="search-input"><img class="icon" src="{{ asset('react/images/icons/magnifying-glass.svg')}}" alt="Magnifying Glass"><input type="text" tabindex="0" control="inp-search" placeholder="Tìm công thức hoặc sản phẩm" value=""></div>
                     <div class="user">
                         
