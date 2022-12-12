@@ -35,21 +35,38 @@
                             <div class="designer" style="background-color: rgb(255, 255, 255);">
                                 <div class="designer-container">
                                     <div class="avatar"><img src="https://image.cooky.vn/usr/g1/51/avt/s200x200/bb639d86-c210-464f-85bd-db7e2b051f66.jpeg"></div>
-                                    <div class="designer-content">
+                                    <!-- <div class="designer-content">
                                         <div class="title">Được thiết kế bởi</div>
                                         <div class="description two-lines">Cooky Vietnamese Cuisine Chef</div>
                                     </div>
-                                    <div class="statistic">793 sản phẩm</div>
+                                    <div class="statistic">793 sản phẩm</div> -->
                                 </div>
                             </div>
-                            <div class="avaBox"><img src="https://image.cooky.vn/posproduct/g0/19570/s1124x1124/715607a3-b833-41d1-ba70-b645f522b55b.jpeg" width="100%" class="img-fit" loading="lazy"></div>
+
+                            <?php 
+
+                                $images_products = Cache::remember('image_product_'.$data->id, 100, function() use ($data) {
+
+                                    $images = App\Models\image::where('product_id', $data->id)->select('image')->get()??'';
+
+                                    return $images;
+                                
+                                });
+
+
+                            ?>
+                            <div class="avaBox"><img src="{{ asset($data->Image) }}" width="100%" class="img-fit" loading="lazy"></div>
                         </div>
                         <div class="side">
-                            <div class="side-item is-main"><img class="img-fit" src="https://image.cooky.vn/posproduct/g0/19570/s200x200/715607a3-b833-41d1-ba70-b645f522b55b.jpeg"></div>
-                            <div class="side-item "><img class="img-fit" src="https://image.cooky.vn/posproduct/g0/19570/s200x200/3ceb37fd-8594-4f86-981d-6cd443d2ef5e.jpeg"></div>
-                            <div class="side-item "><img class="img-fit" src="https://image.cooky.vn/posproduct/g0/19570/s200x200/46420323-5ee8-4675-bd08-d24fab65965e.jpeg"></div>
-                            <div class="side-item "><img class="img-fit" src="https://image.cooky.vn/posproduct/g0/19570/s200x200/7bb33213-d7cb-492c-9ac3-bd560d907658.jpeg"></div>
-                            <div class="side-item "><img class="img-fit" src="https://image.cooky.vn/posproduct/g0/19570/s200x200/973c07d4-e526-4a93-8942-db6d8587790e.jpeg"></div>
+                            @if(isset($images_products))
+                       
+                            @foreach( $images_products as $image)
+
+                            <div class="side-item is-main"><img class="img-fit" src="{{ asset($image->image) }}"></div>
+
+                            @endforeach
+                            @endif
+                           
                         </div>
                     </div>
                 </div>

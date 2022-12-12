@@ -110,7 +110,9 @@ if(!empty($deal)){
                         <div data-index="6" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 1117px;">
                             <div>
                                 <div class="banner-item" tabindex="-1" style="width: 100%; display: inline-block;">
-                                    <div class="embed-responsive embed-responsive-16by9"><a href="https://www.cooky.vn/ho-chi-minh/market/search?type=collection&amp;id=14417" target="_blank"><img src="https://image.cooky.vn/abn/s1065x333/d7026cf2-fae0-4e97-b0fb-50989002c469.png" alt="Quà Tặng Từ MAGGI" loading="lazy" class="embed-responsive-item"></a></div>
+                                    <div class="embed-responsive embed-responsive-16by9"><a href="https://www.cooky.vn/ho-chi-minh/market/search?type=collection&amp;id=14417" target="_blank">
+
+                                        <img src="https://image.cooky.vn/abn/s1065x333/d7026cf2-fae0-4e97-b0fb-50989002c469.png" alt="Quà Tặng Từ MAGGI" loading="lazy" class="embed-responsive-item"></a></div>
                                 </div>
                             </div>
                         </div>
@@ -577,9 +579,9 @@ if(!empty($deal)){
                                             <div class="product-basic-info ">
                                                 <a class="link-absolute" title="{{ $value->Name }}" href="{{ route('details', $value->Link) }}"></a>
                                                 <div class="cover-box">
-                                                    <img class="img-flash-sale" src="https://image.cooky.vn/promotion/s50/76c062c1-1908-4922-bde7-4c62e04aeb44.png" loading="lazy">
+                                                    <img class="img-flash-sale" src="{{ asset($value->Image) }}" loading="lazy">
                                                     <div class="promotion-photo">
-                                                        <div class="package-default"><img src="https://image.cooky.vn/posproduct/g0/16793/s200x200/7f1adc67-e606-4fed-a94f-061d6018f923.jpeg" class="img-fit" loading="lazy"></div>
+                                                        <div class="package-default"><img src="{{ asset($value->Image) }}" class="img-fit" loading="lazy"></div>
                                                     </div>
                                                 </div>
                                                 <div class="promotion-name two-lines">{{ $value->Name }}</div>
@@ -974,9 +976,9 @@ if(!empty($deal)){
                             <div class="product-basic-info ">
                                 <a class="link-absolute" title="{{ $datas->Name }}" href="{{ route('details', $datas->Link) }}"></a>
                                 <div class="cover-box">
-                                    <img class="top-left-tag" src="https://image.cooky.vn/icon/s50x50/a63bc020-0695-4b50-b74c-144329242e39.png"><img class="img-flash-sale" src="https://image.cooky.vn/promotion/s50/61861311-be6d-4ade-8c4c-685fb2845db7.png" loading="lazy">
+                                    <img class="top-left-tag" src="{{ asset($datas->Image) }}"><img class="img-flash-sale" src="https://image.cooky.vn/promotion/s50/61861311-be6d-4ade-8c4c-685fb2845db7.png" loading="lazy">
                                     <div class="promotion-photo">
-                                        <div class="package-default"><img src="https://image.cooky.vn/posproduct/g0/19162/s200x200/d02ffea3-acd3-4d04-94be-84c8e3f69176.jpeg" class="img-fit" loading="lazy"></div>
+                                        <div class="package-default"><img src="{{ asset($datas->Image) }}" class="img-fit" loading="lazy"></div>
                                     </div>
                                 </div>
                                 <div class="promotion-name two-lines">{{ $datas->Name }}</div>
