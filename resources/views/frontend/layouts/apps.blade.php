@@ -22,9 +22,9 @@
         <meta property="og:type" content="website">
         <meta property="fb:app_id" content="279628188873202">
         <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-        <meta name="description" content="Với Cooky - Ứng dụng đi chợ online, bạn chỉ cần đặt, nhận hàng lại còn FREESHIP, nguyên liệu đã được sơ chế sẵn tiết kiệm thời gian hơn rất nhiều.">
-        <meta name="keywords" content="công thức, món ăn, món ngon, làm bánh, cách làm bánh, công thức nấu ăn, món ngon mỗi ngày, cách làm món ngon, hướng dẫn nấu ăn">
-        <meta name="robots" content="INDEX, FOLLOW">
+        
+        <meta name="keywords" content="Mỏ Khoét Ăn Vặt - Nơi mua đồ ăn vặt Ngon và Uy Tín nhất">
+        <meta name="robots" content="no index">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <link href="https://www.cooky.vn/dist/css/home.index.min.css?v=3339257520" rel="stylesheet">
