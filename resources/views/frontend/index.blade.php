@@ -11,6 +11,10 @@
                 .swiper-slide, .swiper-wrapper{
                     height: auto !important;
                 }
+
+                .product-basic-info{
+                    width: auto !important;
+                }
         </style>
 @endpush
 
