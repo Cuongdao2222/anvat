@@ -557,7 +557,7 @@ if(!empty($deal)){
 
             @if(!empty($product_sale)&&$product_sale->count()>0)
             <div class="group-product-content">
-                <div class="title" style="cursor: default;">Giảm Giá</div>
+                <div class="title" style="cursor: default;">Ưu đãi giới hạn</div>
                 <div class="cooky-tabs">
                     <div class="tabs-nav">
                         <!-- <ul>
