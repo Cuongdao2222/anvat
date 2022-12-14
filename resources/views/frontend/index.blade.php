@@ -973,6 +973,7 @@ if(!empty($deal)){
                     <div class="content-product-container" style="padding: 0px;">
                         <div class="promotion-box">
                             @foreach($data as $datas)
+                            @if($datas->active==1)
                             <div class="product-basic-info ">
                                 <a class="link-absolute" title="{{ $datas->Name }}" href="{{ route('details', $datas->Link) }}"></a>
                                 <div class="cover-box">
@@ -1003,6 +1004,7 @@ if(!empty($deal)){
                                     </button>
                                 </div>
                             </div>
+                            @endif
                             @endforeach
 
 
