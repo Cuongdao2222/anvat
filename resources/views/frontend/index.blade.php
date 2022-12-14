@@ -977,7 +977,7 @@ if(!empty($deal)){
                             <div class="product-basic-info ">
                                 <a class="link-absolute" title="{{ $datas->Name }}" href="{{ route('details', $datas->Link) }}"></a>
                                 <div class="cover-box">
-                                    <img class="top-left-tag" src="{{ asset($datas->Image) }}"><img class="img-flash-sale" src="https://image.cooky.vn/promotion/s50/61861311-be6d-4ade-8c4c-685fb2845db7.png" loading="lazy">
+                                    <img class="top-left-tag" src="{{ asset($datas->Image) }}">
                                     <div class="promotion-photo">
                                         <div class="package-default"><img src="{{ asset($datas->Image) }}" class="img-fit" loading="lazy"></div>
                                     </div>
