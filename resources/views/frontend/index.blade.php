@@ -12,7 +12,7 @@
                     height: auto !important;
                 }
 
-                .product-basic-info{
+                .page-container{
                     width: auto !important;
                 }
         </style>
