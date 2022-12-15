@@ -898,7 +898,9 @@ if(!empty($deal)){
                                     </div> -->
                                 </div>
                             </div>
-                            <!-- <a class="view-more one-line" href="{{ route('details', 'sale') }}">Xem thêm Flash Sale</a> -->
+                            @if($product_sale->count()>=10)
+                            <a class="view-more one-line" href="{{ route('details', 'sale') }}">Xem thêm Flash Sale</a>
+                            @endif
                         </div>
                     </section>
                    

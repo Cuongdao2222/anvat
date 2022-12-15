@@ -43,7 +43,7 @@ class indexController extends Controller
 
         
 
-        $product_sale = DB::table('products')->join('sale_product', 'products.id', '=', 'sale_product.product_id')->join('makers', 'products.Maker', '=', 'makers.id')->Orderby('sale_product.updated_at','desc')->get();
+        $product_sale = DB::table('products')->join('sale_product', 'products.id', '=', 'sale_product.product_id')->join('makers', 'products.Maker', '=', 'makers.id')->Orderby('sale_product.updated_at','desc')->take(10)->get();
 
            
         
