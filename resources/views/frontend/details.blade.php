@@ -104,12 +104,14 @@
                                 <span class="row-2"></span>
                             </button> -->
                         </div>
+                        @if(!empty($data->promotion))
                         <div class="promo-desc-box">
                             <img src="/React/Images/Icons/info-yellow.svg">
                             <div>Ưu đãi áp dụng cho đơn:
                                  {!! @$data->promotion !!}
                             </div>
                         </div>
+                        @endif
                         <!-- <div class="promo popup-promo-app ">
                             <div class="popup-wrapper desc-wrapper">
                                 <div class="popup-header"><button class="btn-close-popup"><img src="/React/Images/Icons/close.svg"></button></div>
