@@ -15,6 +15,10 @@
                 .page-container{
                     width: auto !important;
                 }
+                .product-basic-info{
+                    flex: 0 0 calc(20% - 20px);
+                    width: calc(20%);
+                }
         </style>
 @endpush
 
