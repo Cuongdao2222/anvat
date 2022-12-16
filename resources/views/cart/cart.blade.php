@@ -5,8 +5,8 @@
 <link rel="stylesheet" type="text/css" href="https://dienmaynguoiviet.vn/css/apps.css?ver=14">
 @endpush
 
-
-<div class="modal fade show" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="padding-right: 17px; display: block;">
+<div class="page-wrapper">
+    <div class="modal fade show" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="padding-right: 17px; display: block;">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="loader" style="display: none;"></div>
@@ -250,4 +250,6 @@
         </div>
     </div>
 </div>
+</div>
+
 @endsection
