@@ -127,7 +127,7 @@
                                     <div class="package ">
                                         <div class="cover-photo">
                                             <div class="promotion-photo">
-                                                <div class="package-default"><img src="https://image.cooky.vn/posproduct/g0/17282/s200x200/2b0e0d7f-82b9-4c98-8f7a-68ed0d02cb0d.jpeg" class="img-fit" loading="lazy"></div>
+                                                <div class="package-default"><img src="{{ asset($value->image) }}" class="img-fit" loading="lazy"></div>
                                             </div>
                                             <a class="link-absolute" target="_self" href="{{ route('details', $value->Link) }}"></a>
                                         </div>
@@ -141,8 +141,8 @@
                                                         <!-- <div class="unit-price">137k</div> -->
                                                     </div>
                                                 </div>
-                                                <button class="btn-add-to-cart n-btn " title="Bấm để thêm vào giỏ hàng">
-                                                    <div style="position: relative; z-index: 3;"><img src="/public/react/images/icons/plus-filled-red.svg"></div>
+                                                <button class="btn-add-to-cart n-btn " title="Bấm để thêm vào giỏ hàng" onclick="addToCart({{ $value->id }})">
+                                                    <div style="position: relative; z-index: 3;"><img src="./public/react/images/icons/plus-filled-red.svg"></div>
                                                 </button>
                                             </div>
                                         </div>
