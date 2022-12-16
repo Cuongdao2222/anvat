@@ -25,6 +25,8 @@
                             $key = 0;
                             
                             ?>
+
+                        @if($data_cart->count()>0)    
                         @foreach($data_cart as $data)
                         <?php 
                             $price = (int)$data->price*(int)$data->qty;
@@ -57,6 +59,7 @@
                             <a href="javascript:void(0)" class="delete-from-cart" onclick="removeProductCart('{{ $data->rowId }}')"><i class="fa fa-times-circle"></i> Xóa</a>
                         </div>
                         @endforeach
+                        @endif
                         <?php 
                             $totalPrice = array_sum($arrPrice);
                             ?>
