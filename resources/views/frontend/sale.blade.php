@@ -145,7 +145,7 @@
                                     <div class="package ">
                                         <div class="cover-photo">
                                             <div class="promotion-photo">
-                                                <div class="package-default"><img src="{{ asset($value->image) }}" class="img-fit" loading="lazy"></div>
+                                                <div class="package-default"><img src="{{ asset($value->Image) }}" class="img-fit" loading="lazy"></div>
                                             </div>
                                             <a class="link-absolute" target="_self" href="{{ route('details', $datas->Link) }}"></a>
                                         </div>
