@@ -192,6 +192,11 @@ class indexController extends Controller
         }
 
     }
+    public function Cart()
+    {
+        return view('cart.cart');
+    }
+
 
      
 }
