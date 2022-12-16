@@ -835,18 +835,9 @@
                         alert('thêm sản phẩm vào giỏ hàng thành công');
 
             
-                       //  console.log(numberProductCart);
-                       
-                       // numberCart = result.find(numberProductCart);
-            
+                      
                         $('.item-count-badge').text(number);
-            
-                        // const numberCart = $('#number-product-cart').text();
-            
-                        // $('.number-cart').text(numberCart);
-            
-                        // $('#exampleModal').modal('show'); 
-                        // $('.loader').hide();
+        
                         
                     }
                 });

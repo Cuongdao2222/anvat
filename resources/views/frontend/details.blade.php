@@ -96,13 +96,16 @@
                                     </span>
                                 </div>
                             </button>
-                            <!-- <button class="add-item-wrapper n-btn btn-add-to-cart btn-add-to-collection ">
-                                <span class="row-1">
-                                    <div class="icon-total-save"><img class="icon" src="/React/images/icons/heart-gray.svg"></div>
-                                    <span class="text display-block" style="color: rgb(172, 172, 172);">Lưu</span>
-                                </span>
-                                <span class="row-2"></span>
-                            </button> -->
+                            
+                                <button class="add-item-wrapper n-btn btn-add-to-cart btn-add-to-collection ">
+                                    <span class="row-1">
+                                        <div class="icon-total-save"><img class="icon" src="/React/images/icons/heart-gray.svg"></div>
+                                        <span class="text display-block" style="color: rgb(172, 172, 172);" onclick="addToCartRedirect({{ $data->id }})">Mua ngay</span>
+                                    </span>
+                                    <span class="row-2"></span>
+                                </button>
+                           
+                            
                         </div>
                         @if(!empty($data->promotion))
                         <div class="promo-desc-box">
@@ -432,10 +435,38 @@
         $('.content-box .active').html();
         $('.content-box .active').html(content);
 
+    });
+
+    function addToCartRedirect(id) {
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+    
+        $.ajax({
+            type: 'POST',
+            url: "{{ route('cart') }}",
+            data: {
+                product_id: id,
+                gift_check:''
+                   
+            },
+            beforeSend: function() {
+               
+                $('.loader').show();
+
+            },
+            success: function(result){
+
+                window.location.href= "{{ route('cart-anvat') }}";
+                
+            }
+        });
+        
+    }
 
 
-
-    })
    
 </script>
 @endsection
