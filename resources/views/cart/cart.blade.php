@@ -12,7 +12,7 @@
             <div class="loader" style="display: none;"></div>
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Thông tin giỏ hàng</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button> 
+                
             </div>
             <div class="modal-body">
                 <div id="tbl_list_cartss">
@@ -280,7 +280,7 @@
                             </table>
                         </div>
                         <div class="clear"></div>
-                        <div class="modal-footer"> <button type="submit" class="btn btn-primary order1">Đặt hàng</button> <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> </div>
+                        <div class="modal-footer"> <button type="submit" class="btn btn-primary order1">Đặt hàng</button>  </div>
                     </form>
                 </div>
             </div>
