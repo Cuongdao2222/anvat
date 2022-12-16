@@ -88,8 +88,9 @@
                             $cart = Gloudemans\Shoppingcart\Facades\Cart::content();
 
                             $number_cart = count($cart);
-                         ?>   
-                        <button class="n-btn cart-icon action" title="Xem giỏ hàng" onclick="showToCart()"><img src="/public/react/images/icons/cart.svg"><span class="item-count-badge">{{ $number_cart??0 }}</span></button>
+                         ?> 
+                        <a href="{{ route('cart-anvat') }}"> <button class="n-btn cart-icon action" title="Xem giỏ hàng"><img src="/public/react/images/icons/cart.svg"><span class="item-count-badge">{{ $number_cart??0 }}</span></button></a>  
+                       
 
                         <div class="action phone n-btn">
                             <img class="icon" src="{{ asset('public/react/images/icons/call.svg')}}">
