@@ -147,10 +147,10 @@
                                             <div class="promotion-photo">
                                                 <div class="package-default"><img src="{{ asset($value->Image) }}" class="img-fit" loading="lazy"></div>
                                             </div>
-                                            <a class="link-absolute" target="_self" href="{{ route('details', $datas->Link) }}"></a>
+                                            <a class="link-absolute" target="_self" href="{{ route('details', $value->Link) }}"></a>
                                         </div>
                                         <div class="overview">
-                                            <div class="name two-lines"><a class="link-absolute" target="_self" href="{{ route('details', $datas->Link) }}"></a>{{ $value->Name  }}</div>
+                                            <div class="name two-lines"><a class="link-absolute" target="_self" href="{{ route('details', $value->Link) }}"></a>{{ $value->Name  }}</div>
                                             <div class="d-flex-center-middle">
                                                 <div class="price p-g-v ">
                                                     <!-- <div class="weight-serving">3 món/2 người</div> -->
