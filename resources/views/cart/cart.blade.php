@@ -16,22 +16,55 @@
             </div>
             <div class="modal-body">
                 <div id="tbl_list_cartss">
-                    <div id="number-product-cart" style="display:none">1</div>
+                    <div id="number-product-cart" style="display:none">{{ count($data_cart) }}</div>
                     <div style="width:100%;">
+                        <?php  
+
+                            $data_cart = Cart::content();
+                            $arrPrice = [];
+                            $key = 0;
+                            
+                            ?>
+                        @foreach($data_cart as $data)
+                        <?php 
+                            $price = (int)$data->price*(int)$data->qty;
+                            $key++;
+                            array_push($arrPrice, $price);
+                            
+                            $infoProducts = App\Models\product::find($data->id);
+                            
+                            ?>
                         <div class="js-item-row product_list_cart" data-variant_id="0" data-item_id="5804" data-item_type="product">
-                            <div class="cart_col_1"> <a href="https://dienmaynguoiviet.vn/may-loc-khong-khi-samsung-ax40r3030wmsv-40m2"><img src="https://dienmaynguoiviet.vn/uploads/product/1667377119_AX40R3030WM-org.jpg" style="width: 85px;"></a> </div>
+                            <div class="cart_col_1">
+                                <a href="{{ route('details', $infoProducts->Link) }}"><img src="{{ asset($infoProducts->Image) }}" style="width: 85px;"></a>
+                            </div>
                             <div class="cart_col_2">
-                                <a href="https://dienmaynguoiviet.vn/may-loc-khong-khi-samsung-ax40r3030wmsv-40m2"><span class="name">Máy lọc không khí Samsung AX40R3030WM/SV 40m2</span></a> <!--//Kiem tra khuyen mai co lua chon--> 
-                                <ul style="list-style-type: disc;color: #888888;margin-left: 15px;"> </ul>
+                                <a href="{{ route('details', $infoProducts->Link) }}"><span class="name">{{ $data->name }}</span></a>
+                                <!--//Kiem tra khuyen mai co lua chon-->
+                                <ul style="list-style-type: disc;color: #888888;margin-left: 15px;">
+                                </ul>
                             </div>
                             <div class="cart_col_3">
-                                <div class="col_price code1"> <span class="total-item-price">4.190.000 </span> đ </div>
-                                <div class="col_input"> <a href="javascript:void(0)" class="quantity-change" title="tru" onclick="tru('1', '6ec56abdf9ba22b6c86fd785302d4dc8')">-</a> <input class="buy-quantity1 quantity-change" value="1" size="5" disabled=""> <a href="javascript:void(0)" class="quantity-change" title="them" onclick="cong('1', '6ec56abdf9ba22b6c86fd785302d4dc8')">+</a> </div>
+                                <div class="col_price code1">
+                                    <span class="total-item-price">{{ number_format($data->price , 0, ',', '.')}} </span> đ
+                                </div>
+                                <div class="col_input">
+                                    <a href="javascript:void(0)" class="quantity-change"  title="tru" onclick="tru('{{ $key  }}', '{{ $data->rowId }}')">-</a>
+                                    <input class="buy-quantity{{ $key }} quantity-change" value="{{ $data->qty }}" size="5" disabled="">
+                                    <a href="javascript:void(0)" class="quantity-change"  title="them" onclick="cong('{{ $key }}', '{{ $data->rowId }}')">+</a>
+                                </div>
                             </div>
-                            <a href="javascript:void(0)" class="delete-from-cart" onclick="removeProductCart('6ec56abdf9ba22b6c86fd785302d4dc8')"><i class="fa fa-times-circle"></i> Xóa</a> 
+                            <a href="javascript:void(0)" class="delete-from-cart" onclick="removeProductCart('{{ $data->rowId }}')"><i class="fa fa-times-circle"></i> Xóa</a>
                         </div>
+                        @endforeach
+                        <?php 
+                            $totalPrice = array_sum($arrPrice);
+                            ?>
                     </div>
-                    <div class="cart-foot"> <b>Tổng tiền:</b> <span style="float: right;"><span class="sub1 total-cart-price">4.190.000</span> đ</span> </div>
+                    <div class="cart-foot">
+                        <b>Tổng tiền:</b>
+                        <span style="float: right;"><span class="sub1 total-cart-price">{{ number_format($totalPrice , 0, ',', '.')}}</span> đ</span>
+                    </div>
                     <script type="text/javascript"> function removeProductCart(id) {
                         $.ajaxSetup({
                             headers: {
