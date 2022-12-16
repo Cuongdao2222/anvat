@@ -2,6 +2,7 @@
 @section('content')
 @push('style')
 <link rel="stylesheet" type="text/css" href="https://dienmaynguoiviet.vn/css/dienmay.css?ver=15">
+<link rel="stylesheet" type="text/css" href="https://dienmaynguoiviet.vn/css/apps.css?ver=14">
 @endpush
 
 
