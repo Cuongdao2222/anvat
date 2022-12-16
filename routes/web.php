@@ -134,6 +134,8 @@ Auth::routes(['verify' => true]);
 
  Route::post('count-click-banner', 'Frontend\indexController@addClick')->name('click-banner');
 
+ Route::get('cart/index', 'Frontend\indexController@Cart')->name('cart-anvat');
+
 // Route::get('/home', 'HomeController@index');
 
 Route::post('add-cart', 'AjaxController@addProductToCart')->name('cart');

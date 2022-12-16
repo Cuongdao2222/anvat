@@ -84,14 +84,11 @@
                         
                         <a class="action extra n-btn" title="Bộ sưu tập"><img class="icon" src="{{ asset('public/react/images/icons/heart-big-white.svg')}}"></a>
 
-                         <?php
-                        $cart = Gloudemans\Shoppingcart\Facades\Cart::content();
+                        <?php
+                            $cart = Gloudemans\Shoppingcart\Facades\Cart::content();
 
-                        
-
-                        $number_cart = count($cart);
-                       
-                     ?>   
+                            $number_cart = count($cart);
+                         ?>   
                         <button class="n-btn cart-icon action" title="Xem giỏ hàng" onclick="showToCart()"><img src="/public/react/images/icons/cart.svg"><span class="item-count-badge">{{ $number_cart??0 }}</span></button>
 
                         <div class="action phone n-btn">
