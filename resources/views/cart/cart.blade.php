@@ -16,15 +16,16 @@
             </div>
             <div class="modal-body">
                 <div id="tbl_list_cartss">
-                    <div id="number-product-cart" style="display:none">{{ count($data_cart) }}</div>
-                    <div style="width:100%;">
-                        <?php  
+                    <?php  
 
                             $data_cart = Cart::content();
                             $arrPrice = [];
                             $key = 0;
                             
                             ?>
+                    <div id="number-product-cart" style="display:none">{{ count($data_cart) }}</div>
+                    <div style="width:100%;">
+                        
 
                         @if($data_cart->count()>0)    
                         @foreach($data_cart as $data)
