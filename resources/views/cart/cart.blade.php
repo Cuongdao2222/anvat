@@ -1,5 +1,8 @@
 @extends('frontend.layouts.apps')
 @section('content')
+@push('style')
+<link rel="stylesheet" type="text/css" href="https://dienmaynguoiviet.vn/css/dienmay.css?ver=15">
+@endpush
 
 
 <div class="modal fade show" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="padding-right: 17px; display: block;">
