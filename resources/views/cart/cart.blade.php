@@ -69,7 +69,8 @@
                         <b>Tổng tiền:</b>
                         <span style="float: right;"><span class="sub1 total-cart-price">{{ number_format($totalPrice , 0, ',', '.')}}</span> đ</span>
                     </div>
-                    <script type="text/javascript"> function removeProductCart(id) {
+                    <script type="text/javascript"> 
+                        function removeProductCart(id) {
                         $.ajaxSetup({
                             headers: {
                                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -78,25 +79,13 @@
                         
                         $.ajax({
                             type: 'POST',
-                            url: "https://dienmaynguoiviet.vn/remove-cart",
+                            url: "{{ route('removeCart') }}",
                             data: {
                                 product_id: id,
                                    
                             },
                             success: function(result){
-                              
-                               // numberCart = result.find("#number-product-cart").text();
-                        
-                               $('#tbl_list_cartss').html('');
-                        
-                                $('#tbl_list_cartss').append(result);
-                        
-                                const numberCart = $('#number-product-cart').text();
-                        
-                                $('.number-cart').text(numberCart);
-                        
-                                $('#exampleModal').modal('show'); 
-                                
+                                window.location.href ="{{ route('cart-anvat') }}"
                             }
                         });
                         

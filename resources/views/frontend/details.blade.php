@@ -99,7 +99,7 @@
                             
                                 <button class="add-item-wrapper n-btn btn-add-to-cart btn-add-to-collection ">
                                     <span class="row-1">
-                                        <div class="icon-total-save"><img class="icon" src="/React/images/icons/heart-gray.svg"></div>
+                                        <div class="icon-total-save"><img class="icon" src="https://img.icons8.com/material-outlined/2x/sell-stock.png"></div>
                                         <span class="text display-block" style="color: rgb(172, 172, 172);" onclick="addToCartRedirect({{ $data->id }})">Mua ngay</span>
                                     </span>
                                     <span class="row-2"></span>
