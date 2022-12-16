@@ -79,7 +79,14 @@
             <div class="navigation-bar">
                 <div>
                     <div class="logo"><a href="/"><img src="{{ asset('public/category/mokhoet.jpg')}}" alt="Logo Cooky"></a></div>
-                    <div class="search-input"><img class="icon" src="{{ asset('public/react/images/icons/magnifying-glass.svg')}}" alt="Magnifying Glass"><input type="text" tabindex="0" control="inp-search" placeholder="Tìm công thức hoặc sản phẩm" value=""></div>
+                    <form action="{{ route('search-product-frontend') }}" method="get"> 
+                        <div class="search-input">
+                            <img class="icon" src="{{ asset('public/react/images/icons/magnifying-glass.svg')}}" alt="Magnifying Glass">
+                            <input type="text" name="key" tabindex="0" control="inp-search" placeholder="Tìm công thức hoặc sản phẩm" value="">
+                        </div>
+                    </form>
+
+                    
                     <div class="user">
                         
                         <a class="action extra n-btn" title="Bộ sưu tập"><img class="icon" src="{{ asset('public/react/images/icons/heart-big-white.svg')}}"></a>
