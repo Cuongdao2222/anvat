@@ -1051,6 +1051,29 @@ class AjaxController extends Controller
 
     }
 
+    public function getDataToAr(Request $request)
+    {
+        $datas =  json_decode($request->data);
+
+
+        if(!empty($datas)){
+
+            $data = product::whereIn('id', $datas)->get();
+
+            return view('frontend.favourite', compact('data'));
+
+        }
+
+        return 'không tìm thấy sản phẩm đã lưu';
+
+        
+    }
+
+    public function getDataToFavourite()
+    {
+        return view('frontend.favourites');
+    }
+
 }
 
 

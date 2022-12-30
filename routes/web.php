@@ -32,6 +32,10 @@ Route::get('/cart-details', 'Frontend\indexController@showCart');
 
 Route::post('get-compare-pd-viewer', 'productController@getPDviewer')->name('ajax-compare-viewerPd');
 
+Route::post('favourite-like', 'AjaxController@getDataToAr')->name('get favourite product');
+
+Route::get('favourite', 'AjaxController@getDataToFavourite');
+
 
 Route::post('showDealClick','flashdealController@showDealByIdClick')->name('showDealClick');
 

@@ -112,7 +112,7 @@
                             <button class="add-item-wrapper n-btn btn-add-to-cart btn-add-to-collection save">
                                 <span class="row-1">
                                     <div class="icon-total-save"><img class="icon" src="https://www.cooky.vn/React/images/icons/heart-gray.svg"></div>
-                                    <span class="text display-block" style="color: rgb(172, 172, 172);" onclick="addToCartRedirect({{ $data->id }})">Lưu</span>
+                                    <span class="text display-block favourite" style="color: rgb(172, 172, 172);" data-id="{{ $data->id }}">Lưu</span>
                                 </span>
                                 <span class="row-2"></span>
                             </button>
@@ -477,6 +477,23 @@
         });
         
     }
+
+    $('.favourite').click(function() {
+        
+        data_id = $(this).attr('data-id');
+
+        data =  JSON.parse(localStorage.getItem('like'))??[];
+
+        data.push(data_id);
+
+        data = [...new Set(data)];
+
+        localStorage.setItem('like', JSON.stringify(data));
+
+        $(this).text('Đã Lưu');
+
+
+    })
 
 
    

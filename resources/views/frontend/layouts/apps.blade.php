@@ -876,6 +876,8 @@
                 
             }
         </script>
+
+        @stack('js')
         <noscript>
             <img height="1" width="1" style="display:none"
                 src="https://www.facebook.com/tr?id=2589702527947542&ev=PageView&noscript=1" />
