@@ -13,7 +13,7 @@
         <!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->
         <meta name="description" content="Mỏ Khoét Ăn Vặt - Nơi mua đồ ăn vặt Ngon và Uy Tín nhất" />
         @endif
-        <link rel="icon" href="/Content/img/favicon-96x96.png">
+        <link rel="icon" href="https://mokhoetanvat.vn/public/category/mokhoet.jpg">
         <link rel="apple-touch-icon" href="/Content/img/favicon-96x96.png">
         <link rel="apple-touch-icon-precomposed" href="/Content/img/favicon-96x96.png">
         <link rel="android-touch-icon" href="/Content/img/favicon-96x96.png">
