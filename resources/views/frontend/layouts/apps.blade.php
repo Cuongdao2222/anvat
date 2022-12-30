@@ -27,8 +27,8 @@
         <meta name="robots" content="no index">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <link href="https://www.cooky.vn/dist/css/home.index.min.css?v=3339257520" rel="stylesheet">
-        <link href="https://www.cooky.vn/dist/css/shared.market.min.css?v=3339257520" rel="stylesheet">
+        <link href="{{ asset('css/home.index.min.css') }}  ?v=3339257520" rel="stylesheet">
+        <link href="{{ asset('css/shared.market.min.css') }}?v=3339257520" rel="stylesheet">
         <script src="https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.vi.9dHu6cY24zM.O/m=auth2/rt=j/sv=1/d=1/ed=1/rs=AHpOoo-4uY-g_fx7vBG82xSTh2RyDMqbog/cb=gapi.loaded_0?le=scs" async=""></script><script src="https://connect.facebook.net/en_US/sdk.js?hash=fcadfae5cc74dacbd4df8e91c9427460" async="" crossorigin="anonymous"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script id="google-login" src="https://apis.google.com/js/api.js" gapi_processed="true"></script><script async="" src="https://connect.facebook.com/en_US/fbevents.js&amp;#39;"></script><script id="facebook-jssdk" src="https://connect.facebook.net/en_US/sdk.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-NF9KS7H"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
         <script src="https://www.cooky.vn/dist/scripts/jquery-3.5.min.js?v=3339257520"></script>
 
