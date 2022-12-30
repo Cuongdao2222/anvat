@@ -8,7 +8,7 @@
         <meta name="keywords" content="{{ $meta->meta_key_words??'sieu thi dien may, siêu thị điện máy, mua điện máy giá rẻ, siêu thị điện máy uy tín, siêu thị điện máy trực tuyến' }}"/>
 
         @else
-        <title>Mỏ Khoét Ăn Vặt - Nơi mua đồ ăn vặt Ngon và Uy Tín nhất </title>
+        <title>Mỏ Khoét Ăn Vặt - Nơi mua đồ ăn vặt Ngon và Uy Tín nhất Việt Nam</title>
       
         <!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->
         <meta name="description" content="Mỏ Khoét Ăn Vặt - Nơi mua đồ ăn vặt Ngon và Uy Tín nhất" />
