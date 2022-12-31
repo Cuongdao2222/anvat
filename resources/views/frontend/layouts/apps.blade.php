@@ -61,6 +61,12 @@
 
         <link rel="stylesheet" href="https://dienmaynguoiviet.vn/css/lib/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+        <style type="text/css">
+            .user{
+                margin-left: 284px;
+            }
+        </style>
+
 
         @stack('style')
         
@@ -79,10 +85,10 @@
             <div class="navigation-bar">
                 <div>
                     <div class="logo"><a href="{{ route('homeFe') }}"><img src="{{ asset('public/category/mokhoet.jpg')}}" alt="Logo Cooky"></a></div>
-                    <form action="{{ route('search-product-frontend') }}" method="get"> 
+                    <form action="{{ route('search-product-frontend') }}" method="get" style="margin-left: 400px;"> 
                         <div class="search-input">
                             <img class="icon" src="{{ asset('public/react/images/icons/magnifying-glass.svg')}}" alt="Magnifying Glass">
-                            <input type="text" name="key" tabindex="0" control="inp-search" placeholder="Tìm công thức hoặc sản phẩm" value="">
+                            <input type="text" name="key" tabindex="0" control="inp-search" placeholder="Tìm sản phẩm bạn quan tâm" value="">
                         </div>
                     </form>
 

@@ -596,14 +596,14 @@ if(!empty($deal)){
                                                     </div>
                                                 </div>
                                                 <div class="promotion-name two-lines">{{ $value->Name }}</div>
-                                                <div class="promotion-info">
+                                                <!-- <div class="promotion-info">
                                                     <div class="p-percent" style="width: 0%;">
                                                         <img src="./public/react/images/icons/cart-black-s11.svg" loading="lazy">&nbsp;&nbsp;
-                                                        <!-- <div class="countdown-wrapper">
+                                                        <div class="countdown-wrapper">
                                                             <div class="countdown-item">Còn 10 sản phẩm</div>
-                                                        </div> -->
+                                                        </div>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                                 <div class="d-flex-center-middle">
                                                     <div class="price p-g-v ">
                                                         <!-- <div class="weight-serving">1Kg</div> -->
@@ -1025,9 +1025,14 @@ if(!empty($deal)){
 
 
                                     <div class="p-percent" style="width: {{ $percent  }}%;">
-                                        <img src="react/images/icons/cart-black-s11.svg" loading="lazy" style="margin-left: {{  $margin  }};">
+                                        <img src="react/images/icons/cart-black-s11.svg" loading="lazy" style="margin-left: {{  $margin  }};">&nbsp;&nbsp;
+                                        
                                        
                                     </div>
+
+                                    <br>
+
+                                   
                                 </div>
                                 <div class="d-flex-center-middle">
                                     <div class="price p-g-v ">
