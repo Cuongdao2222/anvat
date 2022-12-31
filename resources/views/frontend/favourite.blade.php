@@ -1,25 +1,27 @@
  
 
- @foreach($data as $datas)
 
- 
-      
 
-    <div class="js-item-row product_list_cart" data-variant_id="0" data-item_id="5804" data-item_type="product">
+@foreach($data as $datas)
 
-        <div class="cart_col_1">
-            <a href="{{ route('details', $datas['Link']) }}"><img src="{{ asset($datas['Image']) }}" style="width: 85px;"></a>
-           
+<tr>
+    <td width="45%">
+        <div class="display-flex align-center">
+            <div class="img-product">
+
+               <img src="{{ asset($datas['Image']) }}" alt="" class="mCS_img_loaded">
+                
+            </div>
+            <div class="name-product">
+                {{ $datas['Name'] }}
+            </div>
         </div>
-        <div class="cart_col_2">
-            <a href="{{ route('details', $datas['Link']) }}"><span class="name">{{ $datas['name'] }}</span></a>
-            <!--//Kiem tra khuyen mai co lua chon-->
-            <ul style="list-style-type: disc;color: #888888;margin-left: 15px;">
-            </ul>
-            
-        </div>
-       
+    </td>
+    <td width="15%" class="price">{{ $datas['Price'] }}đ</td>
+    <td width="15%"><span class="in-stock-box">In Stock</span></td>
+    <td width="15%"><button class="round-black-btn small-btn" onclick="addToCart({{ $datas['id'] }})">Add to Cart</button></td>
+    <td width="10%" class="text-center"><a href="#" class="trash-icon"><i class="far fa-trash-alt"></i></a></td>
+</tr>
 
-        <a href="javascript:void(0)" class="delete-from-cart" ><i class="fa fa-times-circle"></i> Xóa</a>
-    </div>
-    @endforeach
+
+@endforeach

@@ -89,7 +89,7 @@
                     
                     <div class="user">
                         
-                        <a class="action extra n-btn" title="Bộ sưu tập"><img class="icon" src="{{ asset('public/react/images/icons/heart-big-white.svg')}}"></a>
+                        <a href="{{ route('favourite') }}" class="action extra n-btn" title="Bộ sưu tập"><img class="icon" src="{{ asset('public/react/images/icons/heart-big-white.svg')}}"></a>
 
                         <?php
                             $cart = Gloudemans\Shoppingcart\Facades\Cart::content();
