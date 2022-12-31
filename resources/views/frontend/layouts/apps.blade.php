@@ -78,7 +78,7 @@
         <div id="app">
             <div class="navigation-bar">
                 <div>
-                    <div class="logo"><a href="/"><img src="{{ asset('public/category/mokhoet.jpg')}}" alt="Logo Cooky"></a></div>
+                    <div class="logo"><a href="{{ route('homeFe') }}"><img src="{{ asset('public/category/mokhoet.jpg')}}" alt="Logo Cooky"></a></div>
                     <form action="{{ route('search-product-frontend') }}" method="get"> 
                         <div class="search-input">
                             <img class="icon" src="{{ asset('public/react/images/icons/magnifying-glass.svg')}}" alt="Magnifying Glass">
@@ -96,7 +96,7 @@
 
                             $number_cart = count($cart);
                          ?> 
-                        <a href="{{ route('cart-anvat') }}"> <button class="n-btn cart-icon action" title="Xem giỏ hàng"><img src="/public/react/images/icons/cart.svg"><span class="item-count-badge">{{ $number_cart??0 }}</span></button></a>  
+                        <a href="{{ route('cart-anvat') }}"> <button class="n-btn cart-icon action" title="Xem giỏ hàng"><img src="{{ asset('react/images/icons/cart.svg') }}"><span class="item-count-badge">{{ $number_cart??0 }}</span></button></a>  
                        
 
                         <div class="action phone n-btn">

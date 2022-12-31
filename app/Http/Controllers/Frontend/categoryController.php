@@ -652,6 +652,9 @@ class categoryController extends Controller
                 return $data_group_products;
             });  
 
+
+        
+
             $other_product = Cache::rememberForever('other_product_'.$data_group_product->product_id, function() use ($data_group_product){ 
 
                 return product::whereIn('id',  json_decode($data_group_product->product_id))->take(10)->get();

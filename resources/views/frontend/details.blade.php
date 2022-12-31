@@ -92,7 +92,7 @@
                                 <div style="position: relative; z-index: 3;">
                                     <span class="row-1">
                                         <div class="icon-total-save">
-                                            <img class="icon" src="https://www.cooky.vn/React/images/icons/cart.svg">
+                                            <img class="icon" src="https://www.cooky.vn/react/images/icons/cart.svg">
                                             <div class="badge-cart"></div>
                                         </div>
                                         <span class="text display-block" onclick="addToCart({{ $data->id }})">Thêm vào giỏ</span>
@@ -111,7 +111,7 @@
 
                             <button class="add-item-wrapper n-btn btn-add-to-cart btn-add-to-collection save">
                                 <span class="row-1">
-                                    <div class="icon-total-save"><img class="icon" src="https://www.cooky.vn/React/images/icons/heart-gray.svg"></div>
+                                    <div class="icon-total-save"><img class="icon" src="https://www.cooky.vn/react/images/icons/heart-gray.svg"></div>
                                     <span class="text display-block favourite" style="color: rgb(172, 172, 172);" data-id="{{ $data->id }}">Lưu</span>
                                 </span>
                                 <span class="row-2"></span>
@@ -121,7 +121,7 @@
                         </div>
                         @if(!empty($data->promotion))
                         <div class="promo-desc-box">
-                            <img src="/React/Images/Icons/info-yellow.svg">
+                            <img src="react/images/icons/info-yellow.svg">
                             <div>Ưu đãi áp dụng cho đơn:
                                  {!! @$data->promotion !!}
                             </div>
@@ -129,7 +129,7 @@
                         @endif
                         <!-- <div class="promo popup-promo-app ">
                             <div class="popup-wrapper desc-wrapper">
-                                <div class="popup-header"><button class="btn-close-popup"><img src="/React/Images/Icons/close.svg"></button></div>
+                                <div class="popup-header"><button class="btn-close-popup"><img src="react/images/icons/close.svg"></button></div>
                                 <div class="popup-body">
                                     <div>
                                         <h4>Mô tả ưu đãi</h4>
@@ -178,7 +178,7 @@
                             <button>Xem toàn bộ mô tả</button>
                             <div class="popup-promo-app ">
                                 <div class="popup-wrapper desc-wrapper">
-                                    <div class="popup-header"><button class="btn-close-popup"><img src="/React/Images/Icons/close.svg"></button></div>
+                                    <div class="popup-header"><button class="btn-close-popup"><img src="react/images/icons/close.svg"></button></div>
                                     <div class="popup-body">
                                         <div>
                                             <h4>Mô tả</h4>
@@ -238,152 +238,7 @@
                     <div class=""></div>
                 </div>
             </div>
-           <!--  <div class="related-package">
-                <label class="title"><span class="flex-align-center">Món thường hay đặt cùng</span></label>
-                <div class="package-list">
-                    <div class="package undefined">
-                        <div class="cover-photo">
-                            <div class="promotion-photo">
-                                <div class="package-default"><img src="https://image.cooky.vn/posproduct/g0/14379/s200x200/4592c81f-29ef-4576-b650-5980dddb6bae.jpeg" class="img-fit" loading="lazy"></div>
-                            </div>
-                            <a class="link-absolute" target="_self" href="https://cooky.vn/market/salad-hon-hop-rong-nho-14379"></a>
-                        </div>
-                        <div class="overview">
-                            <div class="name two-lines"><a class="link-absolute" target="_self" href="https://cooky.vn/market/salad-hon-hop-rong-nho-14379"></a>Salad Hỗn Hợp Rong Nho</div>
-                            <div class="d-flex-center-middle">
-                                <div class="price p-g-v ">
-                                    <div class="weight-serving">2 người</div>
-                                    <div class="price-container">
-                                        <div class="sale-price">31,000đ</div>
-                                        <div class="unit-price"></div>
-                                    </div>
-                                </div>
-                                <button class="btn-add-to-cart n-btn " title="Bấm để thêm vào giỏ hàng">
-                                    <div style="position: relative; z-index: 3;"><img src="/React/Images/Icons/plus-filled-red.svg"></div>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="package undefined">
-                        <div class="cover-photo">
-                            <div class="promotion-photo">
-                                <div class="package-default"><img src="https://image.cooky.vn/posproduct/g0/19295/s200x200/2dad1b33-d992-45af-92e9-e47981ffd1b6.jpeg" class="img-fit" loading="lazy"></div>
-                            </div>
-                            <a class="link-absolute" target="_self" href="https://cooky.vn/market/rau-cu-thap-cam-ca-rot-cu-den-khoai-tay-cat-san-19295"></a>
-                        </div>
-                        <div class="overview">
-                            <div class="name two-lines"><a class="link-absolute" target="_self" href="https://cooky.vn/market/rau-cu-thap-cam-ca-rot-cu-den-khoai-tay-cat-san-19295"></a>Rau Củ Thập Cẩm (Cà Rốt, Củ Dền, Khoai Tây) Cắt Sẵn</div>
-                            <div class="d-flex-center-middle">
-                                <div class="price p-g-v ">
-                                    <div class="weight-serving">300g</div>
-                                    <div class="price-container">
-                                        <div class="sale-price">14,000đ</div>
-                                        <div class="unit-price"></div>
-                                    </div>
-                                </div>
-                                <button class="btn-add-to-cart n-btn " title="Bấm để thêm vào giỏ hàng">
-                                    <div style="position: relative; z-index: 3;"><img src="/React/Images/Icons/plus-filled-red.svg"></div>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="package undefined">
-                        <div class="cover-photo">
-                            <div class="promotion-photo">
-                                <div class="package-default"><img src="https://image.cooky.vn/posproduct/g0/9362/s200x200/6c309c1b-107a-4e8a-9029-6fb74efbea02.jpeg" class="img-fit" loading="lazy"></div>
-                            </div>
-                            <a class="link-absolute" target="_self" href="https://cooky.vn/market/ca-loc-dong-kho-to-9362"></a>
-                        </div>
-                        <div class="overview">
-                            <div class="name two-lines"><a class="link-absolute" target="_self" href="https://cooky.vn/market/ca-loc-dong-kho-to-9362"></a>Cá Lóc Đồng Kho Tộ</div>
-                            <div class="d-flex-center-middle">
-                                <div class="price p-g-v ">
-                                    <div class="weight-serving">2 người</div>
-                                    <div class="price-container">
-                                        <div class="sale-price">58,000đ</div>
-                                        <div class="unit-price"></div>
-                                    </div>
-                                </div>
-                                <button class="btn-add-to-cart n-btn " title="Bấm để thêm vào giỏ hàng">
-                                    <div style="position: relative; z-index: 3;"><img src="/React/Images/Icons/plus-filled-red.svg"></div>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="package undefined">
-                        <div class="cover-photo">
-                            <img class="img-pre-order" src="/React/Images/Icons/pre-order.svg" loading="lazy">
-                            <div class="promotion-photo">
-                                <div class="package-default"><img src="https://image.cooky.vn/posproduct/g0/13832/s200x200/24530a15-d966-4db0-a693-94058998876f.jpeg" class="img-fit" loading="lazy"></div>
-                            </div>
-                            <a class="link-absolute" target="_self" href="https://cooky.vn/market/ca-loc-dong-lam-sach-cat-khuc-13832"></a>
-                        </div>
-                        <div class="overview">
-                            <div class="name two-lines"><a class="link-absolute" target="_self" href="https://cooky.vn/market/ca-loc-dong-lam-sach-cat-khuc-13832"></a>Cá Lóc Đồng Làm Sạch (Cắt Khúc)</div>
-                            <div class="d-flex-center-middle">
-                                <div class="price p-g-v ">
-                                    <div class="weight-serving">200-220g</div>
-                                    <div class="price-container">
-                                        <div class="sale-price">29,000đ</div>
-                                        <div class="unit-price"></div>
-                                    </div>
-                                </div>
-                                <button class="btn-add-to-cart n-btn " title="Bấm để thêm vào giỏ hàng">
-                                    <div style="position: relative; z-index: 3;"><img src="/React/Images/Icons/plus-filled-red.svg"></div>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="package undefined">
-                        <div class="cover-photo">
-                            <div class="promotion-photo">
-                                <div class="package-default"><img src="https://image.cooky.vn/posproduct/g0/3877/s200x200/cb3d4011-3238-43c8-a9fd-d04f59c1837b.jpeg" class="img-fit" loading="lazy"></div>
-                            </div>
-                            <a class="link-absolute" target="_self" href="https://cooky.vn/market/canh-bi-dao-nhoi-thit-3877"></a>
-                        </div>
-                        <div class="overview">
-                            <div class="name two-lines"><a class="link-absolute" target="_self" href="https://cooky.vn/market/canh-bi-dao-nhoi-thit-3877"></a>Canh Bí Đao Nhồi Thịt</div>
-                            <div class="d-flex-center-middle">
-                                <div class="price p-g-v ">
-                                    <div class="weight-serving">2 người</div>
-                                    <div class="price-container">
-                                        <div class="sale-price">38,000đ</div>
-                                        <div class="unit-price"></div>
-                                    </div>
-                                </div>
-                                <button class="btn-add-to-cart n-btn " title="Bấm để thêm vào giỏ hàng">
-                                    <div style="position: relative; z-index: 3;"><img src="/React/Images/Icons/plus-filled-red.svg"></div>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="package undefined">
-                        <div class="cover-photo">
-                            <img class="img-pre-order top-left-tag" src="https://image.cooky.vn/icon/s50x50/a63bc020-0695-4b50-b74c-144329242e39.png">
-                            <div class="promotion-photo">
-                                <div class="package-default"><img src="https://image.cooky.vn/posproduct/g0/9082/s200x200/62247470-383b-4066-b73a-26d57ba7067e.jpeg" class="img-fit" loading="lazy"></div>
-                            </div>
-                            <a class="link-absolute" target="_self" href="https://cooky.vn/market/ga-ta-kho-gung-uop-san-9082"></a>
-                        </div>
-                        <div class="overview">
-                            <div class="name two-lines"><a class="link-absolute" target="_self" href="https://cooky.vn/market/ga-ta-kho-gung-uop-san-9082"></a>Gà Ta Kho Gừng (Ướp Sẵn)</div>
-                            <div class="d-flex-center-middle">
-                                <div class="price p-g-v ">
-                                    <div class="weight-serving">200g</div>
-                                    <div class="price-container">
-                                        <div class="sale-price">19,000đ</div>
-                                        <div class="unit-price">47k</div>
-                                    </div>
-                                </div>
-                                <button class="btn-add-to-cart n-btn " title="Bấm để thêm vào giỏ hàng">
-                                    <div style="position: relative; z-index: 3;"><img src="/React/Images/Icons/plus-filled-red.svg"></div>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="view-more">Xem thêm</div>
-                </div>
-            </div> -->
+       
             
             <div class="related-package">
                 <label class="title"><span class="flex-align-center">Sản phẩm liên quan</span></label>
@@ -394,11 +249,11 @@
                     @if($value->active==1 && $value->id != $data->id)
                     <div class="package undefined">
                         <div class="cover-photo">
-                            <img class="video-play" src="/React/Images/Icons/video-play.svg">
+                            
                             <div class="promotion-photo">
                                 <div class="package-default"><img src="https://image.cooky.vn/posproduct/g0/3384/s200x200/fffff45c-7ad2-41ac-a152-4723aa3d46c5.jpeg" class="img-fit" loading="lazy"></div>
                             </div>
-                            <a class="link-absolute" target="_self" href="https://cooky.vn/market/rau-cu-thap-cam-cham-ba-roi-heo-kho-quet-3384"></a>
+                            
                         </div>
                         <div class="overview">
                             <div class="name two-lines"><a class="link-absolute" target="_self" href="{{ route('details', $value->Link) }}"></a>{{ $value->Name }}</div>
@@ -411,7 +266,7 @@
                                     </div>
                                 </div>
                                 <button class="btn-add-to-cart n-btn " title="Bấm để thêm vào giỏ hàng">
-                                    <div style="position: relative; z-index: 3;"><img src="/React/Images/Icons/plus-filled-red.svg"></div>
+                                    <div style="position: relative; z-index: 3;"><img src="react/images/icons/plus-filled-red.svg"></div>
                                 </button>
                             </div>
                         </div>

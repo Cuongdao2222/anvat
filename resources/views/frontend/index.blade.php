@@ -393,7 +393,7 @@ if(!empty($deal)){
                                             </div>
                                         </div>
                                         <button class="btn-add-to-cart n-btn " title="Bấm để thêm vào giỏ hàng">
-                                            <div style="position: relative; z-index: 3;"><img src="./public/react/images/icons/plus-filled-red.svg"></div>
+                                            <div style="position: relative; z-index: 3;"><img src="react/images/icons/plus-filled-red.svg"></div>
                                         </button>
                                     </div>
                                 </div>
@@ -995,7 +995,7 @@ if(!empty($deal)){
                                 <div class="promotion-name two-lines">{{ $datas->Name }}</div>
                                 <div class="promotion-info">
                                     <div class="p-percent" style="width: 11.1111%;">
-                                        <img src="./public/react/images/icons/cart-black-s11.svg" loading="lazy">&nbsp;&nbsp;
+                                        <img src="react/images/icons/cart-black-s11.svg" loading="lazy">&nbsp;&nbsp;
                                         <div class="countdown-wrapper">
                                             <!-- <div class="countdown-item">Còn 8 sản phẩm</div> -->
                                         </div>
@@ -1010,7 +1010,7 @@ if(!empty($deal)){
                                         </div>
                                     </div>
                                     <button class="btn-add-to-cart n-btn " title="Bấm để thêm vào giỏ hàng" onclick="addToCart({{ $datas->id }})">
-                                        <div style="position: relative; z-index: 3;"><img src="./public/react/images/icons/plus-filled-red.svg"></div>
+                                        <div style="position: relative; z-index: 3;"><img src="react/images/icons/plus-filled-red.svg"></div>
                                     </button>
                                 </div>
                             </div>
