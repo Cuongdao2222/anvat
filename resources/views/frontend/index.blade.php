@@ -994,11 +994,39 @@ if(!empty($deal)){
                                 </div>
                                 <div class="promotion-name two-lines">{{ $datas->Name }}</div>
                                 <div class="promotion-info">
-                                    <div class="p-percent" style="width: 11.1111%;">
-                                        <img src="react/images/icons/cart-black-s11.svg" loading="lazy">&nbsp;&nbsp;
-                                        <div class="countdown-wrapper">
-                                            <!-- <div class="countdown-item">Còn 8 sản phẩm</div> -->
-                                        </div>
+
+                                    <?php 
+
+                                        $qualtity =  intval($datas->Quantily);
+
+                                        $per = [100,75,25, 0];
+
+                                        if($qualtity>10){
+
+                                            $percent =  $per[0];
+
+                                        }
+                                        elseif($qualtity>5 && $qualtity<=10){
+                                            $percent =  $per[1];
+                                        }
+
+                                        elseif($qualtity<5 && $qualtity>0){
+                                            $percent =  $per[2];
+                                        }
+                                        else{
+                                            $percent =  $per[3];
+                                        }
+
+                                        $margin = 190*($percent/100);
+                                        
+
+
+                                    ?>
+
+
+                                    <div class="p-percent" style="width: {{ $percent  }}%;">
+                                        <img src="react/images/icons/cart-black-s11.svg" loading="lazy" style="margin-left: {{  $margin  }};">
+                                       
                                     </div>
                                 </div>
                                 <div class="d-flex-center-middle">
