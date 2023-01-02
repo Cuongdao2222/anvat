@@ -135,7 +135,7 @@
             </script> 
         </div>
         <div class="c3_col_1">
-            <form class="c3_box" id="form-sub" method="post" action="https://dienmaynguoiviet.vn/order-product" novalidate="novalidate">
+            <form class="c3_box" id="form-sub" method="post" action="{{ route('orderProduct') }}" novalidate="novalidate">
                 <input type="hidden" name="_token" value="HCtmozJotbYipmnvXroVD46g03GGOn7Hum1pqzTL"> 
                 <div class="title_box_cart"> Thông tin khách hàng</div>
                 <div class="item-form">

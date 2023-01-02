@@ -28,7 +28,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <link href="{{ asset('css/home.index.min.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/shared.market.min.css') }} " rel="stylesheet">
+        <link href="{{ asset('css/shared.market.min.css') }}?ver=4 " rel="stylesheet">
         <script src="https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.vi.9dHu6cY24zM.O/m=auth2/rt=j/sv=1/d=1/ed=1/rs=AHpOoo-4uY-g_fx7vBG82xSTh2RyDMqbog/cb=gapi.loaded_0?le=scs" async=""></script><script src="https://connect.facebook.net/en_US/sdk.js?hash=fcadfae5cc74dacbd4df8e91c9427460" async="" crossorigin="anonymous"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script id="google-login" src="https://apis.google.com/js/api.js" gapi_processed="true"></script><script async="" src="https://connect.facebook.com/en_US/fbevents.js&amp;#39;"></script><script id="facebook-jssdk" src="https://connect.facebook.net/en_US/sdk.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-NF9KS7H"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
         <script src="https://www.cooky.vn/dist/scripts/jquery-3.5.min.js?v=3339257520"></script>
 
@@ -36,6 +36,9 @@
 
         <script src="https://www.cooky.vn/dist/scripts/polyfill.js?v=3339257520"></script>
         <script src="https://www.cooky.vn/dist/scripts/helper.min.js?v=3339257520"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+
+
         <script>
             var apiHostUrl = "https://marketapi.cooky.vn";
             var locationApiUrl = "https://location-api.cooky.vn";
@@ -66,9 +69,11 @@
                 margin-left: 284px;
             }
 
-            /*.modal-backdrop.show{
-                opacity: 0;
-            }*/
+            .error{
+                color: red;
+            }
+
+          
         </style>
 
 
@@ -130,120 +135,92 @@
                 <div class="modal-backdrop modal-login " style="cursor: default;"></div>
                 <div class="modal-container modal-login animate__animated animate__faster display-none" style="cursor: default;" id="modal-login">
                     <div class="modal-wrapper">
-                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('public/react/images/icons/close.svg')}}"></button></div>
+                        <div class="modal-header-r"><button class="n-btn close close-modal-login"><img src="{{ asset('react/images/icons/close.svg')}}"></button></div>
                         <div class="modal-body-r">
                             <div class="x-container">
                                 <div class="x-header">Đăng nhập</div>
                                 <div class="x-body">
-                                    <div class="input-group"><img class="input-mobile-icon" src="{{ asset('public/react/images/icons/mobile.svg')}}"><input name="phone" class="input-username" placeholder="Nhập số điện thoại" maxlength="12" value=""></div>
-                                    <button class="btn-continue" style="background: rgb(217, 217, 217);">Tiếp theo</button>
-                                    <div class="login-type"><span>Đăng nhập bằng mật khẩu</span></div>
-                                    <div style="margin-top: 40px;">
-                                        <div class="login-line"><span class="login-line-content">hoặc</span></div>
-                                    </div>
-                                    <button class="group-btn facebook-icon">
-                                        <div class="icon-container">
-                                            <div class="icon-wrapper"><img width="25" height="25" src="{{ asset('public/react/images/icons/fb-white.svg')}}"></div>
+
+                                    <form id="login-form-submit">
+                                        <div class="input-group">
+                                       
+                                            <input name="email" id="email" class="input-username" placeholder="Nhập email" value="">
                                         </div>
-                                        <div class="icon-content">Đăng nhập bằng Facebook</div>
-                                    </button>
-                                    <button class="group-btn google-icon">
-                                        <div class="icon-container" style="background-color: white;">
-                                            <div class="icon-wrapper"><img width="25" height="25" src="{{ asset('public/react/images/icons/google-white.svg')}}"></div>
+                                        
+                                        <div class="input-group">
+                                          
+                                            <input name="password" class="input-username" placeholder="Nhập Password" value="">
+                                        </div>   
+
+                                        <button class="btn-continue" type="submit" style="background: #ED1C30;">Đăng nhập</button> 
+
+                                        <div style="margin-top: 40px;"><div class="login-line"><span class="login-line-content">hoặc</span></div></div>
+
+                                        <div class="btn-continue register" style="background: #3868D2; text-align: center;">Đăng ký</div> 
+                                    </form>
+                                    
+                                    
+                                </div>
+                                   
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="modal modal-register">
+                <div class="modal-backdrop modal-login " style="cursor: default;"></div>
+                <div class="modal-container modal-login animate__animated animate__faster display-none" style="cursor: default;" id="modal-register">
+                    <div class="modal-wrapper">
+                        <div class="modal-header-r"><button class="n-btn close close-modal-register"><img src="{{ asset('react/images/icons/close.svg')}}"></button></div>
+                        <div class="modal-body-r">
+                            <div class="x-container">
+                                <div class="x-header">Đăng ký</div>
+                                <div class="x-body">
+
+                                    <form method="post" id="register-form-submit" action="#">
+
+                                        <div class="input-group">
+                                           
+                                            <input name="username" id="username" class="input-username" placeholder="Nhập username" maxlength="12" value="" required>
                                         </div>
-                                        <div class="icon-content">Đăng nhập bằng Google</div>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
 
-            <!-- <div class="modal modal-forgot-pass">
-                <div class="modal-backdrop modal-forgot-pass " style="cursor: default; outline: none;"></div>
-                <div class="modal-container modal-forgot-pass animate__animated animate__faster display-none" style="cursor: default; outline: none;">
-                    <div class="modal-wrapper">
-                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('public/react/images/icons/close.svg')}}"></button></div>
-                        <div class="modal-body-r">
-                            <div class="x-container">
-                                <div class="x-header">Quên mật khẩu?</div>
-                                <div class="x-body">
-                                    <div class="description">Vui lòng nhập email của bạn vào ô bên dưới. Cooky sẽ gửi cho bạn một liên kết để đặt lại mật khẩu.</div>
-                                    <input name="password" class="input-username" placeholder="Nhập email của bạn" value=""><button class="btn-continue" disabled="" style="background: rgb(217, 217, 217);">Khôi phục mật khẩu</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal modal-forgot-pass">
-                <div class="modal-backdrop modal-forgot-pass " style="cursor: default; outline: none;"></div>
-                <div class="modal-container modal-forgot-pass animate__animated animate__faster display-none" style="cursor: default; outline: none;">
-                    <div class="modal-wrapper">
-                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('public/react/images/icons/close.svg')}}"></button></div>
-                        <div class="modal-body-r"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal modal-verify-phone">
-                <div class="modal-backdrop modal-verify-phone " style="cursor: default;"></div>
-                <div class="modal-container modal-verify-phone animate__animated animate__faster display-none" style="cursor: default;">
-                    <div class="modal-wrapper">
-                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('public/react/images/icons/close.svg')}}"></button></div>
-                        <div class="modal-body-r">
-                            <div class="x-container">
-                                <div class="x-header">Thêm số điện thoại</div>
-                                <div class="x-body">
-                                    <div class="description">Mỗi tài khoản cần có số điện thoại để Cooky liên lạc trong quá trình xử lý đơn hàng. Bạn vui lòng liên kết số điện thoại với tài khoản.</div>
-                                    <div class="input-group"><img class="input-mobile-icon" src="{{ asset('public/react/images/icons/mobile.svg')}}"><input name="phone" class="input-username" placeholder="Nhập số điện thoại của bạn" maxlength="12" value=""></div>
-                                    <button class="btn-continue" disabled="" style="background: rgb(217, 217, 217);">Đăng nhập</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal modal-exits-phone">
-                <div class="modal-backdrop modal-exits-phone " style="cursor: default;"></div>
-                <div class="modal-container modal-exits-phone animate__animated animate__faster display-none" style="cursor: default;">
-                    <div class="modal-wrapper">
-                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('public/react/images/icons/close.svg')}}"></button></div>
-                        <div class="modal-body-r">
-                            <div class="x-container">
-                                <div class="x-body">
-                                    <div style="font-size: 14px; color: red; margin-top: 10px;"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal modal-verify">
-                <div class="modal-backdrop modal-verify " style="cursor: default; outline: none;"></div>
-                <div class="modal-container modal-verify animate__animated animate__faster display-none" style="cursor: default; outline: none;">
-                    <div class="modal-wrapper">
-                        <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('public/react/images/icons/close.svg')}}"></button></div>
-                        <div class="modal-body-r">
-                            <div class="x-container">
-                                <div class="x-header">Xác minh</div>
-                                <div class="x-body">
-                                    <div class="description">Mã xác minh của bạn sẽ được gửi bằng tin nhắn đến số </div>
-                                    <div class="enter-code">Vui lòng nhập mã xác minh</div>
-                                    <div class="input-code">
-                                        <div class="pincode-input-container"><input class="pincode-input-text" placeholder="" aria-label="" maxlength="1" autocomplete="off" type="tel" inputmode="numeric" pattern="[0-9]*" value="" style="padding: 0px; margin: 0px 2px; text-align: center; border: 1px solid; background: transparent; width: 50px; height: 50px;"><input class="pincode-input-text" placeholder="" aria-label="" maxlength="1" autocomplete="off" type="tel" inputmode="numeric" pattern="[0-9]*" value="" style="padding: 0px; margin: 0px 2px; text-align: center; border: 1px solid; background: transparent; width: 50px; height: 50px;"><input class="pincode-input-text" placeholder="" aria-label="" maxlength="1" autocomplete="off" type="tel" inputmode="numeric" pattern="[0-9]*" value="" style="padding: 0px; margin: 0px 2px; text-align: center; border: 1px solid; background: transparent; width: 50px; height: 50px;"><input class="pincode-input-text" placeholder="" aria-label="" maxlength="1" autocomplete="off" type="tel" inputmode="numeric" pattern="[0-9]*" value="" style="padding: 0px; margin: 0px 2px; text-align: center; border: 1px solid; background: transparent; width: 50px; height: 50px;"><input class="pincode-input-text" placeholder="" aria-label="" maxlength="1" autocomplete="off" type="tel" inputmode="numeric" pattern="[0-9]*" value="" style="padding: 0px; margin: 0px 2px; text-align: center; border: 1px solid; background: transparent; width: 50px; height: 50px;"><input class="pincode-input-text" placeholder="" aria-label="" maxlength="1" autocomplete="off" type="tel" inputmode="numeric" pattern="[0-9]*" value="" style="padding: 0px; margin: 0px 2px; text-align: center; border: 1px solid; background: transparent; width: 50px; height: 50px;"></div>
-                                    </div>
-                                    <button class="btn-submit" disabled="" style="background-color: rgb(217, 217, 217);">Xác minh</button>
-                                    <div class="resend-code"><span>Bạn không nhận được mã?</span><span style="color: rgb(10, 141, 216); margin-left: 30px; cursor: pointer;">Gửi lại</span></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
- -->
+                                        <div class="input-group">
+                                           
+                                            <input name="email" id="email" class="input-username" placeholder="Nhập email"  value="" required>
+                                        </div>
+                                        
+                                        <div class="input-group">
+                                          
+                                            <input name="password" id="password" type="password" class="input-username" placeholder="Nhập Password" maxlength="30" value="" required>
+                                        </div>
 
+                                        <div class="input-group">
+                                          
+                                            <input name="re-password" type="password" id="re-password" class="input-username" placeholder="Nhập lại Password" maxlength="30" value="" required>
+                                        </div>   
+
+                                        <button type="submit" class="btn-continue" style="background: #ED1C30;">Đăng ký</button>
+                                    </form>     
+
+                                    <!-- <div style="margin-top: 40px;"><div class="login-line"><span class="login-line-content">hoặc</span></div></div>
+
+                                    <button class="btn-continue register" style="background: #3868D2;">Đăng ký</button>  -->
+                                    
+                                </div>
+                                   
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             @yield('content')
            
 
@@ -865,6 +842,93 @@
                 
             }
 
+            $("#login-form-submit").validate({
+                rules: {
+
+                    
+                    "email": {
+                        required: true,
+                        email: true,
+                        
+                    },
+
+                    "password":{
+                        required:true,
+                    },
+
+                   
+                   
+                },
+
+                messages: {
+
+                    
+                    "email":{
+                        email: "Email không đúng định dạng",
+                        required: "Bắt buộc nhập Email",
+                    },
+
+                    "password":{
+                        required:"Bắt buộc nhập Password",
+                    },
+                   
+                }
+               
+            }); 
+
+
+            $("#register-form-submit").validate({
+                rules: {
+
+                    "username":{
+                        required:true,
+                    },
+                   
+                    "email": {
+                        required: true,
+                        email: true,
+                        
+                    },
+
+                    "password":{
+                        required:true,
+                    },
+
+                    "re-password":{
+                        required:true,
+                         equalTo:"#password",
+                    }
+                   
+                },
+
+                messages: {
+
+                    "username":{
+                        required:"Bắt buộc nhập username",
+                    },
+                    
+                    "email":{
+                        email: "Email không đúng định dạng",
+                        required: "Bắt buộc nhập Email",
+                    },
+
+                    "password":{
+                        required:"Bắt buộc nhập Password",
+                    },
+
+                    "re-password": {
+                        required:"Bắt buộc nhập trường này",
+                        equalTo: "Mật khẩu không khớp với trường password",
+                         
+                    }
+                  
+                   
+                }
+               
+            });
+
+
+
             function showToCart() {
                 $.ajaxSetup({
                     headers: {
@@ -894,6 +958,26 @@
                 $('#modal-login').modal('show');
 
             }
+
+            $('.close-modal-login').click(function () {
+
+                $('#modal-login').modal('hide');
+               
+            });
+
+            $('.close-modal-register').click(function () {
+
+                $('#modal-register').modal('hide');
+               
+            });
+
+            $('.register').click(function() {
+
+                $('#modal-login').modal('hide');
+
+                $('#modal-register').modal('show');
+                
+            })
         </script>
 
         @stack('js')

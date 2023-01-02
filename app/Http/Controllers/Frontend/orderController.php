@@ -74,6 +74,7 @@ class orderController extends Controller
 
         $order = new Order();
 
+       
         if($input['total_price'] == 0){
 
             $ip = $request->ip();
