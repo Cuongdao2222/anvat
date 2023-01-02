@@ -57,20 +57,22 @@ class AjaxController extends Controller
 
         $check  =   DB::table('loginclient')->where('email', $email)->first();
 
-        if(!empty($check)){
-            if( Hash::check($request->password, $check->password) == true){
+        return response('thanh cong');
 
-                Session::put('status-login', 'Đăng nhập thành công');
+        // if(!empty($check)){
+        //     if( Hash::check($request->password, $check->password) == true){
 
-                return redirect()->route('homeFe');
+        //         Session::put('status-login', 'Đăng nhập thành công');
 
-            }
+        //         return redirect()->route('homeFe');
 
-        }
+        //     }
 
-        Session::put('status-login', 'Đăng nhập thất bại, xin kiểm tra lại');
+        // }
+
+        // Session::put('status-login', 'Đăng nhập thất bại, xin kiểm tra lại');
         
-        return redirect()->route('homeFe');
+        // return redirect()->route('homeFe');
         
     }
 
@@ -165,30 +167,37 @@ class AjaxController extends Controller
 
     public function registerClient(Request $request)
     {
-        if($request->ajax())
-        {
-            $validator = Validator::make($request->all(), [
-           'email' => 'required|email|unique:loginClient',
-           'fullname' => 'required|string|max:150',
-           'password' => 'required'
-           ]);
+        
+        $validator = Validator::make($request->all(), [
+       'email' => 'required|email|unique:loginClient',
+       'fullname' => 'required|string|max:150',
+       'password' => 'required'
+       ]);
+        
+       if ($validator->fails()) {
+
+            return ($validator->messages()->first());
             
-           if ($validator->fails()) {
-
-                return response($validator->messages()->first());
-                
-           }
-           else{
-                $input['password'] = bcrypt($request->password);
-                $input['email'] = strip_tags($request->email);
-                $input['fullname'] = strip_tags($request->fullname);
-                $result = DB::table('loginClient')->insert($input);
-                return response('Đăng ký thành công');
-
-           }
+       }
+       else{
+            $input['password'] = bcrypt($request->password);
+            $input['email'] = strip_tags($request->email);
+            $input['fullname'] = strip_tags($request->fullname);
+            $result = DB::table('loginClient')->insert($input);
+            return 'Đăng ký thành công';
         }    
+           
  
     }
+
+    public function postregister(Request $request)
+    {
+        // $input['password'] = bcrypt($request->password);
+        // $input['email'] = strip_tags($request->email);
+        // $input['fullname'] = strip_tags($request->fullname);
+        // $result = DB::table('loginClient')->insert($input);
+        return 'Đăng ký thành công';
+    }    
 
     public function getEmail(Request $request)
     {

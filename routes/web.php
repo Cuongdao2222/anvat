@@ -12,7 +12,7 @@
 */
 
 
-
+Route::post('ajax-clent-register1', 'Frontend\indexController@postregister')->name('register-client-fe1');
 
 Route::get('/tin-khuyen-mai/', 'Frontend\blogController@index')->middleware('cache.headers:public;max_age=14400;etag')->name('tin');
 
@@ -57,6 +57,9 @@ Route::get('/caches','crawlController@checkProductSku');
 
 
 Route::get('/deal', 'mainController@deal')->middleware('cache.headers:public;max_age=14400;etag')->name('dealFe');
+
+
+
 
 
 // Route::get('filterurl',crawlController@addFilterProduct);
@@ -165,6 +168,8 @@ Route::get('/category/{slug}', 'Frontend\categoryController@index')->name('categ
 Route::get('/{slug}', 'Frontend\categoryController@details')->middleware('throttle:80')->name('details');
 
 Route::post('ajax-clent-register', 'AjaxController@registerClient')->name('register-client-fe');
+
+
 
 Route::post('muchsearch', 'AjaxController@muchSearch')->name('muchSearch');
 

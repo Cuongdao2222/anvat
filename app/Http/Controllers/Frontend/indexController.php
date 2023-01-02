@@ -115,6 +115,15 @@ class indexController extends Controller
         return view('frontend.index', compact('banners', 'bannersRight', 'bannerUnderSlider', 'bannerUnderSale','deal','product_sale', 'group','timeDeal_star', 'deal_check', 'now','bannerscrollRight', 'bannerscrollLeft'));
     }
 
+    public function postregister(Request $request)
+    {
+        // $input['password'] = bcrypt($request->password);
+        // $input['email'] = strip_tags($request->email);
+        // $input['fullname'] = strip_tags($request->fullname);
+        // $result = DB::table('loginClient')->insert($input);
+        return 'Đăng ký thành công';
+    }    
+
 
     public function cache()
     {

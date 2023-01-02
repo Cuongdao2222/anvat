@@ -121,7 +121,7 @@
                             </div>
                         </div>
                         <!-- <div class="action hotline view-city"><span class="user-name">TP.HCM</span>&nbsp;&nbsp;<img class="icon toggle" src="{{ asset('public/react/images/icons/toggle-down-white.svg')}}"></div> -->
-                        <div class="action hotline" style="cursor: pointer;"><img class="icon" src="{{ asset('public/react/images/icons/user-white.svg')}}"><span class="user-name" onclick="login()">Đăng nhập</span></div>
+                        <div class="action hotline logins" style="cursor: pointer;"><img class="icon" src="{{ asset('public/react/images/icons/user-white.svg')}}"><span class="user-name">Đăng nhập</span></div>
                     </div>
                     <div class="header-menu header-city-menu">
                         <!-- <div class="m-box"><span>TP.HCM</span><img src="{{ asset('public/react/images/icons/arrow-right.svg')}}"></div> -->
@@ -141,15 +141,15 @@
                                 <div class="x-header">Đăng nhập</div>
                                 <div class="x-body">
 
-                                    <form id="login-form-submit">
+                                    <form id="login-form-submit" method="post" action="{{ route('login-Fe') }}">
                                         <div class="input-group">
                                        
-                                            <input name="email" id="email" class="input-username" placeholder="Nhập email" value="">
+                                            <input name="email" id="emails-login" class="input-username" placeholder="Nhập email" value="">
                                         </div>
                                         
                                         <div class="input-group">
                                           
-                                            <input name="password" class="input-username" placeholder="Nhập Password" value="">
+                                            <input name="password" id="password-logins" type="password"  class="input-username" placeholder="Nhập Password" value="">
                                         </div>   
 
                                         <button class="btn-continue" type="submit" style="background: #ED1C30;">Đăng nhập</button> 
@@ -182,11 +182,11 @@
                                 <div class="x-header">Đăng ký</div>
                                 <div class="x-body">
 
-                                    <form method="post" id="register-form-submit" action="#">
+                                    <form method="post" id="register-form-submit" action="{{ route('register-client-fe1') }}">
 
                                         <div class="input-group">
                                            
-                                            <input name="username" id="username" class="input-username" placeholder="Nhập username" maxlength="12" value="" required>
+                                            <input name="username" id="username" class="input-username" placeholder="Nhập username"  value="" required>
                                         </div>
 
 
@@ -202,7 +202,7 @@
 
                                         <div class="input-group">
                                           
-                                            <input name="re-password" type="password" id="re-password" class="input-username" placeholder="Nhập lại Password" maxlength="30" value="" required>
+                                            <input name="re-password" type="password" id="re-password" class="input-username" placeholder="Nhập lại Password"  value="" required>
                                         </div>   
 
                                         <button type="submit" class="btn-continue" style="background: #ED1C30;">Đăng ký</button>
@@ -797,6 +797,11 @@
         </script>
 
         <script type="text/javascript">
+
+            $('.logins').click(function(){
+                $('#modal-login').modal('show');
+            })
+
             
 
             function addToCart(id) {
@@ -872,7 +877,33 @@
                         required:"Bắt buộc nhập Password",
                     },
                    
-                }
+                },
+                submitHandler: function(form) {
+
+                    $.ajaxSetup({
+                        headers: {
+                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                        }
+                    });
+
+                    $.ajax({
+                        type: 'POST',
+                        url: "{{ route('login-Fe') }}",
+                        data: {
+                            email: $('#emails-login').val(),
+                            password: $('#password-logins').val(),
+                            
+                        },
+                       
+                        success: function(result){
+
+                            $('#modal-login').modal('hide');
+                            $('.logins .user-name').text('Xin chào');
+                            alert('Đăng nhập thành công');
+                            
+                        }
+                    });
+                }    
                
             }); 
 
@@ -923,9 +954,41 @@
                     }
                   
                    
+                },
+
+                submitHandler: function(form) {
+                    $.ajaxSetup({
+                        headers: {
+                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                        }
+                    });
+
+                    $.ajax({
+                        type: 'POST',
+                        url: "{{ route('register-client-fe') }}",
+                        data: {
+                            fullname: $('#username').val(),
+                            password: $('#password').val(),
+                            email: $('#email').val(),
+                            
+                        },
+                       
+                        success: function(result){
+                            $("#modal-register").modal("hide");
+                            alert(result);
+
+                            
+                        }
+                    });
                 }
                
             });
+
+            $('#registers-form-submit').submit(function (e) {
+                e.preventDefault();
+
+                
+            })
 
 
 
@@ -954,10 +1017,7 @@
                 
             }
 
-            function login() {
-                $('#modal-login').modal('show');
-
-            }
+            
 
             $('.close-modal-login').click(function () {
 
