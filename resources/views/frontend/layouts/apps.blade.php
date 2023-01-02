@@ -65,6 +65,10 @@
             .user{
                 margin-left: 284px;
             }
+
+            /*.modal-backdrop.show{
+                opacity: 0;
+            }*/
         </style>
 
 
@@ -101,7 +105,7 @@
                             $cart = Gloudemans\Shoppingcart\Facades\Cart::content();
 
                             $number_cart = count($cart);
-                         ?> 
+                        ?> 
                         <a href="{{ route('cart-anvat') }}"> <button class="n-btn cart-icon action" title="Xem giỏ hàng"><img src="{{ asset('react/images/icons/cart.svg') }}"><span class="item-count-badge">{{ $number_cart??0 }}</span></button></a>  
                        
 
@@ -112,7 +116,7 @@
                             </div>
                         </div>
                         <!-- <div class="action hotline view-city"><span class="user-name">TP.HCM</span>&nbsp;&nbsp;<img class="icon toggle" src="{{ asset('public/react/images/icons/toggle-down-white.svg')}}"></div> -->
-                        <!-- <div class="action hotline" style="cursor: pointer;"><img class="icon" src="{{ asset('public/react/images/icons/user-white.svg')}}"><span class="user-name">Đăng nhập</span></div> -->
+                        <div class="action hotline" style="cursor: pointer;"><img class="icon" src="{{ asset('public/react/images/icons/user-white.svg')}}"><span class="user-name" onclick="login()">Đăng nhập</span></div>
                     </div>
                     <div class="header-menu header-city-menu">
                         <!-- <div class="m-box"><span>TP.HCM</span><img src="{{ asset('public/react/images/icons/arrow-right.svg')}}"></div> -->
@@ -120,9 +124,11 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="modal modal-login">
+
+
+            <div class="modal modal-login">
                 <div class="modal-backdrop modal-login " style="cursor: default;"></div>
-                <div class="modal-container modal-login animate__animated animate__faster display-none" style="cursor: default;">
+                <div class="modal-container modal-login animate__animated animate__faster display-none" style="cursor: default;" id="modal-login">
                     <div class="modal-wrapper">
                         <div class="modal-header-r"><button class="n-btn close"><img src="{{ asset('public/react/images/icons/close.svg')}}"></button></div>
                         <div class="modal-body-r">
@@ -153,7 +159,9 @@
                     </div>
                 </div>
             </div>
-            <div class="modal modal-forgot-pass">
+
+
+            <!-- <div class="modal modal-forgot-pass">
                 <div class="modal-backdrop modal-forgot-pass " style="cursor: default; outline: none;"></div>
                 <div class="modal-container modal-forgot-pass animate__animated animate__faster display-none" style="cursor: default; outline: none;">
                     <div class="modal-wrapper">
@@ -233,8 +241,8 @@
                         </div>
                     </div>
                 </div>
-            </div> -->
-
+            </div>
+ -->
 
             @yield('content')
            
@@ -880,6 +888,11 @@
                     }
                 });
                 
+            }
+
+            function login() {
+                $('#modal-login').modal('show');
+
             }
         </script>
 
