@@ -275,9 +275,10 @@ if(!empty($deal)){
                                     <a class="overlay" target="_blank" title="Nhâm Nhi Mùa World Cup" href=""></a>
                                 </div>
                                 <div class="category-item">
-                                    <div class="icon"><img class="img-fit" src="https://image.cooky.vn/ads/s320/022067db-85af-450d-b162-62329e0b005d.png" alt="Pack Ướp Sẵn" loading="lazy"></div>
+                                    <div class="icon"><img class="img-fit" src="https://image.cooky.vn/ads/s320/022067db-85af-450d-b162-62329e0b005d.png" alt="Pack Ướp Sẵn" loading="lazy">
+                                    </div>
                                     <div class="label text-ellipsis-two-lines">Pack Ướp Sẵn</div>
-                                    <a class="overlay" target="_blank" title="Pack Ướp Sẵn" href="></a>
+                                    <a class="overlay" target="_blank" title="Pack Ướp Sẵn" href="#"></a>
                                 </div>
                                 <div class="category-item">
                                     <div class="icon">
