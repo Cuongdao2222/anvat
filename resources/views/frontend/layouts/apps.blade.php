@@ -40,24 +40,6 @@
         <script src="https://www.cooky.vn/dist/scripts/helper.min.js?v=3339257520"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
 
-
-        <script>
-            var apiHostUrl = "https://marketapi.cooky.vn";
-            var locationApiUrl = "https://location-api.cooky.vn";
-            var appApiUrl = "https://app-api.cooky.vn";
-            var authApiUrl = "https://auth-api.cooky.vn";
-            var cgk = "AIzaSyAUIjFHTUat8XQeK6xJrvE54CKMUzJ_uvY";
-            var seller_hn = "5";
-            var googleClientId = "457510023438-32617tl54kggqdsuh88s84dr4dg40873.apps.googleusercontent.com";
-            var facebookAppId = "279628188873202";
-            var RequestSignatureKey = "3e64c288c293c3b27c3cc3ae75c3b8c2b24619c3ab68001bc295c2b2c3b0c2a4";
-        </script>
-        <script>
-            var apiHostUrlObsoleted = "https://api.cooky.vn";
-            var appApiUrl = "https://app-api.cooky.vn";
-            var now = '2022/11/28 16:46:23';
-            var userToken = '';
-        </script>
         
         <script async="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUIjFHTUat8XQeK6xJrvE54CKMUzJ_uvY&amp;v=3.exp&amp;libraries=geometry,drawing,places"></script>
         <style data-emotion="css" data-s=""></style>
@@ -74,6 +56,60 @@
             .error{
                 color: red;
             }
+            .page-container{
+                min-width: auto !important;
+            }
+
+            .navigation-bar .logo {
+
+                left: 0;
+            } 
+
+            
+
+            @media screen and (min-width: 777px) {
+
+                .form-search{
+                    margin-left: 400px;
+                }
+
+                .mobile{
+                    display: none;
+                }
+
+            }   
+
+
+            @media screen and (max-width: 776px) {
+
+                .navigation-bar .logo {
+                    left: 0 !important;
+                }  
+
+                .desktop{
+                    display: none;
+                }
+
+                .navigation-bar > div{
+                    padding-right: 0;
+                    padding-left: 0;
+                    min-width: unset;
+                    max-width: unset;
+                    position: unset;
+                    width: auto;
+                } 
+                .navigation-bar{
+                    padding: 0;
+                } 
+                .page-wrapper{
+                    max-width: unset;
+                }
+
+                .page-container{
+                    padding: 0;
+                }
+
+            }   
 
           
         </style>
@@ -98,11 +134,12 @@
         <div class="top-leaderboard">
         </div>
 
-        <div id="app">
-            <div class="navigation-bar">
+        <div id="app" class="col-xs-12">
+
+            <div class="navigation-bar desktop">
                 <div>
                     <div class="logo"><a href="{{ route('homeFe') }}"><img src="{{ asset('public/category/mokhoet.jpg')}}" alt="Logo Cooky"></a></div>
-                    <form action="{{ route('search-product-frontend') }}" method="get" style="margin-left: 400px;"> 
+                    <form action="{{ route('search-product-frontend') }}" method="get"  class="form-search"> 
                         <div class="search-input">
                             <img class="icon" src="{{ asset('public/react/images/icons/magnifying-glass.svg')}}" alt="Magnifying Glass">
                             <input type="text" name="key" tabindex="0" control="inp-search" placeholder="Tìm sản phẩm bạn quan tâm" value="">
@@ -146,6 +183,43 @@
                             <span class="user-name">Đăng nhập</span>
                             @endif
                         </div>
+                    </div>
+                    <div class="header-menu header-city-menu">
+                        <!-- <div class="m-box"><span>TP.HCM</span><img src="{{ asset('public/react/images/icons/arrow-right.svg')}}"></div> -->
+                        <div class="m-box"><a class="link-absolute"></a><span>Hà Nội</span><img src="{{ asset('public/react/images/icons/arrow-right.svg')}}"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="navigation-bar mobile">
+                <div>
+                    <div class="logo"><a href="{{ route('homeFe') }}"><img src="{{ asset('public/category/mokhoet.jpg')}}" alt="Logo Cooky"></a></div>
+                    <!-- <form action="{{ route('search-product-frontend') }}" method="get"  class="form-search"> 
+                        <div class="search-input">
+                            <img class="icon" src="{{ asset('public/react/images/icons/magnifying-glass.svg')}}" alt="Magnifying Glass">
+                            <input type="text" name="key" tabindex="0" control="inp-search" placeholder="Tìm sản phẩm bạn quan tâm" value="">
+                        </div>
+                    </form>
+ -->
+                    
+                    <div class="user">
+                        
+                        <a href="{{ route('favourite') }}" class="action extra n-btn" title="Bộ sưu tập"><img class="icon" src="{{ asset('public/react/images/icons/heart-big-white.svg')}}"></a>
+
+                        
+                        <a href="{{ route('cart-anvat') }}"> <button class="n-btn cart-icon action" title="Xem giỏ hàng"><img src="{{ asset('react/images/icons/cart.svg') }}"><span class="item-count-badge">{{ $number_cart??0 }}</span></button></a>  
+                       
+
+                        <div class="action phone n-btn">
+                            <img class="icon" src="{{ asset('public/react/images/icons/call.svg')}}">
+                            <div class="phone-hover">
+                                <div style="display: flex; justify-content: space-between; align-items: center; padding: 16px;"><span>HOTLINE: 19002041</span><img src="{{ asset('public/react/images/icons/copy.svg')}}"></div>
+                            </div>
+                        </div>
+                        <!-- <div class="action hotline view-city"><span class="user-name">TP.HCM</span>&nbsp;&nbsp;<img class="icon toggle" src="{{ asset('public/react/images/icons/toggle-down-white.svg')}}"></div> -->
+
+                        
                     </div>
                     <div class="header-menu header-city-menu">
                         <!-- <div class="m-box"><span>TP.HCM</span><img src="{{ asset('public/react/images/icons/arrow-right.svg')}}"></div> -->

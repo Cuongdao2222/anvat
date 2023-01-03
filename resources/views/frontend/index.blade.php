@@ -13,12 +13,43 @@
                 }
 
                 .page-container{
-                    width: auto !important;
+                    width: 100% !important;
                 }
                 .product-basic-info{
                     flex: 0 0 calc(20% - 20px);
                     width: calc(20%);
                 }
+
+                @media screen and (max-width: 776px) {
+                    .slick-slider {
+                        display: none;
+                    }
+
+                    .product-basic-info{
+
+                        flex: 0 0 calc(50% - 50px);
+                        width: calc(50%);
+                    }
+
+                    .short-link-list .category-item {
+                        flex: 0 0 calc(100% / 3);
+                        width: calc(100% / 3);
+                        position: relative;
+                    }  
+
+                    .navigation-bar .logo{
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                    .group-product-content{
+                        width: 100%;
+                    }
+
+                    .page-wrapper{
+                        padding: 0;
+                        width: 100%;
+                    }
+                } 
         </style>
 @endpush
 
@@ -201,7 +232,7 @@ if(!empty($deal)){
                 <div class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
                     <div class="swiper-pagination swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
                     <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
-                        <div class="swiper-slide swiper-slide-active" style="width: 1117px;">
+                        <div class="swiper-slide swiper-slide-active">
                             <div class="category-slider">
                                 <div class="category-item">
                                     <div class="icon"><img class="img-fit" src="https://image.cooky.vn/ads/s320/9e71675b-dc0e-4a10-b6bc-dfd2c44c9945.png" alt="Đồng Giá 19K" loading="lazy"></div>
@@ -371,7 +402,7 @@ if(!empty($deal)){
                 <div class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
                     <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
 
-                        <div class="swiper-slide swiper-slide-active" style="width: 1117px; margin-right: 20px;">
+                        <div class="swiper-slide swiper-slide-active" style="margin-right: 20px;">
                             <div class="promotion-box" style="margin-left: -10px; margin-right: -10px;">
                                 @foreach($deal as $key => $value)
 
@@ -580,7 +611,7 @@ if(!empty($deal)){
                             <div class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
                                 <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-bullets-dynamic" style="width: 80px;"><span class="swiper-pagination-bullet swiper-pagination-bullet-active swiper-pagination-bullet-active-main" style="left: 8px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active-next" style="left: 8px;"></span></div>
                                 <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
-                                    <div class="swiper-slide swiper-slide-active" style="width: 1117px; margin-right: 20px;">
+                                    <div class="swiper-slide swiper-slide-active" style="margin-right: 20px;">
                                         <div class="promotion-box" style="margin: 0px -10px;">
 
 
