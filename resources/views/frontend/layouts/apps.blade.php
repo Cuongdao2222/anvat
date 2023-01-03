@@ -168,12 +168,12 @@
                                     <form id="login-form-submit" method="post" action="{{ route('login-Fe') }}">
                                         <div class="input-group">
                                        
-                                            <input name="email" id="emails-login" class="input-username" placeholder="Nhập email" value="">
+                                            <input name="email" id="emails-login" class="input-username" placeholder="Nhập email" value="" autocomplete="off">
                                         </div>
                                         
                                         <div class="input-group">
                                           
-                                            <input name="password" id="password-logins" type="password"  class="input-username" placeholder="Nhập Password" value="">
+                                            <input name="password" id="password-logins" type="password"  class="input-username" placeholder="Nhập Password" value="" autocomplete="off">
                                         </div>   
 
                                         <button class="btn-continue" type="submit" style="background: #ED1C30;">Đăng nhập</button> 
