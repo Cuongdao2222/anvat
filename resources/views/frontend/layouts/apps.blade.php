@@ -80,6 +80,12 @@
 
 
         @stack('style')
+
+        <?php
+
+            $userClient = session()->get('status-login');
+
+        ?>
         
     </head>
     <body>
@@ -123,7 +129,23 @@
                             </div>
                         </div>
                         <!-- <div class="action hotline view-city"><span class="user-name">TP.HCM</span>&nbsp;&nbsp;<img class="icon toggle" src="{{ asset('public/react/images/icons/toggle-down-white.svg')}}"></div> -->
-                        <div class="action hotline logins" style="cursor: pointer;"><img class="icon" src="{{ asset('public/react/images/icons/user-white.svg')}}"><span class="user-name">Đăng nhập</span></div>
+
+                        <div class="action hotline {{ !empty($userClient)&& $userClient?'':'logins' }} " style="cursor: pointer;">
+                            <img class="icon" src="{{ asset('public/react/images/icons/user-white.svg')}}">
+
+                            @if(!empty($userClient)&& $userClient=='Đăng nhập thành công')
+
+                            <?php 
+
+                                $username = session()->get('user-login');
+                            ?>
+
+                            <span class="user-name">Xin chào {{ @$username['user-name'] }}</span>
+
+                            @else
+                            <span class="user-name">Đăng nhập</span>
+                            @endif
+                        </div>
                     </div>
                     <div class="header-menu header-city-menu">
                         <!-- <div class="m-box"><span>TP.HCM</span><img src="{{ asset('public/react/images/icons/arrow-right.svg')}}"></div> -->
@@ -901,7 +923,7 @@
 
                             $('#modal-login').modal('hide');
                             $('.logins .user-name').text('Xin chào');
-                            alert('Đăng nhập thành công');
+                            // alert(result);
                             
                         }
                     });

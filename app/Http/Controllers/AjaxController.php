@@ -57,22 +57,28 @@ class AjaxController extends Controller
 
         $check  =   DB::table('loginclient')->where('email', $email)->first();
 
-        return response('thanh cong');
+       
 
-        // if(!empty($check)){
-        //     if( Hash::check($request->password, $check->password) == true){
+        if(!empty($check->id)){
+            if( Hash::check($request->password, $check->password) == true){
 
-        //         Session::put('status-login', 'Đăng nhập thành công');
+                Session::put('status-login', 'Đăng nhập thành công');
 
-        //         return redirect()->route('homeFe');
+                Session::put('user-login', ['user-name'=>$check->fullname, 'email'=>$check->email]);
 
-        //     }
 
-        // }
+
+                return redirect()->route('homeFe');
+
+            }
+
+        }
+
+        return response('Đăng nhập thất bại, xin kiểm tra lại');
 
         // Session::put('status-login', 'Đăng nhập thất bại, xin kiểm tra lại');
         
-        // return redirect()->route('homeFe');
+        return redirect()->route('homeFe');
         
     }
 
