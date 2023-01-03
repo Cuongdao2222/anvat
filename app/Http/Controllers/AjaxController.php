@@ -175,7 +175,7 @@ class AjaxController extends Controller
     {
         
         $validator = Validator::make($request->all(), [
-       'email' => 'required|email|unique:loginClient',
+       'email' => 'required|email|unique:loginclient',
        'fullname' => 'required|string|max:150',
        'password' => 'required'
        ]);
@@ -189,7 +189,7 @@ class AjaxController extends Controller
             $input['password'] = bcrypt($request->password);
             $input['email'] = strip_tags($request->email);
             $input['fullname'] = strip_tags($request->fullname);
-            $result = DB::table('loginClient')->insert($input);
+            $result = DB::table('loginclient')->insert($input);
             return 'Đăng ký thành công';
         }    
            
