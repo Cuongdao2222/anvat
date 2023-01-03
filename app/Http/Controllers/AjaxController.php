@@ -51,8 +51,6 @@ class AjaxController extends Controller
     {
         $email =  strip_tags(trim($request->email), '@') ;
 
-       
-
         $password = $request->password;
 
         $check  =   DB::table('loginclient')->where('email', $email)->first();
@@ -74,11 +72,10 @@ class AjaxController extends Controller
 
         }
 
-        return response('Đăng nhập thất bại, xin kiểm tra lại');
+        return response('fails');
 
         // Session::put('status-login', 'Đăng nhập thất bại, xin kiểm tra lại');
         
-        return redirect()->route('homeFe');
         
     }
 

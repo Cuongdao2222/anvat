@@ -560,10 +560,13 @@
                        
                         success: function(result){
 
-                            $('#modal-login').modal('hide');
-                            $('.logins .user-name').text('Xin chào');
-                            // alert(result);
-                            
+                            if(result ==='fails'){
+                                alert('Mật khẩu không đúng hoặc tài khoản không tồn tại!');
+                            }
+                            else{
+                                 $('#modal-login').modal('hide');
+                                $('.logins .user-name').text('Xin chào');
+                            }
                         }
                     });
                 }    
@@ -649,8 +652,6 @@
 
             $('#registers-form-submit').submit(function (e) {
                 e.preventDefault();
-
-                
             })
 
 
