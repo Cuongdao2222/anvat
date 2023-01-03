@@ -198,9 +198,7 @@ class categoryController extends Controller
         else{
             $data = $this->getDataOfCate($slug);
 
-
-
-            return view('frontend.category', with($data));
+            return view('frontend.category', compact('data'));
         }
        
     }

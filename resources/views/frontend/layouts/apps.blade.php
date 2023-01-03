@@ -56,10 +56,7 @@
             .error{
                 color: red;
             }
-            .page-container{
-                min-width: auto !important;
-            }
-
+            
             .navigation-bar .logo {
 
                 left: 0;
@@ -87,7 +84,7 @@
                 }  
 
                 .desktop{
-                    display: none;
+                    display: none !important;
                 }
 
                 .navigation-bar > div{
@@ -124,6 +121,11 @@
                 .content-product-container .view-more{
                     margin: 15px 0 !important;
                 }
+
+                .navigation-bar .logo{
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
 
             }   
 

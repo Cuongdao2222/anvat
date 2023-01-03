@@ -25,6 +25,11 @@
                 }
 
                 @media screen and (max-width: 776px) {
+
+                    .page-container{
+                        min-width: auto !important;
+                    }
+
                     .slick-slider {
                         display: none;
                     }
@@ -45,10 +50,7 @@
                         position: relative;
                     }  
 
-                    .navigation-bar .logo{
-                        top: 50%;
-                        transform: translateY(-50%);
-                    }
+                    
                     .group-product-content{
                         width: 100%;
                     }
