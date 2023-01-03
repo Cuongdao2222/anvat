@@ -5,13 +5,17 @@
 <?php 
     $data_cart = Cart::content();
 
+    $info_user  = session()->get('user-login');
+
+
+
 ?>
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="loader"></div>
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Thông tin giỏ hàng </h5>
+                <h5 class="modal-title" id="exampleModalLabel">Thông tin giỏ hàng1 </h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
@@ -38,13 +42,13 @@
                             <!--option-group-->
                         </div>
                         <div class="item-form">
-                            <input type="text" name="name" id="buyer_name" placeholder="Họ tên">
+                            <input type="text" name="name" id="buyer_name" placeholder="Họ tên" value="@$info_user['user-name']">
                         </div>
                         <div class="item-form">
                             <input type="text" name="phone_number" id="buyer_tel" value="" placeholder="Số điện thoại">
                         </div>
                         <div class="item-form">
-                            <input type="text" name="mail" id="buyer_email" value="" placeholder="Email">
+                            <input type="text" name="mail" id="buyer_email" value="" placeholder="Email" value="@$info_user['email']">
                         </div>
                         <div class="item-form">
                             <textarea name="address" placeholder="Địa chỉ" id="buyer_address"></textarea>

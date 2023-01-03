@@ -130,7 +130,7 @@
                         </div>
                         <!-- <div class="action hotline view-city"><span class="user-name">TP.HCM</span>&nbsp;&nbsp;<img class="icon toggle" src="{{ asset('public/react/images/icons/toggle-down-white.svg')}}"></div> -->
 
-                        <div class="action hotline {{ !empty($userClient)&& $userClient?'':'logins' }} " style="cursor: pointer;">
+                        <div class="action hotline {{ !empty($userClient)&& $userClient?'user-checked':'logins' }} " style="cursor: pointer;">
                             <img class="icon" src="{{ asset('public/react/images/icons/user-white.svg')}}">
 
                             @if(!empty($userClient)&& $userClient=='Đăng nhập thành công')
@@ -184,6 +184,31 @@
                                     </form>
                                     
                                     
+                                </div>
+                                   
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal modal-logout">
+                <div class="modal-backdrop modal-login " style="cursor: default;"></div>
+                <div class="modal-container modal-login animate__animated animate__faster display-none" style="cursor: default;" id="modal-logout">
+                    <div class="modal-wrapper">
+                        <div class="modal-header-r"><button class="n-btn close close-modal-login"><img src="{{ asset('react/images/icons/close.svg')}}"></button></div>
+                        <div class="modal-body-r">
+                            <div class="x-container">
+                                <div class="x-header">Logout</div>
+                                <div class="x-body">
+
+                                    <a href="{{ route('logout-Fe') }}"><div class="btn-continue register" style="background: #3868D2; text-align: center;">Đăng xuất</div> </a>
+                                    
+                                    
+                                   
                                 </div>
                                    
                                   
@@ -1061,7 +1086,13 @@
 
                 $('#modal-register').modal('show');
                 
+            });
+
+            $('.user-checked').click(function(){
+
+                $('#modal-logout').modal('show');
             })
+            
         </script>
 
         @stack('js')

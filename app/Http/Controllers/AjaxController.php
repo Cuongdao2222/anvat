@@ -85,6 +85,9 @@ class AjaxController extends Controller
     public function logout()
     {
         Session::forget('status-login');
+
+        Session::forget('user-login');
+        
         return redirect()->back();
 
     }

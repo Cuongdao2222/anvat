@@ -179,6 +179,7 @@ class indexController extends Controller
 
     public function showCart()
     {
+       
         return view('frontend.cart');
     }
 

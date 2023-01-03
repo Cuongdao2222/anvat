@@ -5,6 +5,11 @@
 <link rel="stylesheet" type="text/css" href="https://dienmaynguoiviet.vn/css/apps.css?ver=14">
 @endpush
 
+<?php 
+
+     $info_user  = session()->get('user-login');
+?>
+
 <div class="page-wrapper">
     <div class="modal fade show" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="padding-right: 17px; display: block;">
     <div class="modal-dialog" role="document">
@@ -180,9 +185,9 @@
                             </div>
                             <!--option-group--> 
                         </div>
-                        <div class="item-form"> <input type="text" name="name" id="buyer_name" placeholder="Họ tên"> </div>
+                        <div class="item-form"> <input type="text" name="name" id="buyer_name" placeholder="Họ tên" value="{{ @$info_user['user-name'] }}"> </div>
                         <div class="item-form"> <input type="text" name="phone_number" id="buyer_tel" value="" placeholder="Số điện thoại"> </div>
-                        <div class="item-form"> <input type="text" name="mail" id="buyer_email" value="" placeholder="Email"> </div>
+                        <div class="item-form"> <input type="text" name="mail" id="buyer_email" value="" placeholder="Email" value="{{ @$info_user['email'] }}"> </div>
                         <div class="item-form"> <textarea name="address" placeholder="Địa chỉ" id="buyer_address"></textarea> </div>
                         <div class="item-form" style="width: 50%;display: inline-block;color: #0083d1;">
                             <select name="province" class="form-control" id="ship_to_province" onchange="getDistrict(this.value)">
