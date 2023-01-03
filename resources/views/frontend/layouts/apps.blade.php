@@ -21,6 +21,8 @@
        
         <meta property="og:type" content="website">
         <meta property="fb:app_id" content="279628188873202">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
         
         <meta name="keywords" content="Mỏ Khoét Ăn Vặt - Nơi mua đồ ăn vặt Ngon và Uy Tín nhất">
