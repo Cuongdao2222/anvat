@@ -174,7 +174,7 @@
 
                             $number_cart = count($cart);
                         ?> 
-                        <a href="{{ route('cart-anvat') }}"> <button class="n-btn cart-icon action" title="Xem giỏ hàng"><img src="{{ asset('react/images/icons/cart.svg') }}"><span class="item-count-badge">{{ $number_cart??0 }}</span></button></a>  
+                        <a href="{{ route('cart-anvat') }}"> <button class="n-btn cart-icon action" title="Xem giỏ hàng"><img src="{{ asset('react/images/icons/cart.svg') }}"><span class="item-count-badge item-count-badge-desk">{{ $number_cart??0 }}</span></button></a>  
                        
 
                         <div class="action phone n-btn">
@@ -490,19 +490,18 @@
                     },
                     success: function(result){
 
-                        
-            
-                        numberProductCart = $(".item-count-badge").text();
+                        console.log(result);
 
-                        
+                        numberProductCart = $(".item-count-badge-desk").text();
+
 
                         number = parseInt(numberProductCart)+1;
 
+                       
                         alert('thêm sản phẩm vào giỏ hàng thành công');
 
-            
                       
-                        $('.item-count-badge').text(number);
+                        $('.item-count-badge-desk').text(number);
         
                         
                     }
