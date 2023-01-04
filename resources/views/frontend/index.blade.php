@@ -973,7 +973,7 @@ if(!empty($deal)){
                    
 
 
-                $data = App\Models\product::whereIn('id', $hot->toArray())->orderBy('orders_hot', 'desc')->get();
+                $data = App\Models\product::whereIn('id', $hot->toArray())->take(10)->orderBy('orders_hot', 'desc')->get();
 
             ?>
 
@@ -1043,8 +1043,8 @@ if(!empty($deal)){
                                     </div>
                                 </div>
                                 <div class="promotion-name two-lines">{{ $datas->Name }}</div>
+                                
                                 <div class="promotion-info">
-
                                     <?php 
 
                                         $qualtity =  intval($datas->Quantily);
@@ -1070,19 +1070,14 @@ if(!empty($deal)){
                                         $margin = 190*($percent/100);
                                         
 
-
                                     ?>
-
-
                                     <div class="p-percent" style="width: {{ $percent  }}%;">
                                         <img src="react/images/icons/cart-black-s11.svg" loading="lazy" style="margin-left: {{  $margin  }};">&nbsp;&nbsp;
                                         
-                                       
                                     </div>
 
                                     <br>
 
-                                   
                                 </div>
                                 <div class="d-flex-center-middle">
                                     <div class="price p-g-v ">
@@ -1100,9 +1095,11 @@ if(!empty($deal)){
                             @endif
                             @endforeach
 
-
-                    
                         </div>
+
+                        @if($data->count()>=10)
+                        <a class="view-more one-line" href="{{ route('details', $groups->link) }}">Xem thêm</a>
+                        @endif
                     </div>
                 </div>
             @endif    

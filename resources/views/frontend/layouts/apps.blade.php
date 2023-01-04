@@ -295,14 +295,9 @@
                         <div class="modal-body-r">
                             <div class="x-container">
                                 <div class="x-header">Logout</div>
-                                <div class="x-body">
-
-                                    <a href="{{ route('logout-Fe') }}"><div class="btn-continue register" style="background: #3868D2; text-align: center;">Đăng xuất</div> </a>
-                                    
-                                    
-                                   
-                                </div>
-                                   
+                                    <div class="x-body">
+                                        <a href="{{ route('logout-Fe') }}"><div class="btn-continue register" style="background: #3868D2; text-align: center;">Đăng xuất</div> </a>
+                                    </div>
                                   
                                 </div>
                             </div>
