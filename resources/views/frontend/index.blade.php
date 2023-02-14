@@ -628,7 +628,7 @@ if(!empty($deal)){
                     <section class="tab-content is-active">
                         <div class="content-product-container" style="margin: 0px;">
                             <div class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
-                                <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-bullets-dynamic" style="width: 80px;"><span class="swiper-pagination-bullet swiper-pagination-bullet-active swiper-pagination-bullet-active-main" style="left: 8px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active-next" style="left: 8px;"></span></div>
+                                <!-- <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-bullets-dynamic" style="width: 80px;"><span class="swiper-pagination-bullet swiper-pagination-bullet-active swiper-pagination-bullet-active-main" style="left: 8px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active-next" style="left: 8px;"></span></div> -->
                                 <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
                                     <div class="swiper-slide swiper-slide-active" style="margin-right: 20px;">
                                         <div class="promotion-box">
@@ -646,6 +646,42 @@ if(!empty($deal)){
                                                     </div>
                                                 </div>
                                                 <div class="promotion-name two-lines">{{ $value->Name }}</div>
+
+                                                <div class="promotion-info">
+                                                <?php 
+
+                                                    $qualtity =  intval($value->Quantily);
+
+                                                    $per = [100,75,25, 0];
+
+                                                    if($qualtity>10){
+
+                                                        $percent =  $per[0];
+
+                                                    }
+                                                    elseif($qualtity>5 && $qualtity<=10){
+                                                        $percent =  $per[1];
+                                                    }
+
+                                                    elseif($qualtity<5 && $qualtity>0){
+                                                        $percent =  $per[2];
+                                                    }
+                                                    else{
+                                                        $percent =  $per[3];
+                                                    }
+
+                                                    $margin = 190*($percent/100);
+                                                    
+
+                                                ?>
+                                                <div class="p-percent" style="width: {{ $percent  }}%;">
+                                                    <img src="react/images/icons/cart-black-s11.svg" loading="lazy" style="margin-left: {{  $margin  }};">&nbsp;&nbsp;
+                                                    
+                                                </div>
+
+                                                <br>
+
+                                            </div>
                                                 <!-- <div class="promotion-info">
                                                     <div class="p-percent" style="width: 0%;">
                                                         <img src="./public/react/images/icons/cart-black-s11.svg" loading="lazy">&nbsp;&nbsp;

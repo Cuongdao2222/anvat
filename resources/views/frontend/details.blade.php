@@ -129,8 +129,11 @@
 
                             <button class="add-item-wrapper n-btn btn-add-to-cart btn-add-to-collection save">
                                 <span class="row-1">
-                                    <div class="icon-total-save"><img class="icon" src="https://www.cooky.vn/react/images/icons/heart-gray.svg"></div>
-                                    <span class="text display-block favourite" style="color: rgb(172, 172, 172);" data-id="{{ $data->id }}">Lưu</span>
+                                    
+                                    
+                                    <span class="text display-block favourite" style="color: rgb(172, 172, 172);" data-id="{{ $data->id }}">
+                                    <img class="icon" style="margin-bottom: -4px;" src="https://www.cooky.vn/react/images/icons/heart-gray.svg">    
+                                    Lưu</span>
                                 </span>
                                 <span class="row-2"></span>
                             </button>
