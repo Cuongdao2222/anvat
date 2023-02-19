@@ -30,6 +30,8 @@
   <!-- Add Media helper (this is optional) -->
   <script type="text/javascript" src="{{ asset('source/helpers/jquery.fancybox-media.js?v=1.0.6')}}"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
 </head>
 
 <div class="owl-carousel">
