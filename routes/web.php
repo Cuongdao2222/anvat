@@ -30,6 +30,8 @@ Route::get('/random-deal', 'crawlController@randomOrderDeal');
 
 Route::get('/cart-details', 'Frontend\indexController@showCart');
 
+
+
 Route::post('get-compare-pd-viewer', 'productController@getPDviewer')->name('ajax-compare-viewerPd');
 
 Route::post('favourite-like', 'AjaxController@getDataToAr')->name('get favourite product');
@@ -104,10 +106,10 @@ Route::get('sitemap_article.xml', 'sitemapController@sitemapChildBlog');
 
 // Route::get('inCrawl', 'crawlController@allproduct');
 
-// Route::get('/tin-chi-tiet', function () {
-//     return view('frontend.blogdetail');
+Route::get('/test', function () {
+    return view('frontend.test');
     
-// });
+});
 
 
 // Route::any('/ckfinder/connector', '\CKSource\CKFinderBridge\Controller\CKFinderController@requestAction')
