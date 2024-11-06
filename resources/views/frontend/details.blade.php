@@ -6,6 +6,10 @@
 <style type="text/css">
     .link-order{
         background: red !important;
+        
+    }
+
+    .link-order .text{
         color: #fff !important;
     }
 </style>
