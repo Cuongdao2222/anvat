@@ -126,13 +126,19 @@
                                 <span class="row-2"></span>
                             </button>
 
+                            @if(!empty($data->Link_order))
+
                              <button class="add-item-wrapper n-btn btn-add-to-cart btn-add-to-collection ">
-                                <span class="row-1">
-                                    <div class="icon-total-save"><img class="icon" src="https://img.icons8.com/material-outlined/2x/sell-stock.png"></div>
-                                    <span class="text display-block" style="color: rgb(172, 172, 172);" onclick="addToCartRedirect({{ $data->id }})">Đến nơi bán</span>
-                                </span>
-                                <span class="row-2"></span>
+                                <a href="">
+                                    <span class="row-1">
+                                        <div class="icon-total-save"><img class="icon" src="https://img.icons8.com/material-outlined/2x/sell-stock.png"></div>
+                                        <span class="text display-block" style="color: rgb(172, 172, 172);">Đến nơi bán</span>
+                                    </span>
+                                    <span class="row-2"></span>
+                                </a>
+                                
                             </button>
+                            @endif
 
 
                             <button class="add-item-wrapper n-btn btn-add-to-cart btn-add-to-collection save">
