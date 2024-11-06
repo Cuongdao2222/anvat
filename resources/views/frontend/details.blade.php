@@ -3,6 +3,12 @@
 @push('style')
 
 <link href="{{ asset('css/market.detail.min.css') }}" rel="stylesheet">
+<style type="text/css">
+    .link-order{
+        background: red;
+        color: #fff;
+    }
+</style>
 
 
 
@@ -128,7 +134,7 @@
 
                             @if(!empty($data->Link_order))
 
-                             <button class="add-item-wrapper n-btn btn-add-to-cart btn-add-to-collection ">
+                             <button class="add-item-wrapper n-btn btn-add-to-cart btn-add-to-collection link-order">
                                 <a href="{{ $data->Link_order }}">
                                     <span class="row-1">
                                         <div class="icon-total-save"><img class="icon" src="https://img.icons8.com/material-outlined/2x/sell-stock.png"></div>
