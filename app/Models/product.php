@@ -78,6 +78,7 @@ class product extends Model
         'limits',
         'GiftPrice',
         'LinkRedirect',
+        'Link_order',
         
 
     ];
