@@ -246,10 +246,18 @@
     </script>
 </div>
 
+
+
 <!-- Link Redirect Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('Link Redirect', 'Link Redirect:') !!}
     {!! Form::text('LinkRedirect', null, ['class' => 'form-control']) !!}
+</div>
+
+<!-- Link Redirect Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('Link Order', 'Link_Order:') !!}
+    {!! Form::text('Link_order', null, ['class' => 'form-control']) !!}
 </div>
 
 
