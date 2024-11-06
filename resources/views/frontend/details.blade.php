@@ -129,7 +129,7 @@
                             @if(!empty($data->Link_order))
 
                              <button class="add-item-wrapper n-btn btn-add-to-cart btn-add-to-collection ">
-                                <a href="">
+                                <a href="{{ $data->Link_order }}">
                                     <span class="row-1">
                                         <div class="icon-total-save"><img class="icon" src="https://img.icons8.com/material-outlined/2x/sell-stock.png"></div>
                                         <span class="text display-block" style="color: rgb(172, 172, 172);">Đến nơi bán</span>
