@@ -5,8 +5,8 @@
 <link href="{{ asset('css/market.detail.min.css') }}" rel="stylesheet">
 <style type="text/css">
     .link-order{
-        background: red;
-        color: #fff;
+        background: red !important;
+        color: #fff !important;
     }
 </style>
 
