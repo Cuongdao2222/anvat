@@ -639,9 +639,7 @@ if(!empty($deal)){
 
                                             <div class="product-basic-info ">
 
-                                                <div class="flash-buy">
-                                                    <button class="btn-warning">Mua ngay</button>
-                                                </div>
+                                                
                                                 <a class="link-absolute" title="{{ $value->Name }}" href="{{ route('details', $value->Link) }}"></a>
                                                 <div class="cover-box">
                                                     <img class="img-flash-sale" src="{{ asset($value->Image) }}" loading="lazy">
