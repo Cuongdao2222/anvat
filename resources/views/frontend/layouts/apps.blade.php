@@ -174,7 +174,7 @@
 
                             $number_cart = count($cart);
                         ?> 
-                        <a href="{{ route('cart-anvat') }}"> <button class="n-btn cart-icon action" title="Xem giỏ hàng"><img src="{{ asset('react/images/icons/cart.svg') }}"><span class="item-count-badge item-count-badge-desk">{{ $number_cart??0 }}</span></button></a>  
+                       
                        
 
                         <div class="action phone n-btn">
