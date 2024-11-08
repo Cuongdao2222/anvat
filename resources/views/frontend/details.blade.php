@@ -116,7 +116,7 @@
                     </div>
                     <div class="extra-info-box">
                         <div class="display-flex btn-cart-box">
-                            <button class="btn-add-to-cart n-btn btn-add-to-cart " title="Bấm để thêm vào giỏ hàng">
+                            <!-- <button class="btn-add-to-cart n-btn btn-add-to-cart " title="Bấm để thêm vào giỏ hàng">
                                 <div style="position: relative; z-index: 3;">
                                     <span class="row-1">
                                         <div class="icon-total-save">
@@ -126,7 +126,7 @@
                                         <span class="text display-block" onclick="addToCart({{ $data->id }})">Thêm vào giỏ</span>
                                     </span>
                                 </div>
-                            </button>
+                            </button> -->
                             
                             <button class="add-item-wrapper n-btn btn-add-to-cart btn-add-to-collection ">
                                 <span class="row-1">
