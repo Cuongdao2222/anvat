@@ -52,6 +52,7 @@
         <li id="tab_3"><a href="#" onclick="imageCss()">Hình nền website</a></li>
         <li id="tab_4"><a href="javascript:void(0)" onclick="muchSearch()">Tìm kiếm nhiều</a></li>
         <li id="tab_5"><a href="javascript:void(0)" onclick="meta()">Thẻ Meta trang Home</a></li>
+        <li id="tab_7"><a href="javascript:void(0)" onclick="meta()">Thẻ cate trang chủ</a></li>
         
     </ul>
     <form method="post" enctype="multipart/form-data" action="{{route('add-popup')}}">
@@ -109,6 +110,50 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Thay Ảnh nền</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="post" enctype="multipart/form-data" action="{{ route('add-image-background') }}">
+                    @csrf
+                    <!-- <p class="sub-section-header">Thay Ảnh nền</p> -->
+                    <p style="color:#F00; margin-bottom:20px">Bạn có thể thay nền website bằng màu hoặc hình ảnh. Với file ảnh, yêu cầu là  .jpg, .gif, hoặc .png và dung lượng tối đa 300KB.</p>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Dùng màu nền: </td>
+                                <td>
+                                    <script type="text/javascript" src="/includes/js/jscolor/jscolor.js"></script>
+                                    <input type="text" class="color" name="background_color" value="FFFFFF"> (&lt;- click chuột vào ô để chọn màu)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Dùng file ảnh</td>
+                                <td>
+                                    <input type="file" name="background_image" size="50">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                    </div>
+                    
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="cssimageModel" tabindex="7" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Thêm cate quảng cáo trang chủ</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
