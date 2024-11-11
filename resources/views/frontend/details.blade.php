@@ -165,7 +165,9 @@
                         <div class="price-x">
                             <div class="price ">
                                 
-                                <div><span class="sale-info">{{  @number_format($data->Price)  }} đ</div>
+                                <div>
+                                    <span class="sale-info">{{  @number_format($data->Price)  }} đ
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -449,22 +451,22 @@
         
     }
 
-    $('.favourite').click(function() {
+    // $('.favourite').click(function() {
         
-        data_id = $(this).attr('data-id');
+    //     data_id = $(this).attr('data-id');
 
-        data =  JSON.parse(localStorage.getItem('like'))??[];
+    //     data =  JSON.parse(localStorage.getItem('like'))??[];
 
-        data.push(data_id);
+    //     data.push(data_id);
 
-        data = [...new Set(data)];
+    //     data = [...new Set(data)];
 
-        localStorage.setItem('like', JSON.stringify(data));
+    //     localStorage.setItem('like', JSON.stringify(data));
 
-        $(this).text('Đã Lưu');
+    //     $(this).text('Đã Lưu');
 
 
-    })
+    // })
 
 
    
