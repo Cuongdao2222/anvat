@@ -101,6 +101,13 @@
 
 <br>
 
+<?php 
+
+    $data_cate_image  = DB::table('add_cate_image')->get();
+?>
+
+@if($data_cate_image->isNotEmpty())
+
 <table style="width:100%" class="table">
     <tr>
         <th>Link</th>
@@ -108,13 +115,19 @@
         <th>image</th>
         
     </tr>
+
+
+    @foreach($data_cate_image as $value)
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>{{ @$value->Link }}</td>
+        <td>{{ @$value->title }}</td>
+        <td>{{ @$value->image }}</td>
     </tr>
+    @endif
     
 </table>
+
+ @endif
 
 <div class="modal fade" id="cssimageModel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
