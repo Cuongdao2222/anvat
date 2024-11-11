@@ -124,10 +124,10 @@
         <td>{{ @$value->title }}</td>
         <td>{{ @$value->images }}</td>
         <td>
-            @if($value->active===0)  
-                <a href="{{ route(active-cate-home) }}?id={{ $value->id }}&active=1">Hiển thị</a>
+            @if($value->active==0)  
+                <a href="{{ route('active-cate-home') }}?id={{ $value->id }}&active=1">Hiển thị</a>
             @else
-                <a href="{{ route(active-cate-home) }}?id={{ $value->id }}&active=0">Ẩn</a>
+                <a href="{{ route('active-cate-home') }}?id={{ $value->id }}&active=0">Ẩn</a>
             @endif    
 
         </td>
