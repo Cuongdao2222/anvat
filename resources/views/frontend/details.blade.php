@@ -70,15 +70,16 @@
 
                 .save{
                     margin-left: 20px;
+                    background: #F7C553 !important;
                 }
 
                 .btn-cart-box .btn-add-to-cart .row-1 .text{
                     padding: 0;
                 }
 
-                .btn-cart-box .btn-add-to-collection{
-                    background: #F7C553 !important;
-                }
+                
+                    
+                
         </style>
         <style type="text/css">
             .content{
