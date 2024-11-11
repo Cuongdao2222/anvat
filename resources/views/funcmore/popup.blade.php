@@ -27,7 +27,7 @@
 
         width: 1200px;
     }
-    table, th, td {
+    table {
       border:1px solid black;
     }
 
