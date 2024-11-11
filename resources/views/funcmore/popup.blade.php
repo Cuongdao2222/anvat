@@ -114,6 +114,8 @@
         <th>title</th>
         <th>image</th>
         <th>active</th>
+
+        <th>delete</th>
         
     </tr>
 
@@ -131,6 +133,7 @@
             @endif    
 
         </td>
+        <td><a href="{{ route('delete-cate-home') }}?id={{ $value->id }}">Xóa</a></td>
     </tr>
     @endforeach
     

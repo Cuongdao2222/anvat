@@ -66,6 +66,15 @@ class showController extends Controller
         return redirect()->route('pop-up-show');
     }
 
+    protected function deleteCateHome(Request $request){
+
+        $id = $request->id;
+
+        DB::table('add_cate_image')->delete($id);
+        
+        return redirect()->route('pop-up-show');
+    }
+
 
     public function addBackgroundSite(Request $request)
     {

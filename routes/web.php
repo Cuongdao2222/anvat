@@ -331,6 +331,8 @@ Route::group(['prefix' => 'admins','middleware' => 'auth'], function() {
 
     Route::get('/update-active-cate-home', 'showController@activeCateHomeImage')->name('active-cate-home');
 
+    Route::get('/delete/delete-active-cate-home', 'showController@deleteCateHome')->name('delete-cate-home');
+
     Route::get('imagescontent/{id}', 'productController@imagecontent')->name('imagescontent');
 
 
