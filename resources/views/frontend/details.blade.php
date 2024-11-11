@@ -203,7 +203,7 @@
                                 <span class="row-1">
                                     
                                     
-                                    <span class="text display-block favourite" style="color: rgb(172, 172, 172);" data-id="{{ $data->id }}">
+                                    <span class="text display-block favourite"  data-id="{{ $data->id }}">
                                     <i class="fa fa-star"></i>    
                                     Review</span>
                                 </span>
