@@ -27,7 +27,7 @@
 
         width: 1200px;
     }
-    table {
+    .table, .table th, .table td {
       border:1px solid black;
     }
 
@@ -99,7 +99,7 @@
     </form>
 </div>
 
-<table style="width:100%">
+<table style="width:100%" class="table">
     <tr>
         <th>Link</th>
         <th>title</th>
