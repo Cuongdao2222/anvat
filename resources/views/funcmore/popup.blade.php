@@ -73,7 +73,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>File ảnh</td>
+                    <td>File ảnh (yêu cầu ảnh kích thước cố định 90x90)</td>
                     <td>
                         <div style="max-height:600px; overflow:auto" id="show-image">
                             

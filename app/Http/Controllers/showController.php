@@ -10,6 +10,8 @@ use App\Models\popup;
 
 use DB;
 
+use Carbon\Carbon;
+
 class showController extends Controller
 {
 
@@ -17,9 +19,8 @@ class showController extends Controller
     {
 
         $input['link']       = $request->link;
-        $input['option']    = $request->popup_display;
-        $input['active']     = !empty($request->popup_activate)??0;
-        $input['image'] = '';
+       
+        $input['images'] = '';
     
 
         if ($request->hasFile('file_image')) {
@@ -28,16 +29,19 @@ class showController extends Controller
 
             $name = time() . '_' . $file_upload->getClientOriginalName();
 
-            $filePath = $file_upload->storeAs('images/banner-popup', $name, 'ftp');
+            $filePath = $file_upload->storeAs('images/cate', $name, 'public');
 
-            $input['image'] = $filePath;
+            $input['images'] = $filePath;
         }
 
-        $popup = popup::findOrFail(4);
+        $input['created_at'] = Carbon::now();
 
-        $popup = $popup->update($input);
+        $input['updated_at'] = Carbon::now();
 
-        return back()->with('status','sửa thành công');
+
+        DB::table('add_cate_image')->insert($input);
+
+        return back()->with('status','thêm thành công');
 
         
     }
