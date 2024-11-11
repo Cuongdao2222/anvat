@@ -244,15 +244,17 @@ if(!empty($deal)){
             <div class="short-link-list">
                 <div class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
                     <div class="swiper-pagination swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+
+                     <?php 
+                        $data_cate_image = DB::table('add_cate_image')->get();
+                    ?>
+
+                    @if($data_cate_image->isNotEmpty())
                     <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
                         <div class="swiper-slide swiper-slide-active">
                             <div class="category-slider">
 
-                                <?php 
-                                    $data_cate_image = DB::table('add_cate_image')->get();
-                                ?>
-
-                                @if($data_cate_image->isNotEmpty())
+                               
                                 @foreach($data_cate_image as $value)
                                 <div class="category-item">
                                     <div class="icon"><img class="img-fit" src="{{ asset($value->images) }}" alt="{{ $value->title }}" loading="lazy"></div>
@@ -260,104 +262,13 @@ if(!empty($deal)){
                                     <a class="overlay" target="_blank" title="{{ $value->title }}" href="#"></a>
                                 </div>
                                 @endforeach
-                                @endif
+                               
                                 
                             </div>
                         </div>
-                        <div class="swiper-slide swiper-slide-next" style="width: 1117px;">
-                            <div class="category-slider">
-                                <div class="category-item">
-                                    <div class="icon"><img class="img-fit" src="https://image.cooky.vn/ads/s320/5aee691e-d002-48be-a926-816f2a7a8d42.png" alt="Thịt Heo" loading="lazy"></div>
-                                    <div class="label text-ellipsis-two-lines">Thịt Heo</div>
-                                    <a class="overlay" target="_blank" title="Thịt Heo" href="ho-chi-minh/market/search?type=category&amp;id=4"></a>
-                                </div>
-                                <div class="category-item">
-                                    <div class="icon"><img class="img-fit" src="https://image.cooky.vn/ads/s320/d6c11e8a-fc6f-406e-9af9-2a2a69933cb8.png" alt="Gà &amp; Vịt" loading="lazy"></div>
-                                    <div class="label text-ellipsis-two-lines">Gà &amp; Vịt</div>
-                                    <a class="overlay" target="_blank" title="Gà &amp; Vịt" href="ho-chi-minh/market/tim-kiem?categoryIds=2"></a>
-                                </div>
-                                <div class="category-item">
-                                    <div class="icon"><img class="img-fit" src="https://image.cooky.vn/ads/s320/34bd2f8e-f9b1-4755-8f42-de7edb2c70d2.png" alt="Hải Sản" loading="lazy"></div>
-                                    <div class="label text-ellipsis-two-lines">Hải Sản</div>
-                                    <a class="overlay" target="_blank" title="Hải Sản" href="ho-chi-minh/market/tim-kiem?categoryIds=3"></a>
-                                </div>
-                                <div class="category-item">
-                                    <div class="icon"><img class="img-fit" src="https://image.cooky.vn/ads/s320/e53955c0-304a-43c7-b47b-d353938239e8.png" alt="Bò Dê" loading="lazy"></div>
-                                    <div class="label text-ellipsis-two-lines">Bò Dê</div>
-                                    <a class="overlay" target="_blank" title="Bò Dê" href="ho-chi-minh/market/search?type=category&amp;id=5"></a>
-                                </div>
-                                <div class="category-item">
-                                    <div class="icon"><img class="img-fit" src="https://image.cooky.vn/ads/s320/50d90fff-415d-470c-9ba7-650e16e5da4c.png" alt="Combo" loading="lazy"></div>
-                                    <div class="label text-ellipsis-two-lines">Combo</div>
-                                    <a class="overlay" target="_blank" title="Combo" href="ho-chi-minh/market/search?type=category&amp;id=38"></a>
-                                </div>
-                                <div class="category-item">
-                                    <div class="icon"><img class="img-fit" src="https://image.cooky.vn/ads/s320/06246ca6-b90d-4039-b5cc-e701888d847f.png" alt="Trứng &amp; Đậu" loading="lazy"></div>
-                                    <div class="label text-ellipsis-two-lines">Trứng &amp; Đậu</div>
-                                    <a class="overlay" target="_blank" title="Trứng &amp; Đậu" href="ho-chi-minh/market/search?type=category&amp;id=6"></a>
-                                </div>
-                                <div class="category-item">
-                                    <div class="icon"><img class="img-fit" src="https://image.cooky.vn/ads/s320/615239e3-c537-40c5-9e09-f027055aa0c9.png" alt="Lương Thực" loading="lazy"></div>
-                                    <div class="label text-ellipsis-two-lines">Lương Thực</div>
-                                    <a class="overlay" target="_blank" title="Lương Thực" href="ho-chi-minh/market/tim-kiem?categoryIds=13"></a>
-                                </div>
-                                <div class="category-item">
-                                    <div class="icon"><img class="img-fit" src="https://image.cooky.vn/ads/s320/94639de1-5d0c-49ae-bee0-895404e68589.png" alt="Món Chay" loading="lazy"></div>
-                                    <div class="label text-ellipsis-two-lines">Món Chay</div>
-                                    <a class="overlay" target="_blank" title="Món Chay" href="ho-chi-minh/market/search?type=category&amp;id=24"></a>
-                                </div>
-                                <div class="category-item">
-                                    <div class="icon"><img class="img-fit" src="https://image.cooky.vn/ads/s320/c0fd247d-6598-47e4-96c5-a3b323cb4479.png" alt="Sữa &amp; Phô Mai" loading="lazy"></div>
-                                    <div class="label text-ellipsis-two-lines">Sữa &amp; Phô Mai</div>
-                                    <a class="overlay" target="_blank" title="Sữa &amp; Phô Mai" href="ho-chi-minh/market/search?type=category&amp;id=77"></a>
-                                </div>
-                                <div class="category-item">
-                                    <div class="icon"><img class="img-fit" src="https://image.cooky.vn/ads/s320/0c9823fa-2264-4d31-9de0-ce9abce9e4c3.png" alt="Gia Vị" loading="lazy"></div>
-                                    <div class="label text-ellipsis-two-lines">Gia Vị</div>
-                                    <a class="overlay" target="_blank" title="Gia Vị" href="ho-chi-minh/market/tim-kiem?categoryIds=12"></a>
-                                </div>
-                                <div class="category-item">
-                                    <div class="icon"><img class="img-fit" src="https://image.cooky.vn/ads/s320/a14f3cab-a3bd-45ce-8d8b-50bb2da389af.png" alt="Nhà Cửa" loading="lazy"></div>
-                                    <div class="label text-ellipsis-two-lines">Nhà Cửa</div>
-                                    <a class="overlay" target="_blank" title="Nhà Cửa" href="ho-chi-minh/market/search?type=category&amp;id=18"></a>
-                                </div>
-                                <div class="category-item">
-                                    <div class="icon"><img class="img-fit" src="https://image.cooky.vn/ads/s320/49a963df-00f2-41a7-b532-f03403f4d5cb.png" alt="Đồ Uống" loading="lazy"></div>
-                                    <div class="label text-ellipsis-two-lines">Đồ Uống</div>
-                                    <a class="overlay" target="_blank" title="Đồ Uống" href="ho-chi-minh/market/search?type=category&amp;id=10"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide" style="width: 1117px;">
-                            <div class="category-slider">
-                                <div class="category-item">
-                                    <div class="icon"><img class="img-fit" src="https://image.cooky.vn/ads/s320/ad0bfc36-2053-4f5e-ad04-32256a2d6179.png" alt="Ăn Vặt" loading="lazy"></div>
-                                    <div class="label text-ellipsis-two-lines">Ăn Vặt</div>
-                                    <a class="overlay" target="_blank" title="Ăn Vặt" href=""></a>
-                                </div>
-                                <div class="category-item">
-                                    <div class="icon"><img class="img-fit" src="https://image.cooky.vn/ads/s320/14f3b752-ab28-4652-b349-4ba52b9dbfe1.png" alt="Bánh Kẹo" loading="lazy"></div>
-                                    <div class="label text-ellipsis-two-lines">Bánh Kẹo</div>
-                                    <a class="overlay" target="_blank" title="Bánh Kẹo" href="ho-chi-minh/market/search?type=category&amp;id=11"></a>
-                                </div>
-                                <div class="category-item">
-                                    <div class="icon"><img class="img-fit" src="https://image.cooky.vn/ads/s320/b62c254d-ea96-4b3f-a613-a9683f0e644f.png" alt="Công Thức" loading="lazy"></div>
-                                    <div class="label text-ellipsis-two-lines">Công Thức</div>
-                                    <a class="overlay" target="_blank" title="Công Thức" href="cong-thuc"></a>
-                                </div>
-                                <div class="category-item">
-                                    <div class="icon"><img class="img-fit" src="https://image.cooky.vn/ads/s320/15b61352-2fed-4e10-a101-eda8f8fee0ec.png" alt="Video" loading="lazy"></div>
-                                    <div class="label text-ellipsis-two-lines">Video</div>
-                                    <a class="overlay" target="_blank" title="Video" href="video"></a>
-                                </div>
-                                <div class="category-item">
-                                    <div class="icon"><img class="img-fit" src="https://image.cooky.vn/ads/s320/e3690479-35d6-4cdd-8abf-56383179c325.png" alt="Chuyên Đề" loading="lazy"></div>
-                                    <div class="label text-ellipsis-two-lines">Chuyên Đề</div>
-                                    <a class="overlay" target="_blank" title="Chuyên Đề" href="blog"></a>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
+                     @endif
                 </div>
             </div>
 
