@@ -15,6 +15,12 @@
         color: #fff !important;
     }
 
+    .old-price span.amount {
+        color: #757575;
+        text-decoration: line-through;
+        font-size: 15px;
+    }
+
     .list-group-affilie {
         display: flex;
         flex-direction: column;
@@ -167,6 +173,8 @@
                                 
                                 <div>
                                     <span class="sale-info">{{  @number_format($data->Price)  }} đ
+
+                                    <span class="old-price"><span class="woocommerce-Price-amount amount"><bdi>549,000<span class="woocommerce-Price-currencySymbol">₫</span></bdi></span> </span>    
                                     </div>
                             </div>
                         </div>
