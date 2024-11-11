@@ -123,7 +123,7 @@
         <td>{{ @$value->title }}</td>
         <td>{{ @$value->image }}</td>
     </tr>
-    @endif
+    @endforeach
     
 </table>
 
