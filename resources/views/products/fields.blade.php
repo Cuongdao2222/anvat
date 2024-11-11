@@ -166,6 +166,30 @@
 
 </div>
 
+<div class="form-group col-sm-6">
+    {!! Form::label('Link Lazada', 'Link lazada:') !!}
+    {!! Form::text('linklzd', null, ['class' => 'form-control']) !!}
+
+</div>
+
+<div class="form-group col-sm-6">
+    {!! Form::label('Link Shopee', 'Link Shopee:') !!}
+    {!! Form::text('linksp', null, ['class' => 'form-control']) !!}
+
+</div>
+
+<div class="form-group col-sm-6">
+    {!! Form::label('Link Tiki', 'Link Tiki:') !!}
+    {!! Form::text('linktk', null, ['class' => 'form-control']) !!}
+
+</div>
+
+<div class="form-group col-sm-6">
+    {!! Form::label('manu Price', 'Giá Hãng:') !!}
+    {!! Form::text('manuPrice', null, ['class' => 'form-control']) !!}
+
+</div>
+
 <!-- Quantily Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('Quantily', 'Số lượng trong kho:') !!}

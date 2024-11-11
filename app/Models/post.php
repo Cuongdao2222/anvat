@@ -29,6 +29,9 @@ class post extends Model
         'shortcontent',
         'Meta_id',
         'date_post',
+        'linksp',
+        'linktk',
+        'linklzd',
     ];
 
     /**

@@ -174,7 +174,9 @@
                                 <div>
                                     <span class="sale-info">{{  @number_format($data->Price)  }} đ
 
-                                    <span class="old-price"><span class="woocommerce-Price-amount amount"><bdi>549,000<span class="woocommerce-Price-currencySymbol">₫</span></bdi></span> </span>    
+                                    @if(!empty($data->manuPrice))        
+                                    <span class="old-price"><span class="woocommerce-Price-amount amount"><bdi>{{  @number_format($data->manuPrice)  }}<span class="woocommerce-Price-currencySymbol">₫</span></bdi></span> </span>
+                                    @endif    
                                     </div>
                             </div>
                         </div>
