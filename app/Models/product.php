@@ -79,8 +79,10 @@ class product extends Model
         'GiftPrice',
         'LinkRedirect',
         'Link_order',
-        
-
+        'linksp',
+        'linktk',
+        'linklzd',
+        'review',
     ];
 
     /**

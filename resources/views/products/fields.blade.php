@@ -185,6 +185,12 @@
 </div>
 
 <div class="form-group col-sm-6">
+    {!! Form::label('Link Review', 'Link Review:') !!}
+    {!! Form::text('review', null, ['class' => 'form-control']) !!}
+
+</div>
+
+<div class="form-group col-sm-6">
     {!! Form::label('manu Price', 'Giá Hãng:') !!}
     {!! Form::text('manuPrice', null, ['class' => 'form-control']) !!}
 

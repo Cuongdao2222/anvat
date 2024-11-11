@@ -213,14 +213,14 @@
 
 
                             <button class="add-item-wrapper n-btn btn-add-to-cart btn-add-to-collection save">
-                                <span class="row-1">
-                                    
-                                    
-                                    <span class="text display-block favourite"  data-id="{{ $data->id }}">
-                                    <i class="fa fa-star"></i>    
-                                    Review</span>
-                                </span>
-                                <span class="row-2"></span>
+                                 <a href="{{  (!empty($data->review))?$data->review:'#' }}">
+                                    <span class="row-1">
+                                        <span class="text display-block favourite"  data-id="{{ $data->id }}">
+                                        <i class="fa fa-star"></i>    
+                                        Review</span>
+                                    </span>
+                                    <span class="row-2"></span>
+                                </a>    
                             </button>
                            
                             
