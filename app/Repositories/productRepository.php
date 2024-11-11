@@ -19,7 +19,6 @@ class productRepository extends BaseRepository
     protected $fieldSearchable = [
         'Image',
         'Product',
-        'manuPrice',
         'ProductSku',
         'Link',
         'Detail',
