@@ -47,8 +47,8 @@
     </style>
     <!-- tabs -->
     <ul id="tabnav">
-        <li id="tab_1"><a href="?opt=system&amp;view=store-design&amp;section=header">Thẻ cate trang chủ</a></li>
-        <li id="tab_2" class="tab-select"><a href="?opt=system&amp;view=store-design&amp;section=popup">Banner Pop-Up</a></li>
+        <li id="tab_1" class="tab-select"><a href="?opt=system&amp;view=store-design&amp;section=header">Thẻ cate trang chủ</a></li>
+        <li id="tab_2"><a href="?opt=system&amp;view=store-design&amp;section=popup">Banner Pop-Up</a></li>
         <li id="tab_3"><a href="#" onclick="imageCss()">Hình nền website</a></li>
         <li id="tab_4"><a href="javascript:void(0)" onclick="muchSearch()">Tìm kiếm nhiều</a></li>
         <li id="tab_5"><a href="javascript:void(0)" onclick="meta()">Thẻ Meta trang Home</a></li>
