@@ -228,15 +228,15 @@
 
                         <div class="list-group-affilie list-group-affilie-flush price-compare mt-2">
 
-                            @if(!empty($data->sp))
-                            <a href="{{ $data->sp }}" class="list-group-affilie-item ecom-s" rel="nofollow" target="_blank">
+                            @if(!empty($data->linksp))
+                            <a href="{{ $data->linksp }}" class="list-group-affilie-item ecom-s" rel="nofollow" target="_blank">
                                 <img width="120" height="30" src="images/template/thumb-s.png" alt="hopee.vn" data-lazy-src="images/template/thumb-s.png" data-ll-status="loaded" class="entered lazyloaded">
                                 <noscript><img width="120" height="30" src="/images/template/thumb-s.png" alt="hopee.vn"></noscript>
                                 <button class="btnnl btn-sm btn-outline-danger float-end">Xem giá Shopee.vn</button> 
                             </a>
                             @endif
 
-                            @if(!empty($data->lzd))
+                            @if(!empty($data->linklzd))
                             <a href="{{ $data->lzd }}" class="list-group-affilie-item ecom-l" rel="nofollow" target="_blank">
                                 <img width="120" height="30" src="/images/template/thumb-l.png" alt="Lazada.vn" data-lazy-src="/images/template/thumb-l.png" data-ll-status="loaded" class="entered lazyloaded">
                                 <noscript><img width="120" height="30" src="/images/template/thumb-l.png" alt="Lazada.vn"></noscript>
@@ -244,7 +244,7 @@
                             </a>
                             @endif
 
-                            @if(!empty($data->tk))
+                            @if(!empty($data->linktk))
                             <a href="{{ $data->tk }}" rel="nofollow" target="_blank">
                                 <img width="120" height="30" src="/images/template/thumb-t.png" alt=" Tiki.vn" data-lazy-src="/images/template/thumb-t.png" data-ll-status="loaded" class="entered lazyloaded">
                                 <noscript><img width="120" height="30" src="/images/template/thumb-t.png" alt=" Tiki.vn"></noscript>
