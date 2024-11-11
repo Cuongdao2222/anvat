@@ -329,6 +329,8 @@ Route::group(['prefix' => 'admins','middleware' => 'auth'], function() {
 
     Route::get('show/pop-up', 'mainController@funcmorePopup')->name('pop-up-show');
 
+    Route::get('/update-active-cate-home', 'showController@activeCateHomeImage')->name('active-cate-home');
+
     Route::get('imagescontent/{id}', 'productController@imagecontent')->name('imagescontent');
 
 

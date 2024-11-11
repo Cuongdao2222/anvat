@@ -113,6 +113,7 @@
         <th>Link</th>
         <th>title</th>
         <th>image</th>
+        <th>active</th>
         
     </tr>
 
@@ -122,6 +123,14 @@
         <td>{{ @$value->link }}</td>
         <td>{{ @$value->title }}</td>
         <td>{{ @$value->images }}</td>
+        <td>
+            @if($value->active===0)  
+                <a href="{{ route(active-cate-home) }}?id={{ $value->id }}&active=1">Hiển thị</a>
+            @else
+                <a href="{{ route(active-cate-home) }}?id={{ $value->id }}&active=0">Ẩn</a>
+            @endif    
+
+        </td>
     </tr>
     @endforeach
     
@@ -249,8 +258,6 @@
                             </tr>
                         </tbody>
                     </table>
-
-                    
                     
                 </form>
 

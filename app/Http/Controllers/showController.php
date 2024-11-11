@@ -41,10 +41,8 @@ class showController extends Controller
 
         DB::table('add_cate_image')->insert($input);
 
-
         return redirect()->route('pop-up-show');
 
-        
     }
 
     public function deleteLinkAdd(Request $request)
@@ -53,6 +51,19 @@ class showController extends Controller
         $delete = DB::table('muchsearch')->delete($id);
         return response('thanh cong');
 
+    }
+
+    protected function activeCateHomeImage(Request $request){
+
+        $id = $request->id;
+
+        $active = $request->active;
+
+        $update = ['active'=>$active];
+
+        $delete = DB::table('add_cate_image')->update($update);
+
+        return redirect()->route('pop-up-show');
     }
 
 
