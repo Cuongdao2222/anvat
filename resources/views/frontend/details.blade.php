@@ -3,6 +3,8 @@
 @push('style')
 
 <link href="{{ asset('css/market.detail.min.css') }}" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 <style type="text/css">
     .link-order{
         background: red !important;
