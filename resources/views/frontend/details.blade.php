@@ -193,8 +193,8 @@
                                     
                                     
                                     <span class="text display-block favourite" style="color: rgb(172, 172, 172);" data-id="{{ $data->id }}">
-                                    <img class="icon" style="margin-bottom: -4px;" src="https://www.cooky.vn/react/images/icons/heart-gray.svg">    
-                                    Lưu</span>
+                                    <i class="fa fa-star"></i>    
+                                    Review</span>
                                 </span>
                                 <span class="row-2"></span>
                             </button>
