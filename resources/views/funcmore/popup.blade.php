@@ -122,7 +122,7 @@
     <tr>
         <td>{{ @$value->link }}</td>
         <td>{{ @$value->title }}</td>
-        <td>{{ @$value->images }}</td>
+        <td><img src="{{ asset($value->images) }}" width="90px" height="90px"> </td>
         <td>
             @if($value->active==0)  
                 <a href="{{ route('active-cate-home') }}?id={{ $value->id }}&active=1">Hiển thị</a>
