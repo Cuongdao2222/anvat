@@ -21,9 +21,9 @@ class showController extends Controller
         $input['link']       = $request->link;
        
         $input['images'] = '';
+
         $input['title'] = trim($request->title);
     
-
         if ($request->hasFile('file_image')) {
 
             $file_upload = $request->file('file_image');
@@ -41,9 +41,8 @@ class showController extends Controller
 
         DB::table('add_cate_image')->insert($input);
 
-        Flash::success('Thêm thành công');
 
-        return redirect()->back();
+        return redirect()->route('pop-up-show');
 
         
     }
