@@ -119,9 +119,9 @@
 
     @foreach($data_cate_image as $value)
     <tr>
-        <td>{{ @$value->Link }}</td>
+        <td>{{ @$value->link }}</td>
         <td>{{ @$value->title }}</td>
-        <td>{{ @$value->image }}</td>
+        <td>{{ @$value->images }}</td>
     </tr>
     @endforeach
     
