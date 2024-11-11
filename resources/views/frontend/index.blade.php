@@ -560,9 +560,9 @@ if(!empty($deal)){
                                                             <!-- <div class="unit-price">159k</div> -->
                                                         </div>
                                                     </div>
-                                                    <button class="btn-add-to-cart n-btn " title="Bấm để thêm vào giỏ hàng" onclick="addToCart({{ $value->product_id }})">
+                                                    <!-- <button class="btn-add-to-cart n-btn " title="Bấm để thêm vào giỏ hàng" onclick="addToCart({{ $value->product_id }})">
                                                         <div style="position: relative; z-index: 3;"><img src="./public/react/images/icons/plus-filled-red.svg"></div>
-                                                    </button>
+                                                    </button> -->
                                                 </div>
                                             </div>
                                             @endif
