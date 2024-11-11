@@ -22,6 +22,10 @@
         margin-top: 10px;
     }
 
+    .float-end {
+        float: right !important;
+    }
+
     .list-group-affilie-item {
         position: relative;
         display: block;
