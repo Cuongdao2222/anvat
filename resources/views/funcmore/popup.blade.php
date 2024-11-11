@@ -61,24 +61,26 @@
             <tbody>
                 <tr>
                     <td>Link nhảy đến</td>
-
-                    <?php  
-
-                        $popup = App\Models\popup::find(4);
-
-                        
-                    ?>
                     <td>
-                        <input type="text" size="50" name="link" value="{{ $popup->link }}">
+                        <input type="text" size="50" name="link" required>
                     </td>
                 </tr>
+
+                 <tr>
+                    <td>title</td>
+
+                   
+                    <td>
+                        <input type="text" size="50" name="title" required>
+                    </td>
+                </tr>
+
                 <tr>
                     <td>File ảnh (yêu cầu ảnh kích thước cố định 90x90)</td>
                     <td>
                         <div style="max-height:600px; overflow:auto" id="show-image">
                             
-
-                            <img border="0" src="{{ asset($popup->image) }}">
+                            <img border="0" src="">
                         </div>
                         <br>
                         <input type="file" name="file_image" size="50" id="file_image" onchange="encodeImageFileAsURL('file_image')">
@@ -93,6 +95,21 @@
        
     </form>
 </div>
+
+<table style="width:100%">
+    <tr>
+        <th>Link</th>
+        <th>title</th>
+        <th>image</th>
+        
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    
+</table>
 
 <div class="modal fade" id="cssimageModel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">

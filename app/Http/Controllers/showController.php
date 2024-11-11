@@ -21,6 +21,7 @@ class showController extends Controller
         $input['link']       = $request->link;
        
         $input['images'] = '';
+        $input['title'] = trim($request->title);
     
 
         if ($request->hasFile('file_image')) {
@@ -39,9 +40,9 @@ class showController extends Controller
         $input['updated_at'] = Carbon::now();
 
 
-        DB::table('add_cate_image')->insert($input);
+        Flash::success('Thêm thành công');
 
-        return back()->with('status','thêm thành công');
+        return redirect()->back();
 
         
     }
