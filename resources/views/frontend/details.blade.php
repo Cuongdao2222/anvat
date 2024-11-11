@@ -37,6 +37,20 @@
         display: inline-block;
         vertical-align: middle;
     }
+
+    .list-group-affilie button {
+        margin-bottom: 0px !important;
+    }
+
+    .price-compare button {
+        width: 150px;
+        text-transform: capitalize;
+    }
+
+    .btn-outline-danger {
+        color: #dc3545;
+        border-color: #dc3545;
+    }
 </style>
 
 
