@@ -12,6 +12,31 @@
     .link-order .text{
         color: #fff !important;
     }
+
+    .list-group-affilie {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        border-radius: 0.25rem;
+        margin-top: 10px;
+    }
+
+    .list-group-affilie-item {
+        position: relative;
+        display: block;
+        padding: 0.5rem 1rem;
+        color: #212529;
+        text-decoration: none;
+        background-color: #fff;
+        border: 1px solid rgba(0, 0, 0, .125);
+    }
+
+    img {
+        height: auto;
+        display: inline-block;
+        vertical-align: middle;
+    }
 </style>
 
 
@@ -158,6 +183,28 @@
                            
                             
                         </div>
+
+                        <div class="list-group-affilie list-group-affilie-flush price-compare mt-2">
+                            <a href="https://shopee.vn/product/221198196/9039450295" class="list-group-affilie-item ecom-s" rel="nofollow" target="_blank">
+                                <img width="120" height="30" src="/wp-content/themes/abweb-vn/images/thumb-s.png" alt="hopee.vn" data-lazy-src="/wp-content/themes/abweb-vn/images/thumb-s.png" data-ll-status="loaded" class="entered lazyloaded">
+                                <noscript><img width="120" height="30" src="/wp-content/themes/abweb-vn/images/thumb-s.png" alt="hopee.vn"></noscript>
+                                <button class="btnnl btn-sm btn-outline-danger float-end">Xem giá Shopee.vn</button> 
+                            </a>
+                            <a href="https://www.lazada.vn/catalog/?q=tr%C3%A0+th%E1%BA%A3o+m%E1%BB%99c+oganic+tr%C3%A0&amp;laz_trackid=2:mm_160351352_51953275_2010953293:clkgg2me81g8ettbqt2gju&amp;mkttid=clkgg2me81g8ettbqt2gju" class="list-group-affilie-item ecom-l" rel="nofollow" target="_blank">
+                                <img width="120" height="30" src="/wp-content/themes/abweb-vn/images/thumb-l.png" alt="Lazada.vn" data-lazy-src="/wp-content/themes/abweb-vn/images/thumb-l.png" data-ll-status="loaded" class="entered lazyloaded">
+                                <noscript><img width="120" height="30" src="/wp-content/themes/abweb-vn/images/thumb-l.png" alt="Lazada.vn"></noscript>
+                                <button class="btnnl btn-sm btn-outline-danger float-end">Xem giá Lazada.vn</button> 
+                            </a>
+                            <a href="https://tiki.vn/search?q=tr%C3%A0+th%E1%BA%A3o+m%E1%BB%99c+oganic+tr%C3%A0&amp;utm_source=tiki-aff&amp;utm_medium=tiki-aff&amp;utm_campaign=AFF_NBR_TIKIAFF_UNK_TIKIVN-TRACKING_ALL_VN_ALL_UNK_UNK_TAPX.8e3b9456-5237-4ad8-b2e9-179ae8e6743c_TAPU.cf9450bb-7fca-48c7-8090-86eaebecf633&amp;%3Butm_term=TAPO.TIKI&amp;tclid=7831005e-9b12-4f04-ae53-e836b113d85a&amp;fsl=true&amp;isOpenStore=false&amp;trackId=62d88afd0e23de2247c052d9&amp;osName=Windows&amp;deepLink=tikivn%3A%2F%2Fsearch%3Fq%3Dtr%25C3%25A0%2Bth%25E1%25BA%25A3o%2Bm%25E1%25BB%2599c%2Boganic%2Btr%25C3%25A0%26utm_source%3Dtiki-aff%26utm_medium%3Dtiki-aff%26utm_campaign%3DAFF_NBR_TIKIAFF_UNK_TIKIVN-TRACKING_ALL_VN_ALL_UNK_UNK_TAPX.8e3b9456-5237-4ad8-b2e9-179ae8e6743c_TAPU.cf9450bb-7fca-48c7-8090-86eaebecf633%26amp%253Butm_term%3DTAPO.TIKI%26tclid%3D7831005e-9b12-4f04-ae53-e836b113d85a&amp;clickId=fb16471c-d081-48f2-82f0-c0cad995eecf&amp;fullUrl=https%3A%2F%2Fti.ki%2FDxKU6TqY%2FTRACKING%3FTIKI_URI%3Dhttps%253A%252F%252Ftiki.vn%252Fsearch%253Fq%253Dtr%2525C3%2525A0%252Bth%2525E1%2525BA%2525A3o%252Bm%2525E1%2525BB%252599c%252Boganic%252Btr%2525C3%2525A0%26amp%253Butm_term%3DTAPO.TIKI&amp;isFBApp=false&amp;deepLinkData=&amp;hash=TRACKING" class="list-group-affilie-item ecom-t" rel="nofollow" target="_blank">
+                                <img width="120" height="30" src="/wp-content/themes/abweb-vn/images/thumb-t.png" alt=" Tiki.vn" data-lazy-src="/wp-content/themes/abweb-vn/images/thumb-t.png" data-ll-status="loaded" class="entered lazyloaded">
+                                <noscript><img width="120" height="30" src="/wp-content/themes/abweb-vn/images/thumb-t.png" alt=" Tiki.vn"></noscript>
+                                <button class="btnnl btn-sm btn-outline-danger float-end">Xem giá Tiki.vn</button> 
+                            </a>
+                        </div>
+
+
+
+
                         @if(!empty($data->promotion))
                         <div class="promo-desc-box">
                             <img src="react/images/icons/info-yellow.svg">
