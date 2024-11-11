@@ -39,6 +39,7 @@ class showController extends Controller
 
         $input['updated_at'] = Carbon::now();
 
+        DB::table('add_cate_image')->insert($input);
 
         Flash::success('Thêm thành công');
 
