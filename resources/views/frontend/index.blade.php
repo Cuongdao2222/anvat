@@ -302,9 +302,9 @@ if(!empty($deal)){
                                                 <div class="unit-price">159k</div>
                                             </div>
                                         </div>
-                                        <button class="btn-add-to-cart n-btn " title="Bấm để thêm vào giỏ hàng">
+                                        <!-- <button class="btn-add-to-cart n-btn " title="Bấm để thêm vào giỏ hàng">
                                             <div style="position: relative; z-index: 3;"><img src="react/images/icons/plus-filled-red.svg"></div>
-                                        </button>
+                                        </button> -->
                                     </div>
                                 </div>
                                 @endforeach
