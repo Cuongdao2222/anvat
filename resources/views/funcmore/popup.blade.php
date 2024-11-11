@@ -86,12 +86,7 @@
                     </td>
                 </tr>
                 
-                <tr>
-                    <td>Cho hiển thị</td>
-                    <td>
-                        <input type="checkbox" name="popup_activate" value="1" {{ $popup->active==1?'checked':'' }}> Tích chọn để hiển thị hoặc dừng hiển thị
-                    </td>
-                </tr>
+               
             </tbody>
         </table>
         <div><button type="submit">xác nhận</button> </div>
