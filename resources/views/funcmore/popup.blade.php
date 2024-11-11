@@ -85,13 +85,7 @@
                         <!-- <input type="hidden" name="popup_file_old" value="/media/banner/popup_5913_popup-mua-he-xanh-2021.png"> -->
                     </td>
                 </tr>
-                <tr>
-                    <td>Lựa chọn hiển thị người dùng</td>
-                    <td>
-                        <label><input type="radio" name="popup_display" value="0" {{ $popup->option==0?'checked':'' }}> Theo session </label> |
-                        <label><input type="radio" name="popup_display" value="1" {{ $popup->option==1?'checked':'' }}> Trang chủ website</label>
-                    </td>
-                </tr>
+                
                 <tr>
                     <td>Cho hiển thị</td>
                     <td>
