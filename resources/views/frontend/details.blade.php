@@ -190,7 +190,7 @@
                                 <a href="{{  (!empty($data->Link_order))?$data->Link_order:'#' }}">
                                     <span class="row-1">
                                         <div class="icon-total-save"><img class="icon" src="https://img.icons8.com/material-outlined/2x/sell-stock.png"></div>
-                                        <span class="text display-block" style="color: rgb(172, 172, 172);">Đến nơi bán</span>
+                                        <span class="text display-block" style="color: #fff;">Đến nơi bán</span>
                                     </span>
                                     <span class="row-2"></span>
                                 </a>
