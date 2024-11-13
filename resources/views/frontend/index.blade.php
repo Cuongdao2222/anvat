@@ -433,7 +433,7 @@ if(!empty($deal)){
                                                 </div>
                                                 <div class="VE_mfV">
                                                     <div class="g0LhW7" style="height: 16px;">
-                                                        <div class="Qeov7Y DqPl63">Đã bán 45</div>
+                                                        
                                                         <div class="gsxwEM" style="width: 15%; border-radius: 8px 0px 0px 8px;"></div>
                                                         <div class="efwV9O" style="border-radius: 8px;"></div>
                                                     </div>
