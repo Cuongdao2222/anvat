@@ -737,7 +737,7 @@ if(!empty($deal)){
                                                             </div>
                                                             <div>
                                                                 <div class="I99cV_ zbggAt I9vX2T">
-                                                                    <div class="Gt3dn4"><span class="ZnuQ4w zbggAt I9vX2T">₫</span><strong class="Rgk_yn">356.000</strong></div>
+                                                                    <div class="Gt3dn4"><span class="ZnuQ4w zbggAt I9vX2T">₫</span><strong class="Rgk_yn">{{  @str_replace(',' ,'.', number_format($value->Price))  }}đ</strong></div>
                                                                 </div>
                                                             </div>
                                                             
@@ -792,18 +792,7 @@ if(!empty($deal)){
                                                         </div>
                                                     </div>
                                                 </div> -->
-                                                <div class="d-flex-center-middle">
-                                                    <div class="price p-g-v ">
-                                                        <!-- <div class="weight-serving">1Kg</div> -->
-                                                        <div class="price-container">
-                                                            <div class="sale-price">{{  @str_replace(',' ,'.', number_format($value->Price))  }}đ</div>
-                                                            <!-- <div class="unit-price">159k</div> -->
-                                                        </div>
-                                                    </div>
-                                                    <!-- <button class="btn-add-to-cart n-btn " title="Bấm để thêm vào giỏ hàng" onclick="addToCart({{ $value->product_id }})">
-                                                        <div style="position: relative; z-index: 3;"><img src="./public/react/images/icons/plus-filled-red.svg"></div>
-                                                    </button> -->
-                                                </div>
+                                                
                                             </div>
                                             @endif
                                             @endforeach
