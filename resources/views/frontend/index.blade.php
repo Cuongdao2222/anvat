@@ -68,6 +68,13 @@
                     text-overflow: ellipsis;
                 }
 
+                .I9vX2T.hYuPX1.I99cV_ {
+                    color: rgba(0, 0, 0, .26);
+                    font-size: .875rem;
+                    font-weight: 400;
+                    height: 1rem;
+                }
+
                 .ph4Z1T {
                     font-size: .875rem;
                     height: 1rem;
