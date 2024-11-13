@@ -345,16 +345,7 @@ if(!empty($deal)){
                                                         <svg enable-background="new 0 0 15 15" viewBox="0 0 15 15" role="img" class="stardust-icon stardust-icon-rating-solid t7jHjH">
                                                             <path d="m7.5.8l2.2 4.6 4.8.5-3.8 3.2 1.1 5.1-4.3-2.6-4.3 2.6 1.1-5.1-3.8-3.2 4.8-.5z" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path>
                                                         </svg>
-                                                        <div class="t7jHjH">
-                                                            <div class="p7bZMY" style="width: 94.4689%;">
-                                                                <svg enable-background="new 0 0 15 15" viewBox="0 0 15 15" role="img" class="stardust-icon stardust-icon-rating-solid ysyPe_">
-                                                                    <path d="m7.5.8l2.2 4.6 4.8.5-3.8 3.2 1.1 5.1-4.3-2.6-4.3 2.6 1.1-5.1-3.8-3.2 4.8-.5z" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path>
-                                                                </svg>
-                                                            </div>
-                                                            <svg enable-background="new 0 0 15 15" viewBox="0 0 15 15" role="img" class="stardust-icon stardust-icon-rating Pn2N1H">
-                                                                <path d="m7.5.8l2.2 4.6 4.8.5-3.8 3.2 1.1 5.1-4.3-2.6-4.3 2.6 1.1-5.1-3.8-3.2 4.8-.5z" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path>
-                                                            </svg>
-                                                        </div>
+                                                        
                                                     </div>
                                                 </div>
                                             </div>
@@ -692,9 +683,7 @@ if(!empty($deal)){
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="r_gprR">
-                                                            <div class="OB_WG4 NUjI4x epiqlJ _1NeKaL">Mua ngay</div>
-                                                        </div>
+                                                        
                                                     </div>
                                                 </div>
                                             </div>
