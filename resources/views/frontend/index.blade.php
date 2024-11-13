@@ -64,6 +64,10 @@
                     width: 9.0625rem;
                 }
 
+                .Rgk_yn {
+                    font-weight: inherit;
+                }
+
                 .gsxwEM {
                     background: linear-gradient(270deg, #ffb000, #eb1717);
                     z-index: 2;
