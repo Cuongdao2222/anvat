@@ -123,6 +123,9 @@
 
                     background: linear-gradient(270deg, #ffb000, #eb1717) !important;
                 }    
+                .product-basic-info .promotion-info{
+                    background: #ffbda6 !important;
+                }
 
                 @media screen and (max-width: 776px) {
 
