@@ -18,7 +18,6 @@
                 .product-basic-info{
                     flex: 0 0 calc(20% - 20px);
                     width: calc(20%);
-                    display: none;
                 }
                 .promotion-box{
                     margin-left: -10px; 
