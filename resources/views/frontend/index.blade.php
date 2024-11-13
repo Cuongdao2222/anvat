@@ -133,6 +133,12 @@
                     height: 2.0625rem;
                 }
 
+                .p-percent span{
+                    font-size: 15px;
+                    color: #fff;
+                    text-transform: uppercase;
+                }
+
                 @media screen and (max-width: 776px) {
 
                     .page-container{
