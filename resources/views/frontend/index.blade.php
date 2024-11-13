@@ -28,7 +28,7 @@
                     color: rgba(0, 0, 0, .87);
                     font-size: 1rem;
                     font-weight: 400;
-                    height: 3rem;
+/*                    height: 3rem;*/
                     line-height: 1.5rem;
                     word-wrap: break-word;
                     display: -webkit-box;
