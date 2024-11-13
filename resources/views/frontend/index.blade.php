@@ -19,6 +19,10 @@
                     flex: 0 0 calc(20% - 20px);
                     width: calc(20%);
                 }
+
+                .promotion-info{
+                    display: none;
+                }
                 .promotion-box{
                     margin-left: -10px; 
                     margin-right: -10px;
