@@ -48,6 +48,16 @@
                     padding: 0 .15625rem 0 .53125rem;
                 }
 
+                .hcYtZZ {
+                    background-color: #ffe97a;
+                    border-radius: .125rem .125rem .125rem 0;
+                    color: #ec3814;
+                    font-style: normal;
+                    font-weight: 500;
+                    position: relative;
+                    white-space: nowrap;
+                }
+
                 .ph4Z1T {
                     font-size: .875rem;
                     height: 1rem;
