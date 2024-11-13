@@ -92,6 +92,7 @@
                     font-size: .875rem;
                     font-weight: 400;
                     height: 1rem;
+                    text-decoration: line-through;
                 }
 
                 .ph4Z1T {
