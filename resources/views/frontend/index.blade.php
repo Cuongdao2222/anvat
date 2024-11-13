@@ -117,7 +117,8 @@
                     stroke: currentColor;
                     fill: currentColor;
                     height: 1em;
-                    width: 1em;
+                    width: 0.5em;
+                    color: #FCAB3E;
                 }
                 .product-basic-info .promotion-info .p-percent:after {
 
