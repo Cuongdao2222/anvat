@@ -21,7 +21,7 @@
                 }
 
                 .promotion-info{
-                    display: none;
+                    display: none !important;
                 }
                 .promotion-box{
                     margin-left: -10px; 
