@@ -126,6 +126,12 @@
                 .product-basic-info .promotion-info{
                     background: #ffbda6 !important;
                 }
+                .I9vX2T.pdfaNN.I99cV_, .I9vX2T.zbggAt.I99cV_ {
+                    color: #ee4d2d;
+                    font-size: 1.75rem;
+                    font-weight: 400;
+                    height: 2.0625rem;
+                }
 
                 @media screen and (max-width: 776px) {
 
