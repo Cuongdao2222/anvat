@@ -612,7 +612,20 @@ if(!empty($deal)){
                                             @foreach($product_sale as  $value)
                                             @if($value->active==1)
 
-                                            <div class="sny52Q">
+
+
+                                            <div class="product-basic-info ">
+
+                                                
+                                                <a class="link-absolute" title="{{ $value->Name }}" href="{{ route('details', $value->Link) }}"></a>
+                                                <div class="cover-box">
+                                                    <img class="img-flash-sale" src="{{ asset($value->Image) }}" loading="lazy">
+                                                    <div class="promotion-photo">
+                                                        <div class="package-default"><img src="{{ asset($value->Image) }}" class="img-fit" loading="lazy"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="promotion-name two-lines">{{ $value->Name }}</div>
+                                                <div class="sny52Q">
                                                 <div class="zs1fUu">
                                                     <div class="UeJ6lG">BẢNG PHẤN MẮT LEMONADE AESTHETIC EYESHADOW PALETTE VERSION 2 20.8G</div>
                                                     <div class="fD85zn">
@@ -685,18 +698,6 @@ if(!empty($deal)){
                                                     </div>
                                                 </div>
                                             </div>
-
-                                            <div class="product-basic-info ">
-
-                                                
-                                                <a class="link-absolute" title="{{ $value->Name }}" href="{{ route('details', $value->Link) }}"></a>
-                                                <div class="cover-box">
-                                                    <img class="img-flash-sale" src="{{ asset($value->Image) }}" loading="lazy">
-                                                    <div class="promotion-photo">
-                                                        <div class="package-default"><img src="{{ asset($value->Image) }}" class="img-fit" loading="lazy"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="promotion-name two-lines">{{ $value->Name }}</div>
 
                                                 <div class="promotion-info">
                                                 <?php 
