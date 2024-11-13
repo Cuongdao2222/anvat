@@ -56,6 +56,7 @@
                     font-weight: 500;
                     position: relative;
                     white-space: nowrap;
+                    display: flex;
                 }
                 .DCjeTh.a4s1bT {
                     left: -.23438rem;
