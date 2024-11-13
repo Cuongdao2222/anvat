@@ -15,6 +15,13 @@
         color: #fff !important;
     }
 
+    .btn-add-cart{
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .old-price span.amount {
         color: #757575;
         text-decoration: line-through;
