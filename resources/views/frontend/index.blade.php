@@ -28,6 +28,7 @@
                 }
 
                 .UeJ6lG {
+                    text-transform: uppercase;
                     color: rgba(0, 0, 0, .87);
                     font-size: 1rem;
                     font-weight: 400;
