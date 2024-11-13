@@ -758,10 +758,10 @@ if(!empty($deal)){
                                                     
 
                                                 ?>
-                                                <div class="p-percent" style="width: {{ $percent  }}%;">
+                                               <!--  <div class="p-percent" style="width: {{ $percent  }}%;">
                                                     <img src="react/images/icons/cart-black-s11.svg" loading="lazy" style="margin-left: {{  $margin  }};">&nbsp;&nbsp;
                                                     
-                                                </div>
+                                                </div> -->
 
                                                 <br>
 
