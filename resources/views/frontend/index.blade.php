@@ -690,10 +690,10 @@ if(!empty($deal)){
                                                         <div class="package-default"><img src="{{ asset($value->Image) }}" class="img-fit" loading="lazy"></div>
                                                     </div>
                                                 </div>
-                                                <div class="promotion-name two-lines">{{ $value->Name }}</div>
+                                               
                                                 <div class="sny52Q">
                                                 <div class="zs1fUu">
-                                                    <div class="UeJ6lG">BẢNG PHẤN MẮT LEMONADE AESTHETIC EYESHADOW PALETTE VERSION 2 20.8G</div>
+                                                    <div class="UeJ6lG">{{ $value->name }}</div>
                                                     <div class="fD85zn">
                                                         <div class="d6cl1K">
                                                             <div class="rUjRDX typo-r10">
