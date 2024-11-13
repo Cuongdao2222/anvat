@@ -23,6 +23,12 @@
                 .promotion-info{
                     display: none !important;
                 }
+
+                .efwV9O {
+                    background: #ffbda6;
+                    width: inherit;
+                    z-index: 1;
+                }
                 .promotion-box{
                     margin-left: -10px; 
                     margin-right: -10px;
