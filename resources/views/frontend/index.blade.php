@@ -58,6 +58,16 @@
                     white-space: nowrap;
                     display: flex;
                 }
+
+                .VE_mfV {
+                    margin-top: .1875rem;
+                    width: 9.0625rem;
+                }
+
+                .gsxwEM {
+                    background: linear-gradient(270deg, #ffb000, #eb1717);
+                    z-index: 2;
+                }
                 .DCjeTh.a4s1bT {
                     left: -.23438rem;
                 }
