@@ -119,6 +119,10 @@
                     height: 1em;
                     width: 1em;
                 }
+                .product-basic-info .promotion-info .p-percent:after {
+
+                    background: linear-gradient(270deg, #ffb000, #eb1717) !important;
+                }    
 
                 @media screen and (max-width: 776px) {
 
