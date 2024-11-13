@@ -690,7 +690,7 @@ if(!empty($deal)){
                                                         <div class="package-default"><img src="{{ asset($value->Image) }}" class="img-fit" loading="lazy"></div>
                                                     </div>
                                                 </div>
-                                                <div class="promotion-name two-lines">{{ $value->Name }}</div>
+                                               
                                                 <div class="sny52Q">
                                                 <div class="zs1fUu">
                                                     <div class="UeJ6lG">{{ @$value->Name }}</div>
