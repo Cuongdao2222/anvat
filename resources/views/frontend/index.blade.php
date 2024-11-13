@@ -37,6 +37,16 @@
                     -webkit-box-orient: vertical;
                     -webkit-line-clamp: 2;
                 }
+                .y1PVWz{
+                    display: flex;
+                }
+                .ph4Z1T {
+                    font-size: .875rem;
+                    height: 1rem;
+                    line-height: 1rem;
+                    margin-left: .46875rem;
+                    padding: 0 .15625rem 0 .53125rem;
+                }
 
                 .ph4Z1T {
                     font-size: .875rem;
