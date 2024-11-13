@@ -61,6 +61,13 @@
                     left: -.23438rem;
                 }
 
+                .Gt3dn4 {
+                    align-items: baseline;
+                    display: flex;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
                 .ph4Z1T {
                     font-size: .875rem;
                     height: 1rem;
