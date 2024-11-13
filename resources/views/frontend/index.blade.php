@@ -57,6 +57,9 @@
                     position: relative;
                     white-space: nowrap;
                 }
+                .DCjeTh.a4s1bT {
+                    left: -.23438rem;
+                }
 
                 .ph4Z1T {
                     font-size: .875rem;
