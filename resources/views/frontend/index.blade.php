@@ -901,7 +901,7 @@ if(!empty($deal)){
                                     <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
                                         <div class="swiper-slide swiper-slide-active" style="margin-right: 20px;">
                                             
-                                                
+                                                @include(view('frontend.cate_index',['data'=>$data]));
                                            
                                         </div>
                                         
