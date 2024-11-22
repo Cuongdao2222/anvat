@@ -837,8 +837,10 @@ if(!empty($deal)){
                                 </div> 
 
                             </div>
+                            @endif
+                            @endforeach
                         </div>
-                        
+        
 
                         @if($data->count()>=10)
                         <a class="view-more one-line" href="{{ route('details', $groups->link) }}">Xem thêm</a>
