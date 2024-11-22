@@ -900,7 +900,7 @@ if(!empty($deal)){
                                     <!-- <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-bullets-dynamic" style="width: 80px;"><span class="swiper-pagination-bullet swiper-pagination-bullet-active swiper-pagination-bullet-active-main" style="left: 8px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active-next" style="left: 8px;"></span></div> -->
                                     <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
                                         <div class="swiper-slide swiper-slide-active" style="margin-right: 20px;">
-                                            @include(view('frontend.cate_index.php', compact('data')));
+                                            @include(view('frontend.cate_index', compact('data')));
                                         </div>
                                         
                                     </div>
