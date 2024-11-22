@@ -1,4 +1,4 @@
-
+<div class="promotion-box">
 
         @foreach($data as  $value)
         @if($value->active==1)
@@ -112,3 +112,4 @@
     @endif
     @endforeach
 
+</div>
