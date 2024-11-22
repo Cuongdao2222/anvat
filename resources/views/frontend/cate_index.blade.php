@@ -1,3 +1,5 @@
+
+
 <div class="promotion-box">
 
         @foreach($data as  $value)
@@ -106,7 +108,7 @@
 
 
         </div>
-        <div class="btn btn-danger">Mua ngay</div>
+        <div class="btn btn-danger btn-buy">Mua ngay</div>
        
         
     </div>

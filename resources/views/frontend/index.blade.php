@@ -20,6 +20,18 @@
                     width: calc(20%);
                 }
 
+                .btn-buy{
+                    width: 50%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%);
+                    background: red;
+                    text-align: center;
+                    color: #fff;
+                    padding: 5px;
+                }
+
                 
 
                 .promotion-box{
