@@ -108,7 +108,8 @@
 
 
         </div>
-        <div class="btn btn-danger btn-buy">Mua ngay</div>
+        <a href="#"><div class="btn btn-danger btn-buy">Mua ngay</div></a>
+        
        
         
     </div>
