@@ -882,80 +882,161 @@ if(!empty($deal)){
                 </div>
 
                 @endif
+
                 <div class="group-product-content">
-                    <div class="title" style="cursor: default;">{{  @$groups->name }}</div>
-                    <div class="content-product-container" style="padding: 0px;">
-                        <div class="promotion-box">
-                            @foreach($data as $datas)
-                            @if($datas->active==1)
-                            <div class="product-basic-info ">
-                                <a class="link-absolute" title="{{ $datas->Name }}" href="{{ route('details', $datas->Link) }}"></a>
-                                <div class="cover-box">
-                                    <img class="top-left-tag" src="{{ asset($datas->Image) }}">
-                                    <div class="promotion-photo">
-                                        <div class="package-default"><img src="{{ asset($datas->Image) }}" class="img-fit" loading="lazy"></div>
-                                    </div>
-                                </div>
-                                <div class="promotion-name two-lines">{{ $datas->Name }}</div>
-                                
-                                <div class="promotion-info">
-                                    <?php 
+                <div class="title" style="cursor: default;">{{  @$groups->name }}</div>
+                <div class="cooky-tabs">
+                    <div class="tabs-nav">
+                        <!-- <ul>
+                            <li class="is-active"><span>Flash Sale</span></li>
+                            <li class=""><span>Giảm 50%</span></li>
+                            <li class=""><span>Mua nhiều giảm nhiều</span></li>
+                            <li class=""><span>Sale</span></li>
+                        </ul> -->
+                    </div>
+                    <section class="tab-content is-active">
+                        <div class="content-product-container" style="margin: 0px;">
+                            <div class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
+                                <!-- <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-bullets-dynamic" style="width: 80px;"><span class="swiper-pagination-bullet swiper-pagination-bullet-active swiper-pagination-bullet-active-main" style="left: 8px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active-next" style="left: 8px;"></span></div> -->
+                                <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+                                    <div class="swiper-slide swiper-slide-active" style="margin-right: 20px;">
+                                        <div class="promotion-box">
 
-                                        $qualtity =  intval($datas->Quantily);
 
-                                        $per = [100,75,25, 0];
+                                            @foreach($data as  $value)
+                                            @if($value->active==1)
 
-                                        if($qualtity>10){
+                                            <div class="product-basic-info ">
 
-                                            $percent =  $per[0];
+                                                <a class="link-absolute" title="{{ $value->Name }}" href="{{ route('details', $value->Link) }}"></a>
+                                                <div class="cover-box">
+                                                    <img class="img-flash-sale" src="{{ asset($value->Image) }}" loading="lazy">
+                                                    <div class="promotion-photo">
+                                                        <div class="package-default"><img src="{{ asset($value->Image) }}" class="img-fit" loading="lazy"></div>
+                                                    </div>
+                                                </div>
+                                               
+                                                <div class="sny52Q">
+                                                <div class="zs1fUu">
+                                                    <div class="UeJ6lG">{{ @$value->Name }}</div>
+                                                    <div class="fD85zn">
+                                                        <div class="d6cl1K">
+                                                            <div class="rUjRDX typo-r10">
+                                                                <div class="A90KS0">
+                                                                    <svg enable-background="new 0 0 15 15" viewBox="0 0 15 15" role="img" class="stardust-icon stardust-icon-rating-solid t7jHjH">
+                                                                        <path d="m7.5.8l2.2 4.6 4.8.5-3.8 3.2 1.1 5.1-4.3-2.6-4.3 2.6 1.1-5.1-3.8-3.2 4.8-.5z" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path>
+                                                                    </svg>
+                                                                    <svg enable-background="new 0 0 15 15" viewBox="0 0 15 15" role="img" class="stardust-icon stardust-icon-rating-solid t7jHjH">
+                                                                        <path d="m7.5.8l2.2 4.6 4.8.5-3.8 3.2 1.1 5.1-4.3-2.6-4.3 2.6 1.1-5.1-3.8-3.2 4.8-.5z" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path>
+                                                                    </svg>
+                                                                    <svg enable-background="new 0 0 15 15" viewBox="0 0 15 15" role="img" class="stardust-icon stardust-icon-rating-solid t7jHjH">
+                                                                        <path d="m7.5.8l2.2 4.6 4.8.5-3.8 3.2 1.1 5.1-4.3-2.6-4.3 2.6 1.1-5.1-3.8-3.2 4.8-.5z" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path>
+                                                                    </svg>
+                                                                    <svg enable-background="new 0 0 15 15" viewBox="0 0 15 15" role="img" class="stardust-icon stardust-icon-rating-solid t7jHjH">
+                                                                        <path d="m7.5.8l2.2 4.6 4.8.5-3.8 3.2 1.1 5.1-4.3-2.6-4.3 2.6 1.1-5.1-3.8-3.2 4.8-.5z" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path>
+                                                                    </svg>
+                                                                   
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="_t8Iel">
+                                                        <div class="iVyZmn">
+                                                            <div class="y1PVWz">
+                                                                <div class="I99cV_ hYuPX1 I9vX2T U0tMPz">
+                                                                    <div class="Gt3dn4"><span class="ZnuQ4w hYuPX1 I9vX2T">₫</span><strong class="Rgk_yn">419.000</strong></div>
+                                                                </div>
+                                                                <div class="hcYtZZ ph4Z1T">
+                                                                    <div class="DCjeTh a4s1bT">
+                                                                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M9.23077 0H4.23077L0 7.82222L3.5 9.14286V16L10 5.68889L6.53846 4.62222L9.23077 0Z" fill="url(#paint0_linear_2216_10611)"></path>
+                                                                            <defs>
+                                                                                <linearGradient id="paint0_linear_2216_10611" x1="0" y1="0" x2="0" y2="16" gradientUnits="userSpaceOnUse">
+                                                                                    <stop stop-color="#EE4D2D"></stop>
+                                                                                    <stop offset="1" stop-color="#FF7337"></stop>
+                                                                                </linearGradient>
+                                                                            </defs>
+                                                                        </svg>
+                                                                    </div>
+                                                                    -15%
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <div class="I99cV_ zbggAt I9vX2T">
+                                                                    <div class="Gt3dn4"><span class="ZnuQ4w zbggAt I9vX2T">₫</span><strong class="Rgk_yn">{{  @str_replace(',' ,'.', number_format($value->Price))  }}đ</strong></div>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
 
-                                        }
-                                        elseif($qualtity>5 && $qualtity<=10){
-                                            $percent =  $per[1];
-                                        }
+                                                <div class="promotion-info">
+                                                <?php 
 
-                                        elseif($qualtity<5 && $qualtity>0){
-                                            $percent =  $per[2];
-                                        }
-                                        else{
-                                            $percent =  $per[3];
-                                        }
+                                                    $qualtity =  intval($value->Quantily);
 
-                                        $margin = 190*($percent/100);
-                                        
+                                                    $per = [100,75,25, 0];
 
-                                    ?>
-                                    <div class="p-percent" style="width: {{ $percent  }}%;">
-                                        <img src="react/images/icons/cart-black-s11.svg" loading="lazy" style="margin-left: {{  $margin  }};">&nbsp;&nbsp;
-                                        
-                                    </div>
+                                                    if($qualtity>10){
 
-                                    <br>
+                                                        $percent =  $per[0];
 
-                                </div>
-                                <div class="d-flex-center-middle">
-                                    <div class="price p-g-v ">
-                                        <!-- <div class="weight-serving">300g</div> -->
-                                        <div class="price-container">
-                                            <div class="sale-price">{{  @str_replace(',' ,'.', number_format($datas->Price))  }}</div>
-                                            <!-- <div class="unit-price">64k</div> -->
+                                                    }
+                                                    elseif($qualtity>5 && $qualtity<=10){
+                                                        $percent =  $per[1];
+                                                    }
+
+                                                    elseif($qualtity<5 && $qualtity>0){
+                                                        $percent =  $per[2];
+                                                    }
+                                                    else{
+                                                        $percent =  $per[3];
+                                                    }
+
+                                                    $margin = 190*($percent/100);
+                                                    
+
+                                                ?>
+                                               <div class="p-percent" style="width: {{ $percent  }}%;">
+                                                    <span>Đã bán 10</span>
+                                                    <img src="react/images/icons/cart-black-s11.svg" loading="lazy" style="margin-left: {{  $margin  }};">&nbsp;&nbsp;
+
+                                                    
+                                                </div> 
+
+                                                <br>
+
+                                            </div>
+                                                <!-- <div class="promotion-info">
+                                                    <div class="p-percent" style="width: 0%;">
+                                                        <img src="./public/react/images/icons/cart-black-s11.svg" loading="lazy">&nbsp;&nbsp;
+                                                        <div class="countdown-wrapper">
+                                                            <div class="countdown-item">Còn 10 sản phẩm</div>
+                                                        </div>
+                                                    </div>
+                                                </div> -->
+                                                
+                                            </div>
+                                            @endif
+                                            @endforeach
+
                                         </div>
                                     </div>
-                                   <!--  <button class="btn-add-to-cart n-btn " title="Bấm để thêm vào giỏ hàng" onclick="addToCart({{ $datas->id }})">
-                                        <div style="position: relative; z-index: 3;"><img src="react/images/icons/plus-filled-red.svg"></div>
-                                    </button> -->
+                                    
                                 </div>
                             </div>
+                            @if($data->count()>=10)
+                            <a class="view-more one-line" href="{{ route('details', $groups->link) }}">Xem thêm</a>
                             @endif
-                            @endforeach
-
                         </div>
-
-                        @if($data->count()>=10)
-                        <a class="view-more one-line" href="{{ route('details', $groups->link) }}">Xem thêm</a>
-                        @endif
-                    </div>
+                    </section>
+                   
                 </div>
+            </div>
+
             @endif    
            
             @endforeach
