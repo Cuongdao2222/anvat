@@ -106,6 +106,7 @@
 
 
         </div>
+        <div class="btn btn-danger">Mua ngay</div>
        
         
     </div>
