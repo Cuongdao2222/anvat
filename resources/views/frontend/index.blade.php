@@ -524,11 +524,12 @@ if(!empty($deal)){
                           
                                 <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
                                     <div class="swiper-slide swiper-slide-active" style="margin-right: 20px;">
+                                        @foreach($product_sale as  $value)
+                                        @if($value->active==1)
                                         <div class="promotion-box">
 
 
-                                            @foreach($product_sale as  $value)
-                                            @if($value->active==1)
+                                            
 
                                             <?php 
 
@@ -727,11 +728,13 @@ if(!empty($deal)){
                     <div class="title" style="cursor: default;">{{  @$groups->name }}</div>
                     <div class="content-product-container" style="padding: 0px;">
 
+
+                         @foreach($data as  $value)
+                        @if($value->active==1)
                         <div class="promotion-box">
 
 
-                            @foreach($data as  $value)
-                            @if($value->active==1)
+                            
 
                             <?php 
 
@@ -837,10 +840,9 @@ if(!empty($deal)){
                                 </div> 
 
                             </div>
-                            @endif
-                            @endforeach
                         </div>
-        
+                        @endif
+                        @endforeach
 
                         @if($data->count()>=10)
                         <a class="view-more one-line" href="{{ route('details', $groups->link) }}">Xem thêm</a>
