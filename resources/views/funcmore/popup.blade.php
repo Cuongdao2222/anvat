@@ -145,7 +145,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Thay Ảnh nền</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Thay Ảnh logo</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
@@ -157,15 +157,11 @@
                     <p style="color:#F00; margin-bottom:20px">Bạn có thể thay nền website bằng màu hoặc hình ảnh. Với file ảnh, yêu cầu là  .jpg, .gif, hoặc .png và dung lượng tối đa 300KB.</p>
                     <table>
                         <tbody>
+
+                            <img src="{{ asset('public/category/mokhoet.jpg')}}" width="50px">
+                           
                             <tr>
-                                <td>Dùng màu nền: </td>
-                                <td>
-                                    <script type="text/javascript" src="/includes/js/jscolor/jscolor.js"></script>
-                                    <input type="text" class="color" name="background_color" value="FFFFFF"> (&lt;- click chuột vào ô để chọn màu)
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Dùng file ảnh</td>
+                                <td>logo</td>
                                 <td>
                                     <input type="file" name="background_image" size="50">
                                 </td>

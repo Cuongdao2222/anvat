@@ -91,13 +91,7 @@ class showController extends Controller
             $input['background_color'] = '';
 
         }
-        else{
-
-            $input['background_color'] = $request->background_color;
-
-            $input['background_image'] = '';
-
-        }
+        
 
         $background = background::find(1);
 
