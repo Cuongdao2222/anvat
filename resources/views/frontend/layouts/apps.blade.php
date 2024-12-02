@@ -156,7 +156,7 @@
 
             <div class="navigation-bar desktop">
                 <div>
-                    <div class="logo"><a href="{{ route('homeFe') }}"><img src="{{ asset('public/category/mokhoet.jpg')}}" alt="Logo Cooky"></a></div>
+                    <div class="logo"><a href="{{ route('homeFe') }}"><img src="{{ asset($logo->background_image)}}" alt="Logo Cooky"></a></div>
                     <form action="{{ route('search-product-frontend') }}" method="get"  class="form-search"> 
                         <div class="search-input">
                             <img class="icon" src="{{ asset('public/react/images/icons/magnifying-glass.svg')}}" alt="Magnifying Glass">

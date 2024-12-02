@@ -157,8 +157,10 @@
                     <p style="color:#F00; margin-bottom:20px">Bạn có thể thay nền website bằng màu hoặc hình ảnh. Với file ảnh, yêu cầu là  .jpg, .gif, hoặc .png và dung lượng tối đa 300KB.</p>
                     <table>
                         <tbody>
-
-                            <img src="{{ asset('public/category/mokhoet.jpg')}}" width="90px">
+                            <?php 
+                                $logo = DB::table('background')->select('background_image')->where('id', 1)->get()->first();
+                            ?>
+                            <img src="{{ asset($logo->background_image)}}" width="90px">
                            
                             <tr>
                                 <td>logo</td>
