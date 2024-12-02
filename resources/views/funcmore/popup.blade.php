@@ -161,14 +161,18 @@
                                 $logo = DB::table('background')->select('background_image')->where('id', 1)->get()->first();
                             ?>
                             <img src="{{ asset($logo->background_image)}}" width="90px">
+
+                            <tr>
+                                 <td>logo (yêu cầu kích thước cố định 90 x35 px)</td>
+                            </tr>
                            
                             <tr>
-                                <td>logo (yêu cầu kích thước cố định 90 x35 px)</td>
-                                <br>
+                             
                                 <td>
                                     <input type="file" name="background_image" size="50">
                                 </td>
                             </tr>
+
                         </tbody>
                     </table>
 
