@@ -163,7 +163,7 @@
                             <img src="{{ asset($logo->background_image)}}" width="90px">
                            
                             <tr>
-                                <td>logo</td>
+                                <td>logo (yêu cầu kích thước cố định 90 x35 px)</td>
                                 <td>
                                     <input type="file" name="background_image" size="50">
                                 </td>
