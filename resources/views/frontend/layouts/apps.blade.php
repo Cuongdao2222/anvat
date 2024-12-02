@@ -156,6 +156,9 @@
 
             <div class="navigation-bar desktop">
                 <div>
+                     <?php 
+                                $logo = DB::table('background')->select('background_image')->where('id', 1)->get()->first();
+                            ?>
                     <div class="logo"><a href="{{ route('homeFe') }}"><img src="{{ asset($logo->background_image)}}" alt="Logo Cooky"></a></div>
                     <form action="{{ route('search-product-frontend') }}" method="get"  class="form-search"> 
                         <div class="search-input">
