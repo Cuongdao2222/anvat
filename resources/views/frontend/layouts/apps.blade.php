@@ -186,20 +186,11 @@
                         <!-- <div class="action hotline view-city"><span class="user-name">TP.HCM</span>&nbsp;&nbsp;<img class="icon toggle" src="{{ asset('public/react/images/icons/toggle-down-white.svg')}}"></div> -->
 
                         <div class="action hotline {{ !empty($userClient)&& $userClient?'user-checked':'logins' }} " style="cursor: pointer;">
-                            <img class="icon" src="{{ asset('public/react/images/icons/user-white.svg')}}">
+                           
 
-                            @if(!empty($userClient)&& $userClient=='Đăng nhập thành công')
-
-                            <?php 
-
-                                $username = session()->get('user-login');
-                            ?>
-
-                            <span class="user-name">Xin chào {{ @$username['user-name'] }}</span>
-
-                            @else
-                            <span class="user-name">Đăng nhập</span>
-                            @endif
+                         
+                            <span class="user-name">Tin tức, khuyến mãi</span>
+                           
                         </div>
                     </div>
                     <div class="header-menu header-city-menu">
