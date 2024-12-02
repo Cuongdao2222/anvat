@@ -84,7 +84,7 @@ class showController extends Controller
 
             $name = time() . '_' . $file_upload->getClientOriginalName();
 
-            $filePath = $file_upload->storeAs('images/background-image', $name, 'ftp');
+            $filePath = $file_upload->storeAs('images/background-image', $name, 'public');
 
             $input['background_image'] = $filePath;
 
