@@ -164,6 +164,7 @@
                            
                             <tr>
                                 <td>logo (yêu cầu kích thước cố định 90 x35 px)</td>
+                                <br>
                                 <td>
                                     <input type="file" name="background_image" size="50">
                                 </td>
