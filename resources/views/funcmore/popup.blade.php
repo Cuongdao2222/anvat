@@ -158,7 +158,7 @@
                     <table>
                         <tbody>
 
-                            <img src="{{ asset('public/category/mokhoet.jpg')}}" width="50px">
+                            <img src="{{ asset('public/category/mokhoet.jpg')}}" width="250px">
                            
                             <tr>
                                 <td>logo</td>
