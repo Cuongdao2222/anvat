@@ -249,8 +249,8 @@
   padding-right: 25px;
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis;
-  max-width: 175px;
+  /*text-overflow: ellipsis;
+  max-width: 175px;*/
 }
 .navigation-bar .user .hotline.view-acc {
   cursor: pointer;
