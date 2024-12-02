@@ -184,14 +184,15 @@
                             </div>
                         </div>
                         <!-- <div class="action hotline view-city"><span class="user-name">TP.HCM</span>&nbsp;&nbsp;<img class="icon toggle" src="{{ asset('public/react/images/icons/toggle-down-white.svg')}}"></div> -->
-
-                        <div class="action hotline {{ !empty($userClient)&& $userClient?'user-checked':'logins' }} " style="cursor: pointer;">
+                        <a href="{{ route('tin') }}">
+                            <div class="action hotline " style="cursor: pointer;">
                            
+                                <span class="user-name">Tin tức, khuyến mãi</span>
+                               
+                            </div>
+                        </a>
 
-                         
-                            <span class="user-name">Tin tức, khuyến mãi</span>
-                           
-                        </div>
+                        
                     </div>
                     <div class="header-menu header-city-menu">
                         <!-- <div class="m-box"><span>TP.HCM</span><img src="{{ asset('public/react/images/icons/arrow-right.svg')}}"></div> -->
