@@ -702,6 +702,251 @@ if(!empty($deal)){
 
             @endif
 
+            <div class="row recipes-list row10">
+                <div class="top-recipes-user">
+                    <div class="today-recipe-user">
+                        <div class="item-block recipe-block">
+                            <div class="item-content">
+                                <div class="featured-recipe-item">
+                                    <div class="recipe-photo">
+                                        <a target="_blank" href="/cong-thuc/chao-thit-heo-bi-do-393?itm_source=home_z3_p1_chefrecipe&amp;itm_medium=desktop&amp;itm_content=recipe&amp;itm_campaign=Cháo+thịt+heo+bí+đỏ" class="photo">
+                                        <img data-original="https://media.cooky.vn/recipe/g1/393/s320x240/Recipe393-635402710349446250.jpg" data-lazy="https://media.cooky.vn/recipe/g1/393/s320x240/Recipe393-635402710349446250.jpg" alt="Cháo thịt heo bí đỏ" class="lazy img-responsive" src="https://media.cooky.vn/recipe/g1/393/s320x240/Recipe393-635402710349446250.jpg" style="display: block;">
+                                        </a>
+                                        <a href="javascript:void(0);" title="Yêu thích" class="btn-act btn-add-favourite ng-isolate-scope" options="{&quot;Id&quot;:393,&quot;TotalLiked&quot;:59,&quot;IsLiked&quot;:false}">
+                                            <!-- ngIf: totalLikes > 0 --><span ng-if="totalLikes > 0" class="ng-binding ng-scope">59 &nbsp;</span><!-- end ngIf: totalLikes > 0 --><i class="ico ico-28 ico-iblock ico-favourite" ng-class="{'ico-favourite': !isLiked, 'ico-favourited' : isLiked}"></i>
+                                        </a>
+                                    </div>
+                                    <div class="item-info-box">
+                                        <h3 class="title">
+                                            <a target="_blank" href="/cong-thuc/chao-thit-heo-bi-do-393?itm_source=home_z3_p1_chefrecipe&amp;itm_medium=desktop&amp;itm_content=recipe&amp;itm_campaign=Cháo+thịt+heo+bí+đỏ" title="Cháo thịt heo bí đỏ">Cháo thịt heo bí đỏ</a>
+                                        </h3>
+                                        <div class="stats">
+                                            <ul class="list-inline nomargin">
+                                                <li><span class="fa fa-clock-o stats-ico"></span><span class="stats-count"> 40p</span></li>
+                                                <li><span class="fa fa-bolt stats-ico"></span> <span class="stats-text"> Trung bình</span></li>
+                                                <li><span class="fa fa-bar-chart stats-ico"></span><span class="stats-count"> 24.46K</span> xem</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-header">
+                                <div class="hprofile">
+                                    <div class="profile">
+                                        <span class="postedby-text">
+                                        công thức bởi:
+                                        </span>
+                                        <a target="_blank" href="/thanh-vien/trinhdo" class="name">
+                                        trinhdo
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="today-recipe-user">
+                        <div class="item-block recipe-block">
+                            <div class="item-content">
+                                <div class="featured-recipe-item">
+                                    <div class="recipe-photo">
+                                        <a target="_blank" href="/cong-thuc/smoothie-xoai-chuoi-kiwi-smoothie-healthy-bowl-50880?itm_source=home_z3_p2_chefrecipe&amp;itm_medium=desktop&amp;itm_content=recipe&amp;itm_campaign=Smoothie+xoài+chuối+kiwi+-+smoothie+healthy+bowl" class="photo">
+                                        <img data-original="https://media.cooky.vn/recipe/g6/50880/s320x240/cooky-recipe-637102372207865706.png" data-lazy="https://media.cooky.vn/recipe/g6/50880/s320x240/cooky-recipe-637102372207865706.png" alt="Smoothie xoài chuối kiwi - smoothie healthy bowl" class="lazy img-responsive" src="https://media.cooky.vn/recipe/g6/50880/s320x240/cooky-recipe-637102372207865706.png" style="display: block;">
+                                        </a>
+                                        <a href="javascript:void(0);" title="Yêu thích" class="btn-act btn-add-favourite ng-isolate-scope" options="{&quot;Id&quot;:50880,&quot;TotalLiked&quot;:364,&quot;IsLiked&quot;:false}">
+                                            <!-- ngIf: totalLikes > 0 --><span ng-if="totalLikes > 0" class="ng-binding ng-scope">364 &nbsp;</span><!-- end ngIf: totalLikes > 0 --><i class="ico ico-28 ico-iblock ico-favourite" ng-class="{'ico-favourite': !isLiked, 'ico-favourited' : isLiked}"></i>
+                                        </a>
+                                    </div>
+                                    <div class="item-info-box">
+                                        <h3 class="title">
+                                            <a target="_blank" href="/cong-thuc/smoothie-xoai-chuoi-kiwi-smoothie-healthy-bowl-50880?itm_source=home_z3_p2_chefrecipe&amp;itm_medium=desktop&amp;itm_content=recipe&amp;itm_campaign=Smoothie+xoài+chuối+kiwi+-+smoothie+healthy+bowl" title="Smoothie xoài chuối kiwi - smoothie healthy bowl">Smoothie xoài chuối kiwi - smoothie healthy bowl</a>
+                                        </h3>
+                                        <div class="stats">
+                                            <ul class="list-inline nomargin">
+                                                <li><span class="fa fa-clock-o stats-ico"></span><span class="stats-count"> 30p</span></li>
+                                                <li><span class="fa fa-bolt stats-ico"></span> <span class="stats-text"> Trung bình</span></li>
+                                                <li><span class="fa fa-bar-chart stats-ico"></span><span class="stats-count"> 12.08K</span> xem</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-header">
+                                <div class="hprofile">
+                                    <div class="profile">
+                                        <span class="postedby-text">
+                                        công thức bởi:
+                                        </span>
+                                        <a target="_blank" href="/thanh-vien/wenkimtuyen" class="name">
+                                        BẾP THÁNG 12
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="today-recipe-user">
+                        <div class="item-block recipe-block">
+                            <div class="item-content">
+                                <div class="featured-recipe-item">
+                                    <div class="recipe-photo">
+                                        <a target="_blank" href="/cong-thuc/banh-bong-lan-tra-xanh-bang-noi-com-dien-15298?itm_source=home_z3_p3_chefrecipe&amp;itm_medium=desktop&amp;itm_content=recipe&amp;itm_campaign=Bánh+bông+lan+trà+xanh+bằng+nồi+cơm+điện" class="photo">
+                                        <img data-original="https://media.cooky.vn/recipe/g2/15298/s320x240/recipe15298-635736102975470370.jpg" data-lazy="https://media.cooky.vn/recipe/g2/15298/s320x240/recipe15298-635736102975470370.jpg" alt="Bánh bông lan trà xanh bằng nồi cơm điện" class="lazy img-responsive" src="https://media.cooky.vn/recipe/g2/15298/s320x240/recipe15298-635736102975470370.jpg" style="display: block;">
+                                        </a>
+                                        <a href="javascript:void(0);" title="Yêu thích" class="btn-act btn-add-favourite ng-isolate-scope" options="{&quot;Id&quot;:15298,&quot;TotalLiked&quot;:191,&quot;IsLiked&quot;:false}">
+                                            <!-- ngIf: totalLikes > 0 --><span ng-if="totalLikes > 0" class="ng-binding ng-scope">191 &nbsp;</span><!-- end ngIf: totalLikes > 0 --><i class="ico ico-28 ico-iblock ico-favourite" ng-class="{'ico-favourite': !isLiked, 'ico-favourited' : isLiked}"></i>
+                                        </a>
+                                    </div>
+                                    <div class="item-info-box">
+                                        <h3 class="title">
+                                            <a target="_blank" href="/cong-thuc/banh-bong-lan-tra-xanh-bang-noi-com-dien-15298?itm_source=home_z3_p3_chefrecipe&amp;itm_medium=desktop&amp;itm_content=recipe&amp;itm_campaign=Bánh+bông+lan+trà+xanh+bằng+nồi+cơm+điện" title="Bánh bông lan trà xanh bằng nồi cơm điện">Bánh bông lan trà xanh bằng nồi cơm điện</a>
+                                        </h3>
+                                        <div class="stats">
+                                            <ul class="list-inline nomargin">
+                                                <li><span class="fa fa-clock-o stats-ico"></span><span class="stats-count"> 45p</span></li>
+                                                <li><span class="fa fa-bolt stats-ico"></span> <span class="stats-text"> Trung bình</span></li>
+                                                <li><span class="fa fa-bar-chart stats-ico"></span><span class="stats-count"> 22.4K</span> xem</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-header">
+                                <div class="hprofile">
+                                    <div class="profile">
+                                        <span class="postedby-text">
+                                        công thức bởi:
+                                        </span>
+                                        <a target="_blank" href="/thanh-vien/tieungoc1294" class="name">
+                                        Tiểu Ngọc
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="today-recipe-user">
+                        <div class="item-block recipe-block">
+                            <div class="item-content">
+                                <div class="featured-recipe-item">
+                                    <div class="recipe-photo">
+                                        <a target="_blank" href="/cong-thuc/bun-chay-kieu-hue-20185?itm_source=home_z3_p4_chefrecipe&amp;itm_medium=desktop&amp;itm_content=recipe&amp;itm_campaign=Bún+chay+kiểu+Huế" class="photo">
+                                        <img data-original="https://media.cooky.vn/recipe/g3/20185/s320x240/cooky-recipe-636318376852793754.jpg" data-lazy="https://media.cooky.vn/recipe/g3/20185/s320x240/cooky-recipe-636318376852793754.jpg" alt="Bún chay kiểu Huế" class="lazy img-responsive" src="https://media.cooky.vn/recipe/g3/20185/s320x240/cooky-recipe-636318376852793754.jpg" style="display: block;">
+                                        </a>
+                                        <a href="javascript:void(0);" title="Yêu thích" class="btn-act btn-add-favourite ng-isolate-scope" options="{&quot;Id&quot;:20185,&quot;TotalLiked&quot;:202,&quot;IsLiked&quot;:false}">
+                                            <!-- ngIf: totalLikes > 0 --><span ng-if="totalLikes > 0" class="ng-binding ng-scope">202 &nbsp;</span><!-- end ngIf: totalLikes > 0 --><i class="ico ico-28 ico-iblock ico-favourite" ng-class="{'ico-favourite': !isLiked, 'ico-favourited' : isLiked}"></i>
+                                        </a>
+                                    </div>
+                                    <div class="item-info-box">
+                                        <h3 class="title">
+                                            <a target="_blank" href="/cong-thuc/bun-chay-kieu-hue-20185?itm_source=home_z3_p4_chefrecipe&amp;itm_medium=desktop&amp;itm_content=recipe&amp;itm_campaign=Bún+chay+kiểu+Huế" title="Bún chay kiểu Huế">Bún chay kiểu Huế</a>
+                                        </h3>
+                                        <div class="stats">
+                                            <ul class="list-inline nomargin">
+                                                <li><span class="fa fa-clock-o stats-ico"></span><span class="stats-count"> 45p</span></li>
+                                                <li><span class="fa fa-bolt stats-ico"></span> <span class="stats-text"> Dễ</span></li>
+                                                <li><span class="fa fa-bar-chart stats-ico"></span><span class="stats-count"> 73.57K</span> xem</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-header">
+                                <div class="hprofile">
+                                    <div class="profile">
+                                        <span class="postedby-text">
+                                        công thức bởi:
+                                        </span>
+                                        <a target="_blank" href="/thanh-vien/hoangthitoha" class="name">
+                                        Hoàng Thị Tố Hà
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="today-recipe-user">
+                        <div class="item-block recipe-block">
+                            <div class="item-content">
+                                <div class="featured-recipe-item">
+                                    <div class="recipe-photo">
+                                        <a target="_blank" href="/cong-thuc/ca-basa-kho-to-3030?itm_source=home_z3_p5_chefrecipe&amp;itm_medium=desktop&amp;itm_content=recipe&amp;itm_campaign=Cá+basa+kho+tộ" class="photo">
+                                        <img data-original="https://media.cooky.vn/recipe/g1/3030/s320x240/recipe3030-635643660376673456.jpg" data-lazy="https://media.cooky.vn/recipe/g1/3030/s320x240/recipe3030-635643660376673456.jpg" alt="Cá basa kho tộ" class="lazy img-responsive" src="https://media.cooky.vn/recipe/g1/3030/s320x240/recipe3030-635643660376673456.jpg" style="display: block;">
+                                        </a>
+                                        <a href="javascript:void(0);" title="Yêu thích" class="btn-act btn-add-favourite ng-isolate-scope" options="{&quot;Id&quot;:3030,&quot;TotalLiked&quot;:570,&quot;IsLiked&quot;:false}">
+                                            <!-- ngIf: totalLikes > 0 --><span ng-if="totalLikes > 0" class="ng-binding ng-scope">570 &nbsp;</span><!-- end ngIf: totalLikes > 0 --><i class="ico ico-28 ico-iblock ico-favourite" ng-class="{'ico-favourite': !isLiked, 'ico-favourited' : isLiked}"></i>
+                                        </a>
+                                    </div>
+                                    <div class="item-info-box">
+                                        <h3 class="title">
+                                            <a target="_blank" href="/cong-thuc/ca-basa-kho-to-3030?itm_source=home_z3_p5_chefrecipe&amp;itm_medium=desktop&amp;itm_content=recipe&amp;itm_campaign=Cá+basa+kho+tộ" title="Cá basa kho tộ">Cá basa kho tộ</a>
+                                        </h3>
+                                        <div class="stats">
+                                            <ul class="list-inline nomargin">
+                                                <li><span class="fa fa-clock-o stats-ico"></span><span class="stats-count"> 40p</span></li>
+                                                <li><span class="fa fa-bolt stats-ico"></span> <span class="stats-text"> Trung bình</span></li>
+                                                <li><span class="fa fa-bar-chart stats-ico"></span><span class="stats-count"> 183.96K</span> xem</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-header">
+                                <div class="hprofile">
+                                    <div class="profile">
+                                        <span class="postedby-text">
+                                        công thức bởi:
+                                        </span>
+                                        <a target="_blank" href="/thanh-vien/tunguyen" class="name">
+                                        Trinh Nguyễn
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="today-recipe-user">
+                        <div class="item-block recipe-block">
+                            <div class="item-content">
+                                <div class="featured-recipe-item">
+                                    <div class="recipe-photo">
+                                        <a target="_blank" href="/cong-thuc/com-chien-duong-chau-4014?itm_source=home_z3_p6_chefrecipe&amp;itm_medium=desktop&amp;itm_content=recipe&amp;itm_campaign=Cơm+chiên+Dương+Châu" class="photo">
+                                        <img data-original="https://media.cooky.vn/recipe/g1/4014/s320x240/recipe4014-636009205974008541.jpg" data-lazy="https://media.cooky.vn/recipe/g1/4014/s320x240/recipe4014-636009205974008541.jpg" alt="Cơm chiên Dương Châu" class="lazy img-responsive" src="https://media.cooky.vn/recipe/g1/4014/s320x240/recipe4014-636009205974008541.jpg" style="display: block;">
+                                        </a>
+                                        <a href="javascript:void(0);" title="Yêu thích" class="btn-act btn-add-favourite ng-isolate-scope" options="{&quot;Id&quot;:4014,&quot;TotalLiked&quot;:920,&quot;IsLiked&quot;:false}">
+                                            <!-- ngIf: totalLikes > 0 --><span ng-if="totalLikes > 0" class="ng-binding ng-scope">920 &nbsp;</span><!-- end ngIf: totalLikes > 0 --><i class="ico ico-28 ico-iblock ico-favourite" ng-class="{'ico-favourite': !isLiked, 'ico-favourited' : isLiked}"></i>
+                                        </a>
+                                    </div>
+                                    <div class="item-info-box">
+                                        <h3 class="title">
+                                            <a target="_blank" href="/cong-thuc/com-chien-duong-chau-4014?itm_source=home_z3_p6_chefrecipe&amp;itm_medium=desktop&amp;itm_content=recipe&amp;itm_campaign=Cơm+chiên+Dương+Châu" title="Cơm chiên Dương Châu">Cơm chiên Dương Châu</a>
+                                        </h3>
+                                        <div class="stats">
+                                            <ul class="list-inline nomargin">
+                                                <li><span class="fa fa-clock-o stats-ico"></span><span class="stats-count"> 30p</span></li>
+                                                <li><span class="fa fa-bolt stats-ico"></span> <span class="stats-text"> Dễ</span></li>
+                                                <li><span class="fa fa-bar-chart stats-ico"></span><span class="stats-count"> 86.53K</span> xem</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-header">
+                                <div class="hprofile">
+                                    <div class="profile">
+                                        <span class="postedby-text">
+                                        công thức bởi:
+                                        </span>
+                                        <a target="_blank" href="/thanh-vien/tuyetlinhhu99" class="name">
+                                        Tuyết Linh Hư
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <?php 
                 $dem = 0;
             ?>
